@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    // Куда происзоди сборка. Не важно, потому что собирает webpack
+    "outDir": "./build/",
+    // Подсвечивает функции без явного указания типа
+    "noImplicitAny": true,
+    "module": "ESNext",
+    "target": "es5",
+    "jsx": "react-jsx",
+    // позволяет обрабатыватьи js
+    "allowJs": true,
+    // есть еще classic, но нужен node в 99% =)
+    "moduleResolution": "node",
+    // esModuleInterop позволяет работать с пакетами, которые используют common js
+    // как с обычными с помощью import (require() module.export) = common js
+    "esModuleInterop": true,
+    // allowSyntheticDefaultImports позволяет использовать библиотеки, не имеющие default import
+    // вместо import * as path from "path";
+    // писать import path from "path";
+    "allowSyntheticDefaultImports": true
+  },
+  "ts-node": {
+    "compilerOptions": {
+      "module": "CommonJS"
+    }
+  }
+}
