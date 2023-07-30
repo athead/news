@@ -1,0 +1,25 @@
+{
+    // "json.schemaDownload.enable": true,
+    "i18n-ally.localesPaths": ["public/locales", "src/shared/config/i18n"],
+
+    "scss.validate": false,
+    "css.validate": false,
+    "less.validate": false,
+
+    // Форматирование при сохранении файла
+    "editor.formatOnSave": false,
+
+    "editor.codeActionsOnSave": {
+        "source.fixAll": true,
+        "source.fixAll.stylelint": true
+    },
+
+    "eslint.validate": ["typescript"],
+    // "editor.defaultFormatter": "rvest.vs-code-prettier-eslint",
+    // "editor.formatOnPaste": false, // required
+    // "editor.formatOnType": false, // required
+    // "editor.formatOnSave": true, // optional
+    // "editor.formatOnSaveMode": "file", // required to format on save
+    // "files.autoSave": "onFocusChange" // optional but recommended
+    // "vs-code-prettier-eslint.prettierLast": "false" // set as "true" to run 'prettier' last not first
+}

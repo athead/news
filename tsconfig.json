@@ -11,17 +11,26 @@
     "allowJs": true,
     // есть еще classic, но нужен node в 99% =)
     "moduleResolution": "node",
+    // Для абсолютного импорта
+    "baseUrl": ".",
+    "paths": {
+      "*": ["./src/*"]
+    },
     // esModuleInterop позволяет работать с пакетами, которые используют common js
     // как с обычными с помощью import (require() module.export) = common js
     "esModuleInterop": true,
     // allowSyntheticDefaultImports позволяет использовать библиотеки, не имеющие default import
     // вместо import * as path from "path";
     // писать import path from "path";
-    "allowSyntheticDefaultImports": true
+    "allowSyntheticDefaultImports": true,
+    // Когда strictNullChecks имеет значение true, null и undefined имеют свои собственные 
+    // различные типы, и вы получите сообщение об ошибке типа, если попытаетесь использовать их там,
+    // где ожидается конкретное значение.
+    "strictNullChecks": false
   },
   "ts-node": {
     "compilerOptions": {
-      "module": "CommonJS"
+      "module": "CommonJS", 
     }
-  }
+  },
 }
