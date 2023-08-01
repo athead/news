@@ -2,5 +2,7 @@
   "loading": "Loading",
   "navbar_mainpage": "Main",
   "navbar_about": "About",
-  "button_lang": "EN"
+  "button_lang": "EN",
+  "page_error_title": "Something goes wrong",
+  "button.update_page": "Reload"
 }

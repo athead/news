@@ -2,7 +2,7 @@
  * For a detailed explanation regarding each configuration property, visit:
  * https://jestjs.io/docs/configuration
  */
-
+import path from 'path';
 import type { Config } from 'jest';
 
 const config: Config = {
@@ -14,29 +14,26 @@ const config: Config = {
     coveragePathIgnorePatterns: ['\\\\node_modules\\\\'],
 
     // An array of file extensions your modules use
-    moduleFileExtensions: [
-        'js',
-        'mjs',
-        'cjs',
-        'jsx',
-        'ts',
-        'tsx',
-        'json',
-        'node',
-    ],
+    moduleFileExtensions: ['js', 'jsx', 'ts', 'tsx', 'json', 'node'],
 
     // An array of directory names to be searched recursively up from the requiring module's
     // location
-    moduleDirectories: ['node_modules'],
-
+    moduleDirectories: ['node_modules', '<rootDir>src'],
+    modulePaths: ['<rootDir>src'],
     // The root directory that Jest should scan for tests and modules within
     rootDir: '../../',
+    setupFilesAfterEnv: ['<rootDir>/config/jest/setupTests.ts'],
     // A list of paths to directories that Jest should use to search for files in
     // roots: ['<rootDir>'],
 
     // The glob patterns Jest uses to detect test files
     // Чтобы на маке и на windows запускалось правильно
     testMatch: ['<rootDir>src/**/*(*.)@(spec|test).[tj]s?(x)'],
+
+    moduleNameMapper: {
+        '\\.(s?css)$': 'identity-obj-proxy',
+        '\\.svg': path.resolve(__dirname, 'jestEmptyComponent.tsx'),
+    },
 
     // All imported modules in your tests should be mocked automatically
     // automock: false,

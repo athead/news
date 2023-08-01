@@ -1,8 +1,13 @@
 {
   "about_page": "about_page",
+  "button": {
+    "update_page": "update_page"
+  },
   "button_lang": "button_lang",
   "loading": "loading",
   "main_page": "main_page",
   "navbar_about": "navbar_about",
-  "navbar_mainpage": "navbar_mainpage"
+  "navbar_mainpage": "navbar_mainpage",
+  "notfound_page": "notfound_page",
+  "page_error_title": "page_error_title"
 }

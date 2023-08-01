@@ -14,7 +14,11 @@
         "source.fixAll.stylelint": true
     },
 
-    "eslint.validate": ["typescript"],
+    "eslint.validate": [
+        "typescript"
+    ],
+    "i18n-ally.keystyle": "flat",
+    "javascript.preferences.importModuleSpecifier": "non-relative"
     // "editor.defaultFormatter": "rvest.vs-code-prettier-eslint",
     // "editor.formatOnPaste": false, // required
     // "editor.formatOnType": false, // required

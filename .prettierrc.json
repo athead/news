@@ -8,5 +8,6 @@
     "plugins": ["stylelint-prettier"],
     "rules": {
         "prettier/prettier": true
-    }
+    },
+    "printWidth": 120
 }
