@@ -4,5 +4,6 @@
   "navbar_about": "О сайте",
   "button_lang": "RU",
   "page_error_title": "Произошла непредвиденная ошибка",
-  "button.update_page": "Обновить страницу"
+  "button.update_page": "Обновить страницу",
+  "toggle_button": "toggle"
 }

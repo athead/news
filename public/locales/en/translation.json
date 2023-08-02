@@ -4,5 +4,6 @@
   "navbar_about": "About",
   "button_lang": "EN",
   "page_error_title": "Something goes wrong",
-  "button.update_page": "Reload"
+  "button.update_page": "Reload",
+  "toggle_button": "toggle"
 }

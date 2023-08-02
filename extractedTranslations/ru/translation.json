@@ -9,5 +9,6 @@
   "navbar_about": "navbar_about",
   "navbar_mainpage": "navbar_mainpage",
   "notfound_page": "notfound_page",
-  "page_error_title": "page_error_title"
+  "page_error_title": "page_error_title",
+  "toggle_button": "toggle_button"
 }
