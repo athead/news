@@ -2,7 +2,8 @@
   "loading": "Загрузка",
   "navbar_mainpage": "Главная",
   "navbar_about": "О сайте",
-  "button_lang": "RU",
+  "button_lang": "Русский",
+  "button_lang_short": "RU",
   "page_error_title": "Произошла непредвиденная ошибка",
   "button.update_page": "Обновить страницу",
   "toggle_button": "toggle"
