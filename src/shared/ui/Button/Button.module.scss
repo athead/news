@@ -11,12 +11,19 @@
     outline: none;
 }
 
-.outline {
+.outline,
+.outlineInverted {
+    border-radius: 10px;
     background: none;
+}
+.outline {
     border: solid 1px var(--primary-color);
     color: var(--primary-color);
 }
-
+.outlineInverted {
+    border: solid 1px var(--inverted-primary-color);
+    color: var(--inverted-primary-color);
+}
 
 .background {
     background: var(--bg-color);
@@ -28,7 +35,6 @@
     background: var(--inverted-bg-color);
     color: var(--inverted-primary-color);
     border: none;
-
 }
 
 .square {
@@ -50,13 +56,13 @@
 }
 
 .size_m {
-    font: var(--font-m)
+    font: var(--font-m);
 }
 
 .size_l {
-    font: var(--font-l)
+    font: var(--font-l);
 }
 
 .size_xl {
-    font: var(--font-xl)
+    font: var(--font-xl);
 }

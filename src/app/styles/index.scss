@@ -4,13 +4,14 @@
 @import 'themes/dark';
 @import 'https://fonts.googleapis.com/css?family=Montserrat:400,700|Roboto:100,300,400';
 
-.app {
-    min-height: 100vh;
+body {
     font: var(--font-m);
     color: var(--primary-color);
-    background: var(--bg-color);
 }
-
+.app {
+    background: var(--bg-color);
+    min-height: 100vh;
+}
 .content-page {
     display: flex;
 }

@@ -6,5 +6,6 @@
   "button_lang_short": "RU",
   "page_error_title": "Произошла непредвиденная ошибка",
   "button.update_page": "Обновить страницу",
-  "toggle_button": "toggle"
+  "toggle_button": "toggle",
+  "login": "Войти"
 }
