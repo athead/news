@@ -21,6 +21,13 @@ export const Primary: Story = {
     },
 };
 
+export const Disabled: Story = {
+    args: {
+        children: 'Text',
+        disabled: true,
+    },
+};
+
 export const Clear: Story = {
     args: {
         children: 'Text',

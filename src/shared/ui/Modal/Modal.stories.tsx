@@ -5,7 +5,7 @@ import { Theme } from 'app/providers/ThemeProvider';
 import { Modal } from './Modal';
 
 const meta: Meta<typeof Modal> = {
-    title: 'shared/Button',
+    title: 'shared/Modal',
     component: Modal,
     // argTypes: {
     //     backgroundColor: { control: 'color' },

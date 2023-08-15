@@ -1,0 +1,19 @@
+{
+    "profile_card": "Профиль",
+    "button_edit": "Редактировать",
+    "button_save": "Сохранить",
+    "button_cancel": "Отменить",
+    "firstname": "Имя",
+    "lastname": "Фамилия",
+    "age": "Возраст",
+    "city": "Город",
+    "username": "Логин",
+    "avatar": "Аватар",
+    "loading_error": "Произошла ошибка при загрузке",
+    "try_to_update_page": "Попробуйте обновить страницу",
+    "SERVER_ERROR": "Ошибка сервера",
+    "NO_DATA": "Сервер не отвечает",
+    "INCORRECT_AGE": "Ошибка в возрасте",
+    "INCORRECT_COUNTRY": "Ошибка выбора страны",
+    "INCORRECT_USER_DATA": "Ошибка в данных пользователя"
+}

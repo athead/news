@@ -26,14 +26,19 @@ module.exports = {
         ],
         'import/no-unresolved': 'off',
         'import/prefer-default-export': 'off',
-        'no-unused-vars': 'warn',
+
+        // 'no-unused-vars': 'warn',
+        'no-unused-vars': 'off',
+        '@typescript-eslint/no-unused-vars': 'error', // for correct unused variables
+
         'react/require-default-props': 'off',
         'react/react-in-jsx-scope': 'off',
         'react/jsx-props-no-spreading': 'warn',
         'react/function-component-definition': 'off',
         'no-shadow': 'off',
         'import/extensions': 'off',
-        'import/no-extraneous-dependencies': 'warn',
+        // 'import/no-extraneous-dependencies': 'warn',
+        'import/no-extraneous-dependencies': ['error', { devDependencies: true }],
         'no-underscore-dangle': 'off',
         'max-len': [
             'error',
@@ -54,6 +59,8 @@ module.exports = {
         'jsx-a11y/no-static-element-interactions': 'off',
         'react-hooks/rules-of-hooks': 'error',
         'react-hooks/exhaustive-deps': 'error',
+        'no-param-reassign': 'off',
+        'no-undef': 'off',
     },
     settings: {
         react: {
@@ -62,6 +69,8 @@ module.exports = {
     },
     globals: {
         __IS_DEV__: true,
+        __API__: true,
+        __PROJECT__: true,
     },
     overrides: [
         {

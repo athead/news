@@ -1,0 +1,19 @@
+{
+    "profile_card": "Profile",
+    "button_edit": "Edit",
+    "button_save": "Save",
+    "button_cancel": "Cancel",
+    "firstname": "Firstname",
+    "lastname": "Lastname",
+    "age": "Age",
+    "city": "City",
+    "username": "Username",
+    "avatar": "Avatar",
+    "loading_error": "Loading error",
+    "try_to_update_page": "Try to update page",
+    "SERVER_ERROR": "Server error",
+    "NO_DATA": "No data from server",
+    "INCORRECT_AGE": "Incorrect age",
+    "INCORRECT_COUNTRY": "Incorrect country",
+    "INCORRECT_USER_DATA": "Incorrect user data"
+}
