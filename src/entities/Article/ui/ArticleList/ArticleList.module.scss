@@ -1,0 +1,11 @@
+.TILE {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.BLOCK {
+    .card {
+        margin-bottom: 30px;
+    }
+}

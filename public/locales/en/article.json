@@ -1,0 +1,16 @@
+{
+    "article_not_found": "Article not found",
+    "article_error": "Error on loading article",
+    "comments": "Comments",
+    "back_to_list": "Back to list",
+    "edit_btn": "Edit article",
+    "recommendations": "Recommendations",
+    "create_article": "Create article",
+    "sorting_label": "Sort on",
+    "sorting_order": "by",
+    "asc": "asc",
+    "desc": "desc",
+    "created_date": "Created date",
+    "title": "Title",
+    "views": "Views"
+}

@@ -1,0 +1,11 @@
+.panel {
+    position: absolute;
+    z-index: 10;
+
+    padding: 15px;
+
+    background: var(--card-bg);
+
+    // border: 1px solid var(--primary-color);
+    border-radius: 8px;
+}

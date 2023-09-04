@@ -1,0 +1,14 @@
+.options {
+    position: absolute;
+    z-index: 5;
+
+    min-width: 100%;
+
+    background: var(--list-bg);
+    border-radius: 12px;
+    box-shadow: 4px 4px 8px var(--list-bg);
+}
+
+.item {
+    padding: 10px 20px;
+}

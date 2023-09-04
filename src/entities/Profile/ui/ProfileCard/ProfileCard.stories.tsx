@@ -9,7 +9,7 @@ import AvatarImg from 'shared/assets/test/avatar.jpg';
 import { ProfileCard } from './ProfileCard';
 
 const meta: Meta<typeof ProfileCard> = {
-    title: 'entites/ProfileCard',
+    title: 'entities/ProfileCard',
     component: ProfileCard,
 };
 

@@ -2,7 +2,7 @@ import { Mods, classNames } from 'shared/lib/classNames/classNames';
 import {
     MutableRefObject, ReactNode, useCallback, useEffect, useRef, useState,
 } from 'react';
-import { Portal } from 'shared/ui/Portal/Portal';
+import { Portal } from '../Portal/Portal';
 import cls from './Modal.module.scss';
 
 interface ModalProps {
@@ -13,23 +13,28 @@ interface ModalProps {
     lazy?: boolean;
 }
 
-const ANIMATION_DELAY = 300;
+const ANIMATION_DELAY = 150;
 
 export const Modal = (props: ModalProps) => {
     const {
         className, children, isOpen, onClose, lazy,
     } = props;
 
+    const [isOpening, setIsOpening] = useState(false);
     const [isClosing, setIsClosing] = useState(false);
     const [isMounted, setIsMounted] = useState(false);
-    const timerRef = useRef() as MutableRefObject<ReturnType<typeof setTimeout>>;
+
+    const closeTimerRef = useRef() as MutableRefObject<ReturnType<typeof setTimeout>>;
+    const openTimerRef = useRef() as MutableRefObject<ReturnType<typeof setTimeout>>;
 
     const closeHandler = useCallback(() => {
         if (onClose) {
             setIsClosing(true);
-            timerRef.current = setTimeout(() => {
+            // Таймердля класса закрытия
+            closeTimerRef.current = setTimeout(() => {
                 onClose();
                 setIsClosing(false);
+                setIsOpening(false);
             }, ANIMATION_DELAY);
         }
     }, [onClose]);
@@ -46,7 +51,13 @@ export const Modal = (props: ModalProps) => {
     );
 
     useEffect(() => {
-        if (isOpen) setIsMounted(true);
+        if (isOpen) {
+            setIsMounted(true);
+            // таймер до присвоение класса открыто
+            openTimerRef.current = setTimeout(() => {
+                setIsOpening(true);
+            }, ANIMATION_DELAY);
+        }
     }, [isOpen]);
 
     useEffect(() => {
@@ -54,13 +65,15 @@ export const Modal = (props: ModalProps) => {
             window.addEventListener('keydown', onKeyDown);
         }
         return () => {
-            clearTimeout(timerRef.current);
+            // очистка таймеров
+            clearTimeout(closeTimerRef.current);
+            clearTimeout(openTimerRef.current);
             window.removeEventListener('keydown', onKeyDown);
         };
     }, [isOpen, onKeyDown]);
 
     const mods: Mods = {
-        [cls.opened]: isOpen,
+        [cls.opened]: isOpening,
         [cls.isClosing]: isClosing,
     };
 

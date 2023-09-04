@@ -1,0 +1,16 @@
+{
+    "article_not_found": "Статья не найдена",
+    "article_error": "Произошла ошибка при загрузке статьи",
+    "comments": "Комментарии",
+    "back_to_list": "Назад к списку",
+    "edit_btn": "Редактировать статью",
+    "recommendations": "Также рекомендуем",
+    "create_article": "Создать статью",
+    "sorting_label": "Сортировать",
+    "sorting_order": "по",
+    "asc": "возрастанию",
+    "desc": "убыванию",
+    "created_date": "Дате создания",
+    "title": "Заголовку",
+    "views": "Просмотрам"
+}

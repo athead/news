@@ -9,10 +9,16 @@
     background: var(--inverted-bg-color);
 }
 
-.links {
+.links, 
+.actions {
     margin-left: auto;
 }
 
 .mainLink {
     margin-right: 15px;
+}
+
+.appName {
+    width: var(--sidebar-width);
+    margin-left: 15px;
 }

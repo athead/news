@@ -7,7 +7,7 @@ declare module '*.scss' {
 }
 
 declare module '*.svg' {
-    const content: React.FunctionComponent<React.SVGAttributes<SVGElement>>;
+    const content: React.FC<React.SVGAttributes<SVGElement>>;
     export default content;
     // export const ReactComponent: React.FC<React.SVGProps<SVGSVGElement>>;
 }
@@ -25,3 +25,7 @@ type DeepPartial<T> = T extends object
           [P in keyof T]?: DeepPartial<T[P]>;
       }
     : T;
+
+type OptionalRecord<K extends keyof any, T> = {
+    [P in K]?: T;
+};

@@ -18,6 +18,9 @@ export const Avatar = (props: AvatarProps) => {
         return {
             width: size || 100,
             height: size || 100,
+            // centering alt attr
+            textAlign: 'center',
+            lineHeight: `${size}px` || '100px',
         };
     }, [size]);
     return <img src={src} style={styles} className={classNames(cls.Avatar, mods, [className])} alt={alt} />;

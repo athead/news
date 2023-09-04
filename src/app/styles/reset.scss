@@ -2,6 +2,8 @@
 *::before,
 *::after {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 html,
@@ -95,7 +97,7 @@ blockquote::before,
 blockquote::after,
 q::before,
 q::after {
-    content: "";
+    content: '';
     content: none;
 }
 
@@ -107,4 +109,8 @@ table {
 input {
     appearance: none;
     border-radius: 0;
+}
+
+a {
+    text-decoration: none;
 }

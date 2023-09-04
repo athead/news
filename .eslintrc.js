@@ -13,7 +13,7 @@ module.exports = {
         ecmaVersion: 'latest',
         sourceType: 'module',
     },
-    plugins: ['react', '@typescript-eslint', 'i18next', 'react-hooks'],
+    plugins: ['react', '@typescript-eslint', 'i18next', 'react-hooks', 'fsdm'],
     rules: {
         'react/jsx-indent': [2, 4],
         'react/jsx-indent-props': [2, 4],
@@ -33,7 +33,7 @@ module.exports = {
 
         'react/require-default-props': 'off',
         'react/react-in-jsx-scope': 'off',
-        'react/jsx-props-no-spreading': 'warn',
+        'react/jsx-props-no-spreading': 'off', // warn
         'react/function-component-definition': 'off',
         'no-shadow': 'off',
         'import/extensions': 'off',
@@ -61,7 +61,18 @@ module.exports = {
         'react-hooks/exhaustive-deps': 'error',
         'no-param-reassign': 'off',
         'no-undef': 'off',
+        'react/no-array-index-key': 'warn',
+        'fsdm/path-checker': 'error',
     },
+    overrides: [
+        {
+            files: ['./src/**/*.{test,stories}.{ts,tsx}'],
+            rules: {
+                'i18next/no-literal-string': 'off',
+                'max-len': 'off',
+            },
+        },
+    ],
     settings: {
         react: {
             version: 'detect',
@@ -72,13 +83,4 @@ module.exports = {
         __API__: true,
         __PROJECT__: true,
     },
-    overrides: [
-        {
-            files: ['**./src/**/*.{test,stories}.{ts,tsx}'],
-            rules: {
-                'i18next/no-literal-string': 'off',
-                'max-len': 'off',
-            },
-        },
-    ],
 };
