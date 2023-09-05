@@ -8,6 +8,10 @@
     color: var(--primary-color);
 
     opacity: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .overlay {
