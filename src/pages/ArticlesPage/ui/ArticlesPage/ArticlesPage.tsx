@@ -1,11 +1,11 @@
 import { memo, useCallback } from 'react';
 import { useTranslation } from 'react-i18next';
 import { useSelector } from 'react-redux';
-import { classNames } from 'shared/lib/classNames/classNames';
-import { DynamicModuleLoader, ReducersList } from 'shared/lib/components/DynamicModuleLoader/DynamicModuleLoader';
-import { useAppDispatch } from 'shared/lib/hooks/useAppDispatch/useAppDispatch';
-import { Text } from 'shared/ui/Text/Text';
-import { Page } from 'widgets/Page/ui/Page';
+import { classNames } from '@/shared/lib/classNames/classNames';
+import { DynamicModuleLoader, ReducersList } from '@/shared/lib/components/DynamicModuleLoader/DynamicModuleLoader';
+import { useAppDispatch } from '@/shared/lib/hooks/useAppDispatch/useAppDispatch';
+import { Text } from '@/shared/ui/Text/Text';
+import { Page } from '@/widgets/Page/ui/Page';
 import { getArticlesPageError } from '../../model/selectors/articlesPageSelectors';
 import { fetchNextArticlesList } from '../../model/services/fetchNextArticleList/fetchNextArticleList';
 import { articlesPageReducer } from '../../model/slices/articlesPageSlice';

@@ -1,11 +1,11 @@
-import { ArticleList } from 'entities/Article/ui/ArticleList/ArticleList';
 import { memo } from 'react';
 import { useSelector } from 'react-redux';
 import { useSearchParams } from 'react-router-dom';
-import { useAppDispatch } from 'shared/lib/hooks/useAppDispatch/useAppDispatch';
-import { useInitialEffect } from 'shared/lib/hooks/useInitialEffect/useInitialEffect';
-import { Text } from 'shared/ui/Text/Text';
 import { useTranslation } from 'react-i18next';
+import { ArticleList } from '@/entities/Article/ui/ArticleList/ArticleList';
+import { useAppDispatch } from '@/shared/lib/hooks/useAppDispatch/useAppDispatch';
+import { useInitialEffect } from '@/shared/lib/hooks/useInitialEffect/useInitialEffect';
+import { Text } from '@/shared/ui/Text/Text';
 import {
     getArticlesPageError,
     getArticlesPageIsLoading,

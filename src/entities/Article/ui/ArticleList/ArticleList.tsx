@@ -1,9 +1,9 @@
-import { classNames } from 'shared/lib/classNames/classNames';
 // import { useTranslation } from 'react-i18next';
 import { HTMLAttributeAnchorTarget, memo, useCallback } from 'react';
 import { useTranslation } from 'react-i18next';
 import { VirtuosoGrid } from 'react-virtuoso';
-import { Text, TextSize } from 'shared/ui/Text/Text';
+import { classNames } from '@/shared/lib/classNames/classNames';
+import { Text, TextSize } from '@/shared/ui/Text/Text';
 import { Article } from '../../model/types/article';
 import { ArticleListItem } from '../ArticleListItem/ArticleListItem';
 import { ArticleListItemSkeleton } from '../ArticleListItem/ArticleListItemSkeleton';
