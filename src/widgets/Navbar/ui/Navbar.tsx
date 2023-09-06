@@ -45,7 +45,9 @@ export const Navbar = memo(({ className }: NavbarProps) => {
         );
     }
     return (
+
         <header className={classNames(cls.Navbar, {}, [className])}>
+            <Text theme={TextTheme.INVERTED} className={cls.appName} title={t('APPNAME')} />
             <Button theme={ButtonTheme.OUTLINE_INVERTED} className={cls.links} onClick={onShowModal}>
                 {t('login')}
             </Button>
