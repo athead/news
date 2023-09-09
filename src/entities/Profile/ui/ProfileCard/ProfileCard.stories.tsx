@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/react';
 
 import { ThemeDecorator } from '@/shared/config/storybook/ThemeDecorator/ThemeDecorator';
-import { Theme } from '@/app/providers/ThemeProvider';
+import { Theme } from '@/shared/const/theme';
 import { StoreDecorator } from '@/shared/config/storybook/StoreDecorator/StoreDecorator';
 import { Currency } from '@/entities/Currency';
 import { Country } from '@/entities/Country';
@@ -9,7 +9,7 @@ import AvatarImg from '@/shared/assets/test/avatar.jpg';
 import { ProfileCard } from './ProfileCard';
 
 const meta: Meta<typeof ProfileCard> = {
-    title: 'entities/ProfileCard',
+    title: 'entities/Profile/ProfileCard',
     component: ProfileCard,
 };
 

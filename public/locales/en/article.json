@@ -12,5 +12,7 @@
     "desc": "desc",
     "created_date": "Created date",
     "title": "Title",
-    "views": "Views"
+    "views": "Views",
+    "article_rate": "Rate article",
+    "feedback_title": "Enter your feedback to improve articles quality"
 }

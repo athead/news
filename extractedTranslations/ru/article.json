@@ -1,11 +1,13 @@
 {
   "article_error": "article_error",
+  "article_rate": "article_rate",
   "asc": "asc",
   "back_to_list": "back_to_list",
   "comments": "comments",
   "created_date": "created_date",
   "desc": "desc",
   "edit_btn": "edit_btn",
+  "feedback_title": "feedback_title",
   "recommendations": "recommendations",
   "sorting_label": "sorting_label",
   "sorting_order": "sorting_order",

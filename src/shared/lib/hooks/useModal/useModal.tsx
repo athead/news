@@ -20,7 +20,7 @@ export function useModal(props: UseModalProps) {
     const close = useCallback(() => {
         if (onClose) {
             setIsClosing(true);
-            // Таймердля класса закрытия
+            // Таймер для класса закрытия
             closeTimerRef.current = setTimeout(() => {
                 onClose();
                 setIsClosing(false);
@@ -51,6 +51,8 @@ export function useModal(props: UseModalProps) {
             window.addEventListener('keydown', onKeyDown);
         }
         return () => {
+            setIsOpening(false);
+
             // очистка таймеров
             clearTimeout(closeTimerRef.current);
             clearTimeout(openTimerRef.current);

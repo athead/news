@@ -1,19 +1,19 @@
 import {
-    memo, ReactNode, useCallback, useEffect,
+    memo, ReactNode, useCallback, useEffect, useState,
 } from 'react';
-import { useTheme } from '@/app/providers/ThemeProvider';
 import { classNames } from '@/shared/lib/classNames/classNames';
 import { AnimationProvider, useAnimationLibs } from '@/shared/lib/components/AnimationProvider';
 import { Overlay } from '../Overlay/Overlay';
 import { Portal } from '../Portal/Portal';
 import cls from './Drawer.module.scss';
+import { useTheme } from '@/shared/lib/hooks/useTheme/useTheme';
 
 interface DrawerProps {
     className?: string;
     children: ReactNode;
     isOpen?: boolean;
     onClose?: () => void;
-    // lazy?: boolean;
+    lazy?: boolean;
 }
 
 const height = window.innerHeight - 100;
@@ -25,9 +25,10 @@ const DrawerContent = memo((props: DrawerProps) => {
     });
 
     const {
-        className, children, onClose, isOpen,
+        className, children, onClose, isOpen, lazy,
     } = props;
     const { theme } = useTheme();
+    const [isMounted, setIsMounted] = useState(false);
     // const {
     //     close, isClosing, isMounted, isOpening,
     // } = useModal({ animationDelay: 300, onClose, isOpen });
@@ -39,6 +40,7 @@ const DrawerContent = memo((props: DrawerProps) => {
     useEffect(() => {
         if (isOpen) {
             openDrawer();
+            setIsMounted(true);
         }
     }, [api, isOpen, openDrawer]);
 
@@ -90,9 +92,9 @@ const DrawerContent = memo((props: DrawerProps) => {
     //     [cls.isClosing]: isClosing,
     // };
 
-    // if (lazy && !isMounted) {
-    //     return null;
-    // }
+    if (lazy && !isMounted) {
+        return null;
+    }
 
     return (
         <Portal>

@@ -14,7 +14,10 @@ export default ({ config }: { config: webpack.Configuration }) => {
     };
     config.resolve!.extensions!.push('.ts', 'tsx');
     config.resolve!.modules!.push(paths.src);
-
+    config.resolve!.alias = {
+        ...config.resolve!.alias,
+        '@': paths.src,
+    };
     // ТАК ДЕЛАТЬ НЕ СТОИТ, НАДО РАЗОБРАТЬСЯ
     const webpackRules = config!.module!.rules as RuleSetRule[];
     // eslint-disable-next-line no-param-reassign

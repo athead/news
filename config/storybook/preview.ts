@@ -3,7 +3,7 @@ import { StyleDecorator } from '../../src/shared/config/storybook/StyleDecorator
 import { ThemeDecorator } from '../../src/shared/config/storybook/ThemeDecorator/ThemeDecorator';
 import { RouterDecorator } from '../../src/shared/config/storybook/RouterDecorator/RouterDecorator';
 import { SuspenceDecorator } from '../../src/shared/config/storybook/SuspenceDecorator/SuspenceDecorator';
-import { Theme } from '../../src/app/providers/ThemeProvider';
+import { Theme } from '../../src/shared/const/theme';
 import i18n from './i18next';
 
 const preview: Preview = {

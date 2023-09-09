@@ -51,7 +51,7 @@ module.exports = {
             'error',
             {
                 markupOnly: true,
-                ignoreAttribute: ['data-testid', 'to'],
+                ignoreAttribute: ['data-testid', 'to', 'key'],
             },
         ],
         'arrow-body-style': ['warn', 'always'],
@@ -62,7 +62,12 @@ module.exports = {
         'no-param-reassign': 'off',
         'no-undef': 'off',
         'react/no-array-index-key': 'warn',
-        'fsdm/path-checker': 'error',
+        'fsdm/path-checker': ['error', { alias: '@' }],
+        'fsdm/public-api-imports': [
+            'error',
+            { alias: '@', testFilesPatterns: ['**/*.test.*', '**/*.story.*', '**/StoreDecorator.tsx'] },
+        ],
+        'fsdm/layer-imports': ['error', { alias: '@', ignoreImportPatterns: ['**/StoreProvider', '**/testing'] }],
     },
     overrides: [
         {

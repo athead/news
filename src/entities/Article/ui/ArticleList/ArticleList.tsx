@@ -80,9 +80,9 @@ export const ArticleList = memo((props: ArticleListProps) => {
                 exit: (velocity) => {
                     return Math.abs(velocity) < 30;
                 },
-                change: (_, range) => {
-                    return console.log({ range });
-                },
+                // change: (_, range) => {
+                //     return console.log({ range });
+                // },
             }}
         />
     ) : (
