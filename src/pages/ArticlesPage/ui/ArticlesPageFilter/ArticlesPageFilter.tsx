@@ -4,11 +4,8 @@ import { useTranslation } from 'react-i18next';
 import { classNames } from '@/shared/lib/classNames/classNames';
 import {
     ArticleSortField,
-    ArticleSortSelector,
     ArticleType,
-    ArticleTypeTabs,
     ArticleView,
-    ArticleViewSelector,
 } from '@/entities/Article';
 import { useAppDispatch } from '@/shared/lib/hooks/useAppDispatch/useAppDispatch';
 import { Card } from '@/shared/ui/Card';
@@ -25,6 +22,9 @@ import {
 } from '../../model/selectors/articlesPageSelectors';
 import { articlesPageActions } from '../../model/slices/articlesPageSlice';
 import cls from './ArticlesPageFilter.module.scss';
+import { ArticleViewSelector } from '@/features/ArticleViewSelector';
+import { ArticleTypeTabs } from '@/features/ArticleTypeTabs';
+import { ArticleSortSelector } from '@/features/ArticleSortSelector';
 
 interface ArticlesPageFilterProps {
     className?: string;

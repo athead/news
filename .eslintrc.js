@@ -4,7 +4,11 @@ module.exports = {
         es2021: true,
         jest: true,
     },
-    extends: ['plugin:react/recommended', 'airbnb', 'plugin:storybook/recommended'],
+    extends: [
+        'plugin:react/recommended',
+        'airbnb',
+        'plugin:storybook/recommended',
+    ],
     parser: '@typescript-eslint/parser',
     parserOptions: {
         ecmaFeautures: {
@@ -13,7 +17,7 @@ module.exports = {
         ecmaVersion: 'latest',
         sourceType: 'module',
     },
-    plugins: ['react', '@typescript-eslint', 'i18next', 'react-hooks', 'fsdm'],
+    plugins: ['react', '@typescript-eslint', 'i18next', 'react-hooks', 'fsdm', 'import', 'unused-imports'],
     rules: {
         'react/jsx-indent': [2, 4],
         'react/jsx-indent-props': [2, 4],
@@ -62,6 +66,7 @@ module.exports = {
         'no-param-reassign': 'off',
         'no-undef': 'off',
         'react/no-array-index-key': 'warn',
+        'unused-imports/no-unused-imports': 'error',
         'fsdm/path-checker': ['error', { alias: '@' }],
         'fsdm/public-api-imports': [
             'error',
@@ -82,6 +87,7 @@ module.exports = {
         react: {
             version: 'detect',
         },
+        'import/extensions': ['.js', '.jsx'],
     },
     globals: {
         __IS_DEV__: true,

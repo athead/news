@@ -16,6 +16,7 @@ const preview: Preview = {
     },
     parameters: {
         actions: { argTypesRegex: '^on[A-Z].*' },
+
         controls: {
             matchers: {
                 color: /(background|color)$/i,
@@ -23,8 +24,17 @@ const preview: Preview = {
             },
         },
         i18n,
-    },
 
+        layout: 'fullscreen',
+
+        themes: {
+            default: 'light',
+            list: [
+                { name: 'light', class: Theme.LIGHT, color: '#ffffff' },
+                { name: 'dark', class: Theme.DARK, color: '#000000' },
+            ],
+        },
+    },
     decorators: [StyleDecorator, ThemeDecorator(Theme.LIGHT), RouterDecorator, SuspenceDecorator],
 };
 

@@ -1,27 +1,45 @@
 import { CSSProperties, useMemo } from 'react';
 import { Mods, classNames } from '@/shared/lib/classNames/classNames';
 import cls from './Avatar.module.scss';
+import { AppImage } from '../AppImage';
+import { Skeleton } from '../Skeleton';
+import ProfileIcon from '@/shared/assets/icons/profile.svg';
+import { Icon } from '../Icon';
 
 interface AvatarProps {
     className?: string;
     src?: string;
     size?: number;
     alt?: string;
+    fallbackInverted?: boolean;
 }
 
 export const Avatar = (props: AvatarProps) => {
     const {
-        className, src, size, alt,
+        className, src, size = 100, alt, fallbackInverted,
     } = props;
     const mods: Mods = {};
     const styles = useMemo<CSSProperties>(() => {
         return {
-            width: size || 100,
-            height: size || 100,
+            width: size,
+            height: size,
             // centering alt attr
             textAlign: 'center',
             lineHeight: `${size}px` || '100px',
         };
     }, [size]);
-    return <img src={src} style={styles} className={classNames(cls.Avatar, mods, [className])} alt={alt} />;
+
+    const fallback = <Skeleton width={size} height={size} borderRadius="50%" />;
+    const errorFallback = <Icon size={size} Svg={ProfileIcon} inverted={fallbackInverted} />;
+
+    return (
+        <AppImage
+            fallback={fallback}
+            errorFallback={errorFallback}
+            src={src}
+            style={styles}
+            className={classNames(cls.Avatar, mods, [className])}
+            alt={alt}
+        />
+    );
 };

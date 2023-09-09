@@ -33,6 +33,8 @@ const config: Config = {
     moduleNameMapper: {
         '\\.(s?css)$': 'identity-obj-proxy',
         '\\.svg': path.resolve(__dirname, 'jestEmptyComponent.tsx'),
+        // aliases for test
+        '^@/(.*)$': '<rootDir>/src/$1',
         // 'react-i18next': '<rootDir>/shared/config/i18nMock.ts',
     },
 
