@@ -22,9 +22,13 @@ const reducers: ReducersList = {
 
 const ArticleDetailsPage = ({ className }: ArticleDetailsPageProps) => {
     // const { t } = useTranslation('article');
-    const { id } = useParams<{ id: string }>();
+    let { id } = useParams<{ id: string }>();
+    // TODO
+    if (__PROJECT__ === 'storybook') {
+        id = '1';
+    }
 
-    if (!id && __PROJECT__ !== 'storybook') {
+    if (!id) {
         return null;
     }
 
