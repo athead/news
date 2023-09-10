@@ -24,7 +24,7 @@ const ArticleDetailsPage = ({ className }: ArticleDetailsPageProps) => {
     // const { t } = useTranslation('article');
     const { id } = useParams<{ id: string }>();
 
-    if (!id) {
+    if (!id && __PROJECT__ !== 'storybook') {
         return null;
     }
 

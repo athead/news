@@ -1,8 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react';
 
-import {
-    Article,
-} from '../../model/types/article';
+import { Article } from '../../model/types/article';
 import { ArticleList } from './ArticleList';
 import { ArticleBlockType, ArticleType, ArticleView } from '../../model/consts/consts';
 
@@ -66,11 +64,15 @@ export default meta;
 type Story = StoryObj<typeof meta>;
 
 export const LoadingBlock: Story = {
-    args: { articles: [], isLoading: true, view: ArticleView.BLOCK },
+    args: {
+        articles: [], isLoading: true, view: ArticleView.BLOCK, virtualized: false,
+    },
 };
 
 export const LoadingTile: Story = {
-    args: { articles: [], isLoading: true, view: ArticleView.TILE },
+    args: {
+        articles: [], isLoading: true, view: ArticleView.TILE, virtualized: false,
+    },
 };
 
 export const ListBlock: Story = {
@@ -83,6 +85,7 @@ export const ListBlock: Story = {
         }),
         isLoading: false,
         view: ArticleView.BLOCK,
+        virtualized: false,
     },
 };
 
@@ -96,5 +99,6 @@ export const ListTile: Story = {
         }),
         isLoading: false,
         view: ArticleView.TILE,
+        virtualized: false,
     },
 };

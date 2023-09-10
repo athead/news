@@ -7,13 +7,16 @@ import { useAppDispatch } from '@/shared/lib/hooks/useAppDispatch/useAppDispatch
 import { Avatar } from '@/shared/ui/Avatar';
 import { getUserAuthData, isUserAdmin, userActions } from '@/entities/User';
 import { getRouteAdminPanel, getRouteProfile } from '@/shared/const/router';
+import { DropdownDirection } from '@/shared/types/ui';
 
 interface AvatarDropdownProps {
     className?: string;
+    direction?: DropdownDirection;
+    fallbackInverted?: boolean;
 }
 
 export const AvatarDropdown = memo((props: AvatarDropdownProps) => {
-    const { className } = props;
+    const { className, direction = 'bottom left', fallbackInverted = true } = props;
     const { t } = useTranslation();
     const dispatch = useAppDispatch();
 
@@ -32,7 +35,7 @@ export const AvatarDropdown = memo((props: AvatarDropdownProps) => {
     return (
         <Dropdown
             className={classNames('', {}, [className])}
-            direction="bottom left"
+            direction={direction}
             items={[
                 ...(isAdminPanelAvailable
                     ? [
@@ -51,7 +54,7 @@ export const AvatarDropdown = memo((props: AvatarDropdownProps) => {
                     onClick: onLogout,
                 },
             ]}
-            trigger={<Avatar fallbackInverted size={30} src={authData.avatar} />}
+            trigger={<Avatar fallbackInverted={fallbackInverted} size={30} src={authData.avatar} />}
         />
     );
 });

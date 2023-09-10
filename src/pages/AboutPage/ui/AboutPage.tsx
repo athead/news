@@ -9,7 +9,11 @@ interface ArticlesPageProps {
 
 const AboutPage = ({ className }: ArticlesPageProps) => {
     const { t } = useTranslation('about');
-    return <Page className={classNames(cls.AboutPage, {}, [className])}>{t('about_page')}</Page>;
+    return (
+        <Page data-testid="AboutPage" className={classNames(cls.AboutPage, {}, [className])}>
+            {t('about_page')}
+        </Page>
+    );
 };
 
 export default AboutPage;

@@ -9,15 +9,16 @@ export function buildLoaders(options: BuildOptions): webpack.RuleSetRule[] {
     const codeBabelLoader = buildBabelLoader({ ...options, isTsx: false });
     const tsxCodeBabelLoader = buildBabelLoader({ ...options, isTsx: true });
 
-    // Загрузчик картинок
+    // Загрузчик картинок и шрифтов
     const fileLoader = {
-        test: /\.(png|jpe?g|gif)$/i,
+        test: /\.(ttf|png|jpe?g|gif)$/i,
         use: [
             {
                 loader: 'file-loader',
             },
         ],
     };
+
     // Загрузчик svg
     const svgLoader = {
         test: /\.svg$/,

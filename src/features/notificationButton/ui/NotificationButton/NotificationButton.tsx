@@ -9,13 +9,16 @@ import { Icon } from '@/shared/ui/Icon';
 import NotificationIcon from '@/shared/assets/icons/bell.svg';
 import { Drawer } from '@/shared/ui/Drawer';
 import cls from './NotificationButton.module.scss';
+import { DropdownDirection } from '@/shared/types/ui';
 
 interface NotificationButtonProps {
     className?: string;
+    inverted?: boolean;
+    direction?: DropdownDirection;
 }
 
 export const NotificationButton = memo((props: NotificationButtonProps) => {
-    const { className } = props;
+    const { className, inverted = true, direction = 'bottom left' } = props;
 
     const [isOpen, setIsOpen] = useState(false);
 
@@ -29,7 +32,7 @@ export const NotificationButton = memo((props: NotificationButtonProps) => {
 
     const trigger = (
         <Button onClick={onOpenDrawer} theme={ButtonTheme.CLEAR}>
-            <Icon size="30" Svg={NotificationIcon} inverted />
+            <Icon size="30" Svg={NotificationIcon} inverted={inverted} />
         </Button>
     );
 
@@ -38,7 +41,7 @@ export const NotificationButton = memo((props: NotificationButtonProps) => {
             <BrowserView>
                 <Popover
                     className={classNames(cls.NotificationButton, {}, [className])}
-                    direction="bottom left"
+                    direction={direction}
                     trigger={trigger}
                 >
                     <NotificationList className={cls.notifications} />

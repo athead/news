@@ -2,8 +2,16 @@
 @import 'variables/global';
 @import 'themes/light';
 @import 'themes/dark';
-@import 'https://fonts.googleapis.com/css?family=Montserrat:400,700|Roboto:100,300,400';
+// @import 'https://fonts.googleapis.com/css?family=Montserrat:400|Roboto:400';
 
+@font-face {
+    font-family: 'Roboto';
+    src: url('../../shared/assets/fonts/Montserrat-Regular.ttf') format('woff2');
+}
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../../shared/assets/fonts/Montserrat-Regular.ttf') format('woff2');
+}
 .app,
 .app_modal,
 .app_drawer {

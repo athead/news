@@ -22,7 +22,7 @@ type Story = StoryObj<typeof meta>;
 
 export const TopRight: Story = {
     args: {
-        // direction: 'top right',
+        direction: 'top right',
         value: 'title',
         items: [
             { content: '123123123123123', value: '1' },

@@ -40,5 +40,6 @@
   "feedback": "Your feedback",
   "cancel": "Cancel",
   "send": "Send",
-  "rated": "Your rating"
+  "rated": "Your rating",
+  "no_notification": "No notifications"
 }
