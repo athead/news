@@ -72,7 +72,7 @@ module.exports = {
             { alias: '@', testFilesPatterns: ['**/*.test.*', '**/*.story.*', '**/StoreDecorator.tsx'] },
         ],
         'fsdm/layer-imports': ['error', { alias: '@', ignoreImportPatterns: ['**/StoreProvider', '**/testing'] }],
-        'react/jsx-max-props-per-line': ['error', { maximum: 3 }],
+        'react/jsx-max-props-per-line': ['error', { maximum: 4 }],
     },
     overrides: [
         {
