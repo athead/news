@@ -65,13 +65,19 @@ type Story = StoryObj<typeof meta>;
 
 export const LoadingBlock: Story = {
     args: {
-        articles: [], isLoading: true, view: ArticleView.BLOCK, virtualized: false,
+        articles: [],
+        isLoading: true,
+        view: ArticleView.BLOCK,
+        virtualized: false,
     },
 };
 
 export const LoadingTile: Story = {
     args: {
-        articles: [], isLoading: true, view: ArticleView.TILE, virtualized: false,
+        articles: [],
+        isLoading: true,
+        view: ArticleView.TILE,
+        virtualized: false,
     },
 };
 

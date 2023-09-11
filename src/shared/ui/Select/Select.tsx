@@ -16,9 +16,7 @@ interface SelectProps<T extends string> {
 }
 
 export const Select = <T extends string>(props: SelectProps<T>) => {
-    const {
-        className, label, options, value, readonly, onChange,
-    } = props;
+    const { className, label, options, value, readonly, onChange } = props;
 
     const onChangeHandler = (e: ChangeEvent<HTMLSelectElement>) => {
         onChange?.(e.target.value as T);

@@ -31,9 +31,7 @@ const getSkeleton = (view: ArticleView) => {
 };
 
 export const ArticleList = memo((props: ArticleListProps) => {
-    const {
-        className, articles, isLoading, view = ArticleView.TILE, target, virtualized = true,
-    } = props;
+    const { className, articles, isLoading, view = ArticleView.TILE, target, virtualized = true } = props;
     const { t } = useTranslation();
 
     const ArticleItemComponent = useCallback(
@@ -90,16 +88,16 @@ export const ArticleList = memo((props: ArticleListProps) => {
         <div data-testid="ArticleList" className={classNames(cls.ArticleList, {}, [className, cls[view]])}>
             {articles.length > 0
                 ? articles.map((article) => {
-                    return (
-                        <ArticleListItem
-                            target={target}
-                            article={article}
-                            view={view}
-                            key={article.id}
-                            className={cls.card}
-                        />
-                    );
-                })
+                      return (
+                          <ArticleListItem
+                              target={target}
+                              article={article}
+                              view={view}
+                              key={article.id}
+                              className={cls.card}
+                          />
+                      );
+                  })
                 : null}
             {isLoading && getSkeletons(view)}
         </div>

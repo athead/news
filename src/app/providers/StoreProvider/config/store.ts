@@ -1,6 +1,4 @@
-import {
-    CombinedState, Reducer, ReducersMapObject, configureStore,
-} from '@reduxjs/toolkit';
+import { CombinedState, Reducer, ReducersMapObject, configureStore } from '@reduxjs/toolkit';
 import { userReducer } from '@/entities/User';
 import { $api } from '@/shared/api/api';
 import { scrollRestoreReducer } from '@/widgets/Page';

@@ -26,9 +26,7 @@ interface ListBoxProps {
 }
 
 export function ListBox(props: ListBoxProps) {
-    const {
-        className, items, value, defaultValue, onChange, readonly, direction = 'bottom left', label,
-    } = props;
+    const { className, items, value, defaultValue, onChange, readonly, direction = 'bottom left', label } = props;
 
     const optionsClasses = [mapDirectionClass[direction]];
 

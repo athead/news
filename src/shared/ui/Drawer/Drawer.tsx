@@ -1,6 +1,4 @@
-import {
-    memo, ReactNode, useCallback, useEffect, useState,
-} from 'react';
+import { memo, ReactNode, useCallback, useEffect, useState } from 'react';
 import { classNames } from '@/shared/lib/classNames/classNames';
 import { AnimationProvider, useAnimationLibs } from '@/shared/lib/components/AnimationProvider';
 import { Overlay } from '../Overlay/Overlay';
@@ -24,9 +22,7 @@ const DrawerContent = memo((props: DrawerProps) => {
         return { y: height };
     });
 
-    const {
-        className, children, onClose, isOpen, lazy,
-    } = props;
+    const { className, children, onClose, isOpen, lazy } = props;
     const { theme } = useTheme();
     const [isMounted, setIsMounted] = useState(false);
     // const {
@@ -54,9 +50,7 @@ const DrawerContent = memo((props: DrawerProps) => {
     };
 
     const bind = Gesture.useDrag(
-        ({
-            last, velocity: [, vy], direction: [, dy], movement: [, my], cancel,
-        }) => {
+        ({ last, velocity: [, vy], direction: [, dy], movement: [, my], cancel }) => {
             if (my < -70) cancel();
 
             if (last) {

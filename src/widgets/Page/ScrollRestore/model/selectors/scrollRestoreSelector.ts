@@ -6,6 +6,10 @@ export const getRestoreScrollSize = (state: StateSchema) => {
 };
 export const getRestoreScrollByPath = createSelector(
     getRestoreScrollSize,
-    (state: StateSchema, path: string) => { return path; },
-    (scroll, path) => { return scroll[path] || 0; },
+    (state: StateSchema, path: string) => {
+        return path;
+    },
+    (scroll, path) => {
+        return scroll[path] || 0;
+    },
 );

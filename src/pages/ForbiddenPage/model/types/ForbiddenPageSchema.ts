@@ -1,3 +1,1 @@
-export interface ForbiddenPageSchema {
-
-}
+export interface ForbiddenPageSchema {}

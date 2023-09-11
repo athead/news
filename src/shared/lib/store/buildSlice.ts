@@ -13,7 +13,8 @@ export function buildSlice<State, CaseReducers extends SliceCaseReducers<State>,
 
         // TODO
         // @ts-ignore
-        return useMemo(() => { return bindActionCreators(slice.actions, dispatch); }, [dispatch]);
+        return useMemo(() => {return bindActionCreators(slice.actions, dispatch);
+        }, [dispatch]);
     };
 
     return {

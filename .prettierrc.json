@@ -2,12 +2,12 @@
     "singleQuote": true,
     "jsxSingleQuote": false,
     "arrowParens": "always",
-    "max-len": ["error", 140, 2],
     "tabWidth": 4,
+    "semi": true,
     "useTabs": false,
     "plugins": ["stylelint-prettier"],
-    "rules": {
-        "prettier/prettier": true
-    },
-    "printWidth": 120
+    "printWidth": 120,
+    "trailingComma": "all",
+    "bracketSpacing": true,
+    "bracketSameLine": false
 }

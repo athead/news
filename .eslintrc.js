@@ -7,7 +7,9 @@ module.exports = {
     extends: [
         'plugin:react/recommended',
         'airbnb',
+        'plugin:i18next/recommended',
         'plugin:storybook/recommended',
+        'prettier',
     ],
     parser: '@typescript-eslint/parser',
     parserOptions: {
@@ -19,9 +21,6 @@ module.exports = {
     },
     plugins: ['react', '@typescript-eslint', 'i18next', 'react-hooks', 'fsdm', 'import', 'unused-imports'],
     rules: {
-        'react/jsx-indent': [2, 4],
-        'react/jsx-indent-props': [2, 4],
-        indent: [2, 4],
         'react/jsx-filename-extension': [
             2,
             {
@@ -73,6 +72,7 @@ module.exports = {
             { alias: '@', testFilesPatterns: ['**/*.test.*', '**/*.story.*', '**/StoreDecorator.tsx'] },
         ],
         'fsdm/layer-imports': ['error', { alias: '@', ignoreImportPatterns: ['**/StoreProvider', '**/testing'] }],
+        'react/jsx-max-props-per-line': ['error', { maximum: 3 }],
     },
     overrides: [
         {

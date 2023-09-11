@@ -14,9 +14,7 @@ interface IconProps {
 }
 
 export const Icon = memo((props: IconProps) => {
-    const {
-        className, size = 50, inverted = false, Svg, ...otherProps
-    } = props;
+    const { className, size = 50, inverted = false, Svg, ...otherProps } = props;
     const style: CSSProperties = {
         width: size,
         height: size,

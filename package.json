@@ -12,6 +12,7 @@
         "build:prod": "webpack --env mode=production",
         "build:dev": "webpack --env mode=development",
         "lint:ts": "eslint \"**/*.{ts,tsx}\"",
+        "prettier": "npx prettier --write **/*.{ts,tsx,json}",
         "lint:ts:fix": "eslint \"**/*.{ts,tsx}\" --fix",
         "lint:scss": "npx stylelint \"**/*.scss\"",
         "lint:scss:fix": "npx stylelint \"**/*.scss\" --fix",
@@ -74,6 +75,7 @@
         "cypress": "^13.1.0",
         "eslint": "^8.46.0",
         "eslint-config-airbnb": "^19.0.4",
+        "eslint-config-prettier": "^9.0.0",
         "eslint-plugin-fsdm": "^0.0.6",
         "eslint-plugin-i18n": "^2.1.0",
         "eslint-plugin-i18next": "^6.0.3",
@@ -168,6 +170,9 @@
         }
     },
     "lint-staged": {
-        "**/*.{ts,tsx}": "eslint"
+        "**/*.{ts,tsx}": [
+            "prettier --list-different",
+            "eslint"
+        ]
     }
 }

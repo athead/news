@@ -22,9 +22,7 @@ interface RatingCardProps {
 }
 
 export const RatingCard = memo((props: RatingCardProps) => {
-    const {
-        className, rate = 0, hasFeedback, feedbackTitle, onAccept, onCancel, title,
-    } = props;
+    const { className, rate = 0, hasFeedback, feedbackTitle, onAccept, onCancel, title } = props;
     const [isModalOpen, setIsModalOpen] = useState(false);
     const [starsCount, setStarsCount] = useState(rate);
     const [feedback, setFeedback] = useState('');

@@ -1,3 +1,1 @@
-export interface AdminPanelPageSchema {
-
-}
+export interface AdminPanelPageSchema {}
