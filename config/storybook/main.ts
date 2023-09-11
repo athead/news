@@ -19,5 +19,9 @@ const config: StorybookConfig = {
     docs: {
         autodocs: 'tag',
     },
+    // Поддержка для loki
+    features: {
+        storyStoreV7: false,
+    },
 };
 export default config;

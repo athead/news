@@ -62,6 +62,7 @@ export const ArticleList = memo((props: ArticleListProps) => {
 
     return virtualized ? (
         <VirtuosoGrid
+            data-testid="ArticleList.virtualized"
             // style={{ height: 500 }}
             useWindowScroll
             listClassName={classNames(cls.ArticleList, {}, [className, cls[view]])}
@@ -86,7 +87,7 @@ export const ArticleList = memo((props: ArticleListProps) => {
             }}
         />
     ) : (
-        <div className={classNames(cls.ArticleList, {}, [className, cls[view]])}>
+        <div data-testid="ArticleList" className={classNames(cls.ArticleList, {}, [className, cls[view]])}>
             {articles.length > 0
                 ? articles.map((article) => {
                     return (

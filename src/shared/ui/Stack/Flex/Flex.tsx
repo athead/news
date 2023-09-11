@@ -46,7 +46,14 @@ const gapClasses: Record<FlexGap, string> = {
 
 export const Flex = (props: FlexProps) => {
     const {
-        className, children, align = 'center', direction = 'row', justify = 'start', gap, max,
+        className,
+        children,
+        align = 'center',
+        direction = 'row',
+        justify = 'start',
+        gap,
+        max,
+        ...otherProps
     } = props;
 
     const mods: Mods = {
@@ -60,5 +67,9 @@ export const Flex = (props: FlexProps) => {
         gap && gapClasses[gap],
     ];
 
-    return <div className={classNames(cls.Flex, mods, classes)}>{children}</div>;
+    return (
+        <div className={classNames(cls.Flex, mods, classes)} {...otherProps}>
+            {children}
+        </div>
+    );
 };
