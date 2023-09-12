@@ -64,10 +64,10 @@ const HTTP_PORT = 8000;
 const httpsServer = https.createServer(options, server);
 
 httpsServer.listen(HTTPS_PORT, () => {
-    console.log(`server is running on ${HTTPS_PORT} port`);
+    console.log(`[HTTPS] Server is running on ${HTTPS_PORT} port`);
 });
 
 const httpServer = http.createServer(server);
 httpServer.listen(HTTP_PORT, () => {
-    console.log(`server is running on ${HTTP_PORT} port`);
+    console.log(`[HTTP] Server is running on ${HTTP_PORT} port`);
 });
