@@ -650,6 +650,9 @@
             "username": "admin",
             "password": "123",
             "roles": ["ADMIN"],
+            "feautures": {
+                "isArticleRatingEnabled": true
+            },
             "avatar": "https://ovicio.com.br/wp-content/uploads/2023/01/20230102-flblag-xgaaclax-555x555.jpg"
         },
         {
@@ -657,6 +660,9 @@
             "username": "user",
             "password": "123",
             "roles": ["USER"],
+            "feautures": {
+                "isArticleRatingEnabled": false
+            },
             "avatar": "https://xakep.ru/wp-content/uploads/2018/05/171485/KuroiSH-hacker.jpg"
         },
         {
