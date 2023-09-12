@@ -15,7 +15,8 @@ export const PageError = ({ className }: PageErrorProps) => {
         window.location.reload();
     };
     return (
-        <HStack gap="16" max align="center" justify="center" className={classNames(cls.PageError, {}, [className])}>
+        <HStack gap="16" max align="center" justify="center"
+className={classNames(cls.PageError, {}, [className])}>
             <Text title={t('page_error_title')} />
             <Button onClick={reloadPage}>{t('button.update_page')}</Button>
         </HStack>

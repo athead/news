@@ -41,5 +41,6 @@
     "cancel": "Cancel",
     "send": "Send",
     "rated": "Your rating",
-    "no_notification": "No notifications"
+    "no_notification": "No notifications",
+    "welcome_message": "Welcome to the site!"
 }

@@ -12,6 +12,7 @@ import { articlesPageReducer } from '../../model/slices/articlesPageSlice';
 import { ArticleInfiniteList } from '../ArticleInfiniteList/ArticleInfiniteList';
 import { ArticlesPageFilter } from '../ArticlesPageFilter/ArticlesPageFilter';
 import cls from './ArticlesPage.module.scss';
+import { ArticlePageGreeting } from '@/features/articlePageGreeting';
 
 interface ArticlesPageProps {
     className?: string;
@@ -47,6 +48,7 @@ const ArticlesPage = ({ className }: ArticlesPageProps) => {
             >
                 <ArticlesPageFilter />
                 <ArticleInfiniteList className={cls.list} />
+                <ArticlePageGreeting />
             </Page>
         </DynamicModuleLoader>
     );

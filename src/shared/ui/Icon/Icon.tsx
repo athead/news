@@ -6,7 +6,7 @@ interface IconProps {
     className?: string;
     // Svg: React.FC<React.SVGAttributes<SVGElement>>;
     Svg: React.FC<React.SVGProps<SVGElement>>;
-    size?: string | number;
+    size?: number;
     inverted?: boolean;
     onMouseLeave?: () => void;
     onMouseEnter?: () => void;

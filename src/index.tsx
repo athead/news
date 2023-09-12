@@ -16,13 +16,15 @@ const root = createRoot(document.getElementById('root') as Element);
 root.render(
     <BrowserRouter>
         <StoreProvider>
-            <React.StrictMode>
-                <ErrorBoundary>
-                    <ThemeProvider>
-                        <App />
-                    </ThemeProvider>
-                </ErrorBoundary>
-            </React.StrictMode>
+            {/* <React.StrictMode> */}
+            <ErrorBoundary>
+                <ThemeProvider>
+                    <App />
+                </ThemeProvider>
+            </ErrorBoundary>
+            {/* </React.StrictMode> */}
         </StoreProvider>
     </BrowserRouter>,
 );
+
+export { Theme } from '@/shared/const/theme';
