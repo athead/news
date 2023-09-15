@@ -11,5 +11,5 @@ describe('EditableProfileCard.cy.tsx', () => {
             </TestProvider>,
         );
     });
-    // jописываем тест кейсы
+    // описываем тест кейсы
 });

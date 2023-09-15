@@ -1,0 +1,125 @@
+
+.addonLeft svg, .addonRight svg{
+    color: var(--hint-redesigned);
+}
+
+.Button {
+    cursor: pointer;
+
+    display: flex;
+    gap: 8px;
+    align-items: center;
+
+    height: 38px;
+    padding: 8px 16px;
+
+    color: var(--text-redesigned);
+
+    &:hover {
+        color: var(--accent-redesigned);
+
+        .addonLeft svg, .addonRight svg{
+            color: var(--accent-redesigned);
+        }
+    }
+}
+
+// .withAddon {
+//     padding: 0 16px;
+// }
+
+.clear {
+    padding: 0;
+    background: none;
+    border: none;
+    outline: none;
+}
+
+.filled {
+    background: var(--light-bg-redesigned);
+    border: none;
+    border-radius: 34px;
+    outline: none;
+}
+
+.outline {
+    background: none;
+    border-radius: 34px;
+    outline: none;
+
+    &.normal {
+        border: 2px solid var(--icon-redesigned);
+
+        &:hover {
+            border: 2px solid var(--accent-redesigned);
+        }
+    }
+
+    &.success {
+        border: 2px solid var(--save-redesigned);
+
+        &:hover {
+            opacity: 0.8;
+        }
+    }
+
+    &.error {
+        border: 2px solid var(--cancel-redesigned);
+
+        &:hover {
+            opacity: 0.8;
+        }
+    }
+}
+
+.square {
+    padding: 0;
+}
+
+.square.m {
+    width: var(--font-line-m);
+    height: var(--font-line-m);
+}
+
+.square.l {
+    width: var(--font-line-l);
+    height: var(--font-line-l);
+}
+
+.square.xl {
+    width: var(--font-line-xl);
+    height: var(--font-line-xl);
+}
+
+.m {
+    font: var(--font-m);
+}
+
+.l {
+    font: var(--font-l);
+}
+
+.xl {
+    font: var(--font-xl);
+}
+
+.disabled {
+    opacity: 0.5;
+}
+
+.fullWidth {
+    width: 100%;
+}
+
+
+.addonLeft, .addonRight {
+    display: flex;
+}
+
+.withAddonLeft {
+    padding: 6px 10px 6px 16px;
+}
+
+.withAddonRight {
+    padding: 6px 10px 6px 16px;
+}

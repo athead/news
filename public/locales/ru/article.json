@@ -6,7 +6,7 @@
     "edit_btn": "Редактировать статью",
     "recommendations": "Также рекомендуем",
     "create_article": "Создать статью",
-    "sorting_label": "Сортировать",
+    "sorting_label": "Сортировать по:",
     "sorting_order": "по",
     "asc": "возрастанию",
     "desc": "убыванию",
@@ -14,5 +14,9 @@
     "title": "Заголовку",
     "views": "Просмотрам",
     "article_rate": "Оцените статью",
-    "feedback_title": "Оставьте отзыв, это поможет улучшить качество материалов"
+    "feedback_title": "Оставьте отзыв, это поможет улучшить качество материалов",
+    "{{count}} views_zero": "{{count}} просмотров",
+    "{{count}} views_one": "{{count}} просмотр",
+    "{{count}} views_few": "{{count}} просмотра",
+    "{{count}} views_many": "{{count}} просмотров"
 }

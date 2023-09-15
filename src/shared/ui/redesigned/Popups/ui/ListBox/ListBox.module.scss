@@ -1,0 +1,46 @@
+.trigger {
+    margin: 0;
+    padding: 0;
+
+    background: none;
+    border: none;
+    outline: none;
+}
+
+.options {
+    position: absolute;
+    z-index: 10000;
+
+    background: var(--dark-bg-redesigned);
+    border-radius: 12px;
+    box-shadow: 4px 4px 8px var(--dark-bg-redesigned);
+}
+
+.item {
+    cursor: pointer;
+
+    position: relative;
+
+    padding: 10px 20px 10px 30px;
+
+    font: var(--font-m);
+    white-space: nowrap;
+
+    .checkedIcon {
+       position: absolute;
+       left: 5px;
+    }
+}
+
+.dropdownIcon {
+    transform: rotate(90deg);
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) .4s;
+
+    &.opened {
+        transform: rotate(-90deg);
+    }
+}
+
+.selected {
+    background: var(--light-bg-redesigned);
+}

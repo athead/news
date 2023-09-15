@@ -5,42 +5,61 @@
 
 // @import 'https://fonts.googleapis.com/css?family=Montserrat:400|Roboto:400';
 
-@font-face {
-    font-family: Roboto;
-    src: url('../../shared/assets/fonts/Montserrat-Regular.ttf') format('woff2');
-}
+// @font-face {
+//     font-family: Roboto;
+//     src: url('../../shared/assets/fonts/Montserrat-Regular.ttf') format('woff2');
+// }
 
-@font-face {
-    font-family: Montserrat;
-    src: url('../../shared/assets/fonts/Montserrat-Regular.ttf') format('woff2');
-}
-
-.app,
-.app_modal,
-.app_drawer {
-    font: var(--font-m);
-    color: var(--primary-color);
-}
+// @font-face {
+//     font-family: Montserrat;
+//     src: url('../../shared/assets/fonts/Montserrat-Regular.ttf') format('woff2');
+// }
 
 .app {
     min-height: 100vh;
+    font: var(--font-m);
+    color: var(--primary-color);
     background: var(--bg-color);
 }
+
+.app_redesigned {
+    min-height: 100vh;
+    font: var(--font-m);
+    color: var(--text-redesigned);
+    background: var(--bg-redesigned);
+}
+
 
 .content-page {
     display: flex;
 }
 
+
 *::-webkit-scrollbar {
-    width: 12px; /* ширина всей полосы прокрутки */
+    width: 10px; 
     height: 8px;
 }
 
 *::-webkit-scrollbar-track {
-    background: var(--card-bg); /* цвет зоны отслеживания */
+    background: var(--light-bg-redesigned); 
 }
 
 *::-webkit-scrollbar-thumb {
+    background-color: var(--icon-redesigned); 
+    border: 1px solid var(--accent-redesigned); 
+    border-radius: 20px; 
+}
+
+.app_redesigned *::-webkit-scrollbar {
+    width: 12px; /* ширина всей полосы прокрутки */
+    height: 8px;
+}
+
+.app_redesigned *::-webkit-scrollbar-track {
+    background: var(--card-bg); /* цвет зоны отслеживания */
+}
+
+.app_redesigned *::-webkit-scrollbar-thumb {
     background-color: var(--inverted-primary-color); /* цвет бегунка */
     border: 2px solid var(--primary-color); /* отступ вокруг бегунка */
     border-radius: 20px; /* округлось бегунка */

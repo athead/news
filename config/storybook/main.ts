@@ -7,7 +7,7 @@ const config: StorybookConfig = {
         { name: '@storybook/addon-essentials', options: { background: false } },
         '@storybook/addon-onboarding',
         '@storybook/addon-interactions',
-        '@storybook/addon-actions',
+        // '@storybook/addon-actions',
         'storybook-addon-mock',
         'storybook-react-i18next',
         'storybook-addon-themes',
@@ -20,8 +20,8 @@ const config: StorybookConfig = {
         autodocs: 'tag',
     },
     // Поддержка для loki
-    features: {
-        storyStoreV7: false,
-    },
+    // features: {
+    //     storyStoreV7: false,
+    // },
 };
 export default config;

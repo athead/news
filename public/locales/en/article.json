@@ -6,7 +6,7 @@
     "edit_btn": "Edit article",
     "recommendations": "Recommendations",
     "create_article": "Create article",
-    "sorting_label": "Sort on",
+    "sorting_label": "Sort:",
     "sorting_order": "by",
     "asc": "asc",
     "desc": "desc",
@@ -14,5 +14,7 @@
     "title": "Title",
     "views": "Views",
     "article_rate": "Rate article",
-    "feedback_title": "Enter your feedback to improve articles quality"
+    "feedback_title": "Enter your feedback to improve articles quality",
+    "{{count}} views_one": "{{count}} view",
+    "{{count}} views_other": "{{count}} views"
 }

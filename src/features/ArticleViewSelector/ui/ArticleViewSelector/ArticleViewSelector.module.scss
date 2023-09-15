@@ -1,8 +1,23 @@
-.icon {
-    opacity: 0.4;
+.ArticleViewSelector {
+    .selected {
+        opacity: 1;
+        stroke: var(--primary-color);
+    }
+
+    .icon {
+        opacity: 0.4;
+    }
 }
 
-.selected {
-    opacity: 1;
-    stroke: var(--primary-color);
+.ArticleViewSelectorRedesigned {
+    .icon {
+        stroke: var(--light-bg-redesigned);
+
+        // opacity: 0.4;
+    }
+
+    .selected {
+        opacity: 1;
+        stroke: var(--icon-redesigned);
+    }
 }

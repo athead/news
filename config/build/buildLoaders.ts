@@ -22,7 +22,22 @@ export function buildLoaders(options: BuildOptions): webpack.RuleSetRule[] {
     // Загрузчик svg
     const svgLoader = {
         test: /\.svg$/,
-        use: ['@svgr/webpack'],
+        use: [{
+            loader: '@svgr/webpack',
+            options: {
+                icon: true,
+                svgoConfig: {
+                    plugins: [
+                        {
+                            name: 'convertColors',
+                            params: {
+                                currentColor: true
+                            }
+                        }
+                    ]
+                }
+            }
+    }],
     };
     // Если не используем TS - нужен babel-loader
     // const tsLoader = {

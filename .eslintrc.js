@@ -32,7 +32,12 @@ module.exports = {
 
         // 'no-unused-vars': 'warn',
         'no-unused-vars': 'off',
-        '@typescript-eslint/no-unused-vars': 'error', // for correct unused variables
+        '@typescript-eslint/no-unused-vars': [
+            'error',
+            {
+                argsIgnorePattern: '^_',
+            },
+        ], // for correct unused variables
 
         'react/require-default-props': 'off',
         'react/react-in-jsx-scope': 'off',
@@ -67,6 +72,8 @@ module.exports = {
                     'data-testid',
                     'to',
                     'key',
+                    'color',
+                    'variant',
                 ],
             },
         ],

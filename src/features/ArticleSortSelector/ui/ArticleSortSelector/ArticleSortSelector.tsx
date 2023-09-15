@@ -1,10 +1,14 @@
 import { memo, useMemo } from 'react';
 import { useTranslation } from 'react-i18next';
 import { classNames } from '@/shared/lib/classNames/classNames';
-import { Select, SelectOption } from '@/shared/ui/Select';
+import { Select as SelectDeprecated, SelectOption } from '@/shared/ui/deprecated/Select';
 import { SortOrder } from '@/shared/types/sort';
 import cls from './ArticleSortSelector.module.scss';
 import { ArticleSortField } from '@/entities/Article';
+import { ToggleFeatures } from '@/shared/lib/features';
+import { ListBox } from '@/shared/ui/redesigned/Popups';
+import { VStack } from '@/shared/ui/redesigned/Stack';
+import { Text } from '@/shared/ui/redesigned/Text';
 
 interface ArticleSortSelectorProps {
     className?: string;
@@ -49,15 +53,34 @@ export const ArticleSortSelector = memo((props: ArticleSortSelectorProps) => {
     }, [t]);
 
     return (
-        <div className={classNames(cls.ArticleSortSelector, {}, [className])}>
-            <Select options={sortFieldOptions} label={t('sorting_label')} value={sort} onChange={onChangeSort} />
-            <Select
-                options={orderOptions}
-                label={t('sorting_order')}
-                value={order}
-                onChange={onChangeOrder}
-                className={cls.order}
-            />
-        </div>
+        <ToggleFeatures
+            feature="isAppRedesigned"
+            on={
+                <div className={classNames(cls.ArticleSortSelectorRedesigned, {}, [className])}>
+                    <VStack gap="8">
+                        <Text text={t('sorting_label')} />
+                        <ListBox items={sortFieldOptions} value={sort} onChange={onChangeSort} />
+                        <ListBox items={orderOptions} value={order} onChange={onChangeOrder} />
+                    </VStack>
+                </div>
+            }
+            off={
+                <div className={classNames(cls.ArticleSortSelector, {}, [className])}>
+                    <SelectDeprecated
+                        options={sortFieldOptions}
+                        label={t('sorting_label')}
+                        value={sort}
+                        onChange={onChangeSort}
+                    />
+                    <SelectDeprecated
+                        options={orderOptions}
+                        label={t('sorting_order')}
+                        value={order}
+                        onChange={onChangeOrder}
+                        className={cls.order}
+                    />
+                </div>
+            }
+        />
     );
 });

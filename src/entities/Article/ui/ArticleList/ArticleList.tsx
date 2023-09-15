@@ -3,12 +3,14 @@ import { HTMLAttributeAnchorTarget, memo, useCallback } from 'react';
 import { useTranslation } from 'react-i18next';
 import { VirtuosoGrid } from 'react-virtuoso';
 import { classNames } from '@/shared/lib/classNames/classNames';
-import { Text, TextSize } from '@/shared/ui/Text';
+import { Text, TextSize } from '@/shared/ui/deprecated/Text';
 import { Article } from '../../model/types/article';
 import { ArticleListItem } from '../ArticleListItem/ArticleListItem';
 import { ArticleListItemSkeleton } from '../ArticleListItem/ArticleListItemSkeleton';
 import cls from './ArticleList.module.scss';
 import { ArticleView } from '../../model/consts/consts';
+import { ToggleFeatures } from '@/shared/lib/features';
+import { HStack } from '@/shared/ui/redesigned/Stack';
 
 interface ArticleListProps {
     className?: string;
@@ -21,7 +23,6 @@ interface ArticleListProps {
 
 const getSkeletons = (view: ArticleView) => {
     return new Array(view === ArticleView.TILE ? 9 : 3).fill(0).map((_, index) => {
-        // eslint-disable-next-line
         return <ArticleListItemSkeleton className={cls.card} key={index} view={view} />;
     });
 };
@@ -85,21 +86,49 @@ export const ArticleList = memo((props: ArticleListProps) => {
             }}
         />
     ) : (
-        <div data-testid="ArticleList" className={classNames(cls.ArticleList, {}, [className, cls[view]])}>
-            {articles.length > 0
-                ? articles.map((article) => {
-                      return (
-                          <ArticleListItem
-                              target={target}
-                              article={article}
-                              view={view}
-                              key={article.id}
-                              className={cls.card}
-                          />
-                      );
-                  })
-                : null}
-            {isLoading && getSkeletons(view)}
-        </div>
+        <ToggleFeatures
+            feature="isAppRedesigned"
+            on={
+                <HStack
+                    wrap="wrap"
+                    gap="16"
+                    data-testid="ArticleList"
+                    className={classNames(cls.ArticleListRedesigned, {}, [])}
+                >
+                    {articles.length > 0
+                        ? articles.map((article) => {
+                              return (
+                                  <ArticleListItem
+                                      target={target}
+                                      article={article}
+                                      view={view}
+                                      key={article.id}
+                                      className={cls.card}
+                                  />
+                              );
+                          })
+                        : null}
+                    {isLoading && getSkeletons(view)}
+                </HStack>
+            }
+            off={
+                <div data-testid="ArticleList" className={classNames(cls.ArticleList, {}, [className, cls[view]])}>
+                    {articles.length > 0
+                        ? articles.map((article) => {
+                              return (
+                                  <ArticleListItem
+                                      target={target}
+                                      article={article}
+                                      view={view}
+                                      key={article.id}
+                                      className={cls.card}
+                                  />
+                              );
+                          })
+                        : null}
+                    {isLoading && getSkeletons(view)}
+                </div>
+            }
+        />
     );
 });

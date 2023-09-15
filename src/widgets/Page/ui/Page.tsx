@@ -11,6 +11,7 @@ import cls from './Page.module.scss';
 import { scrollRestoreActions } from '../ScrollRestore/model/slices/scrollRestoreSlice';
 import { getRestoreScrollByPath } from '../ScrollRestore/model/selectors/scrollRestoreSelector';
 import { TestProps } from '@/shared/types/tests';
+import { toggleFeatures } from '@/shared/lib/features';
 
 interface PageProps extends TestProps {
     className?: string;
@@ -33,7 +34,15 @@ export const Page = memo((props: PageProps) => {
 
     useInfiniteScroll({
         triggerRef,
-        wrapperRef,
+        wrapperRef: toggleFeatures({
+            name: 'isAppRedesigned',
+            on: () => {
+                return undefined;
+            },
+            off: () => {
+                return wrapperRef;
+            },
+        }),
         callback: onScrollEnd,
     });
 
@@ -54,7 +63,19 @@ export const Page = memo((props: PageProps) => {
         <main
             data-testid={props['data-testid'] ?? 'Page'}
             ref={wrapperRef}
-            className={classNames(cls.Page, {}, [className])}
+            className={classNames(
+                toggleFeatures({
+                    name: 'isAppRedesigned',
+                    on: () => {
+                        return cls.PageRedisigned;
+                    },
+                    off: () => {
+                        return cls.Page;
+                    },
+                }),
+                {},
+                [className],
+            )}
             onScroll={onScroll}
         >
             {children}
