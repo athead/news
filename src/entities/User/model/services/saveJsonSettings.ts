@@ -25,7 +25,7 @@ export const saveJsonSettings = createAsyncThunk<JsonSettings, JsonSettings, Thu
                     },
                 }),
             ).unwrap();
-            
+
             if (!response.jsonSettings) {
                 return rejectWithValue('Empty response in user settings thunk');
             }

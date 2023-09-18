@@ -1,4 +1,6 @@
-export { getArticleDetailsData } from './model/selectors/articleDetails';
+export { fetchArticleById } from './model/services/fetchArticleById/fetchArticleById';
+
+export { getArticleDetailsData, getArticleDetailsIsLoading } from './model/selectors/articleDetails';
 
 export { ArticleDetails } from './ui/ArticleDetails/ArticleDetails';
 

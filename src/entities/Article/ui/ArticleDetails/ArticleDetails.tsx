@@ -5,12 +5,7 @@ import { classNames } from '@/shared/lib/classNames/classNames';
 // import { useTranslation } from 'react-i18next';
 import { DynamicModuleLoader, ReducersList } from '@/shared/lib/components/DynamicModuleLoader/DynamicModuleLoader';
 import { useAppDispatch } from '@/shared/lib/hooks/useAppDispatch/useAppDispatch';
-import { Text as TextDeprecated, TextAlign, TextSize, TextTheme } from '@/shared/ui/deprecated/Text';
-import { Avatar as AvatarDeprecated } from '@/shared/ui/deprecated/Avatar';
-import EyeIcon from '@/shared/assets/icons/eye.svg';
-import CalendarIcon from '@/shared/assets/icons/calendar.svg';
-import { Icon as IconDeprecated } from '@/shared/ui/deprecated/Icon';
-import { HStack, VStack } from '@/shared/ui/redesigned/Stack';
+import { VStack } from '@/shared/ui/Stack';
 import {
     getArticleDetailsData,
     getArticleDetailsError,
@@ -20,11 +15,9 @@ import { fetchArticleById } from '../../model/services/fetchArticleById/fetchArt
 import { articleDetailsReducer } from '../../model/slice/articleDetailsSlice';
 import cls from './ArticleDetails.module.scss';
 import { renderArticleBlock } from './renderBlock';
-import { ToggleFeatures, toggleFeatures } from '@/shared/lib/features';
-import { Text } from '@/shared/ui/redesigned/Text';
-import { Skeleton as SkeletonDeprecated } from '@/shared/ui/deprecated/Skeleton';
-import { AppImage } from '@/shared/ui/redesigned/AppImage';
-import { Skeleton as SkeletonRedesigned } from '@/shared/ui/redesigned/Skeleton';
+import { Text } from '@/shared/ui/Text';
+import { Skeleton } from '@/shared/ui/Skeleton';
+import { AppImage } from '@/shared/ui/AppImage';
 
 interface ArticleDetailsProps {
     className?: string;
@@ -35,75 +28,22 @@ const reducers: ReducersList = {
     articleDetails: articleDetailsReducer,
 };
 
-const Deprecated = () => {
-    const article = useSelector(getArticleDetailsData);
-    return (
-        <>
-            <HStack justify="center" max className={cls.avatarWrapper}>
-                <AvatarDeprecated size={200} src={article?.img} className={cls.avatar} alt="Article image" />
-            </HStack>
-            <VStack gap="4" max data-testid="ArticleDetails.Info">
-                <TextDeprecated
-                    size={TextSize.L}
-                    className={cls.title}
-                    title={article?.title}
-                    text={article?.subtitle}
-                />
-                <HStack gap="8" className={cls.articleInfo}>
-                    <IconDeprecated className={cls.icon} Svg={EyeIcon} size={20} />
-                    <TextDeprecated text={String(article?.views)} />
-                </HStack>
-                <HStack gap="8" className={cls.articleInfo}>
-                    <IconDeprecated className={cls.icon} Svg={CalendarIcon} size={20} />
-                    <TextDeprecated text={article?.createdAt} />
-                </HStack>
-            </VStack>
-            {article?.blocks.map(renderArticleBlock)}
-        </>
-    );
-};
-
-const Redesigned = () => {
-    const article = useSelector(getArticleDetailsData);
-
-    return (
-        <>
-            <Text size="l" title={article?.title} weight="bold" />
-            <Text title={article?.subtitle} />
-            <AppImage
-                round="middle"
-                fallback={<SkeletonRedesigned width="100%" height={420} borderRadius="16px" />}
-                src={article?.img}
-                className={cls.img}
-            />
-            {article?.blocks.map(renderArticleBlock)}
-        </>
-    );
-};
-
 const ArticleDetailsSkeleton = () => {
-    const Skeleton = toggleFeatures({
-        name: 'isAppRedesigned',
-        on: () => {
-            return SkeletonRedesigned;
-        },
-        off: () => {
-            return SkeletonDeprecated;
-        },
-    });
     return (
         <>
-            <Skeleton className={cls.avatar} width={200} height={200} borderRadius="50%" />
-            <Skeleton className={cls.title} width={300} height={32} borderRadius="5px" />
-            <Skeleton className={cls.skeleton} width={600} height={24} borderRadius="5px" />
-            <Skeleton className={cls.skeleton} width="100%" height={200} borderRadius="5px" />
-            <Skeleton className={cls.skeleton} width="100%" height={200} borderRadius="5px" />
+            <Skeleton width={200} height={40} borderRadius="16px" />
+            <Skeleton width={400} height={30} borderRadius="12px" />
+            <Skeleton width="100%" height={300} borderRadius="24px" />
+            <Skeleton width={300} height={30} borderRadius="12px" />
+            <Skeleton width={200} height={24} borderRadius="12px" />
+            <Skeleton width={400} height={24} borderRadius="12px" />
         </>
     );
 };
 export const ArticleDetails = memo((props: ArticleDetailsProps) => {
     const { className, id } = props;
     const dispatch = useAppDispatch();
+    const article = useSelector(getArticleDetailsData);
     const isLoading = useSelector(getArticleDetailsIsLoading);
     const error = useSelector(getArticleDetailsError);
     const { t } = useTranslation('article');
@@ -116,9 +56,21 @@ export const ArticleDetails = memo((props: ArticleDetailsProps) => {
     if (isLoading) {
         content = <ArticleDetailsSkeleton />;
     } else if (error) {
-        content = <TextDeprecated align={TextAlign.CENTER} theme={TextTheme.ERROR} title={t('article_error')} />;
+        content = <Text align="center" variant="error" title={t('article_error')} />;
     } else {
-        content = <ToggleFeatures feature="isAppRedesigned" on={<Redesigned />} off={<Deprecated />} />;
+        content = (
+            <>
+                <Text size="l" title={article?.title} weight="bold" />
+                <Text title={article?.subtitle} />
+                <AppImage
+                    round="middle"
+                    fallback={<Skeleton width="100%" height={420} borderRadius="16px" />}
+                    src={article?.img}
+                    className={cls.img}
+                />
+                {article?.blocks.map(renderArticleBlock)}
+            </>
+        );
     }
 
     return (

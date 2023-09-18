@@ -4,16 +4,14 @@ import { useSelector } from 'react-redux';
 import { classNames } from '@/shared/lib/classNames/classNames';
 import { DynamicModuleLoader, ReducersList } from '@/shared/lib/components/DynamicModuleLoader/DynamicModuleLoader';
 import { useAppDispatch } from '@/shared/lib/hooks/useAppDispatch/useAppDispatch';
-import { Text } from '@/shared/ui/deprecated/Text';
+import { Text } from '@/shared/ui/Text';
 import { Page } from '@/widgets/Page';
 import { getArticlesPageError } from '../../model/selectors/articlesPageSelectors';
 import { fetchNextArticlesList } from '../../model/services/fetchNextArticleList/fetchNextArticleList';
 import { articlesPageReducer } from '../../model/slices/articlesPageSlice';
 import { ArticleInfiniteList } from '../ArticleInfiniteList/ArticleInfiniteList';
-import { ArticlesPageFilter } from '../ArticlesPageFilters/ArticlesPageFilters';
 import cls from './ArticlesPage.module.scss';
 import { ArticlePageGreeting } from '@/features/articlePageGreeting';
-import { ToggleFeatures } from '@/shared/lib/features';
 import { StickyContentLayout } from '@/shared/layouts/StickyContentLayout';
 import { ViewSelectorContainer } from '../ViewSelectorContainer/ViewSelectorContainer';
 import { FiltersContainer } from '../FiltersContainer/FiltersContainer';
@@ -45,31 +43,15 @@ const ArticlesPage = ({ className }: ArticlesPageProps) => {
     }
 
     const content = (
-        <ToggleFeatures
-            feature="isAppRedesigned"
-            on={
-                <StickyContentLayout
-                    left={<ViewSelectorContainer />}
-                    right={<FiltersContainer />}
-                    content={
-                        <Page
-                            data-testid="ArticlesPage"
-                            onScrollEnd={onLoadNextPart}
-                            className={classNames(cls.ArticlesPageRedesigned, {}, [className])}
-                        >
-                            <ArticleInfiniteList className={cls.list} />
-                            <ArticlePageGreeting />
-                        </Page>
-                    }
-                />
-            }
-            off={
+        <StickyContentLayout
+            left={<ViewSelectorContainer />}
+            right={<FiltersContainer />}
+            content={
                 <Page
                     data-testid="ArticlesPage"
                     onScrollEnd={onLoadNextPart}
                     className={classNames(cls.ArticlesPage, {}, [className])}
                 >
-                    <ArticlesPageFilter />
                     <ArticleInfiniteList className={cls.list} />
                     <ArticlePageGreeting />
                 </Page>

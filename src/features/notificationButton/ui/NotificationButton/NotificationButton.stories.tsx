@@ -12,7 +12,7 @@ export default meta;
 type Story = StoryObj<typeof meta>;
 
 export const Normal: Story = {
-    args: { direction: 'bottom right', inverted: false },
+    args: { direction: 'bottom right' },
 };
 
 Normal.decorators = [StoreDecorator({})];

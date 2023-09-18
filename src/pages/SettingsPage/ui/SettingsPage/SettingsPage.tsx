@@ -1,9 +1,8 @@
 import { useTranslation } from 'react-i18next';
 import { memo } from 'react';
-import { Text } from '@/shared/ui/redesigned/Text';
+import { Text } from '@/shared/ui/Text';
 import { Page } from '@/widgets/Page';
-import { VStack } from '@/shared/ui/redesigned/Stack';
-import { UiDesignSwitcher } from '@/features/uiDesignSwitcher';
+import { VStack } from '@/shared/ui/Stack';
 
 interface SettingsPageProps {
     className?: string;
@@ -17,7 +16,6 @@ const SettingsPage = memo((props: SettingsPageProps) => {
         <Page className={className}>
             <VStack gap="16">
                 <Text title={t('user_settings')} />
-                <UiDesignSwitcher />
             </VStack>
         </Page>
     );

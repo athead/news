@@ -7,10 +7,9 @@ import { useAppDispatch } from '@/shared/lib/hooks/useAppDispatch/useAppDispatch
 import { Country } from '@/entities/Country';
 import { Currency } from '@/entities/Currency';
 import { useInitialEffect } from '@/shared/lib/hooks/useInitialEffect/useInitialEffect';
-import { Text, TextTheme } from '@/shared/ui/deprecated/Text';
 import { ProfileCard } from '@/entities/Profile';
 import { DynamicModuleLoader, ReducersList } from '@/shared/lib/components/DynamicModuleLoader/DynamicModuleLoader';
-import { VStack } from '@/shared/ui/redesigned/Stack';
+import { VStack } from '@/shared/ui/Stack';
 import { getProfileForm } from '../../model/selectors/getProfileForm/getProfileForm';
 import { getProfileIsLoading } from '../../model/selectors/getProfileIsLoading/getProfileIsLoading';
 import { getProfileError } from '../../model/selectors/getProfileError/getProfileError';
@@ -20,6 +19,7 @@ import { profileActions, profileReducer } from '../../model/slice/profileSlice';
 import { fetchProfileData } from '../../model/services/fetchProfileData/fetchProfileData';
 import { EditableProfileCardHeader } from '../EditableProfileCardHeader/EditableProfileCardHeader';
 import { ValidateProfileError } from '../../model/consts/consts';
+import { Text } from '@/shared/ui/Text';
 
 const reducers: ReducersList = {
     profile: profileReducer,
@@ -112,13 +112,13 @@ export const EditableProfileCard = memo((props: EditableProfileCardProps) => {
     return (
         <DynamicModuleLoader reducers={reducers} removeAfterUnmount>
             <VStack gap="8" max className={classNames('', {}, [className])}>
-                <EditableProfileCardHeader isLoading={isLoading}/>
+                <EditableProfileCardHeader isLoading={isLoading} />
                 {validateErrors?.length &&
                     validateErrors?.map((err) => {
                         return (
                             <Text
                                 key={err}
-                                theme={TextTheme.ERROR}
+                                variant='error'
                                 text={validateErrorTranslates[err]}
                                 data-testid="EditableProfileCard.Error"
                             />

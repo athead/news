@@ -9,5 +9,8 @@
             }
         ]
     ]
-    // "plugins": ["i18next-extract"]
+    // "plugins": [
+    // "i18next-extract"
+    // "babel-plugin-react-scoped-css"
+    // ]
 }

@@ -1,30 +1,22 @@
 :root {
-    --bg-color: rgb(214 214 214);
-    --inverted-bg-color: rgb(16 16 16);
-    --primary-color: rgb(22 20 30);
-    --secondary-color: rgb(51 51 51);
-    --inverted-primary-color: rgb(253 253 253);
-    --inverted-secondary-color: rgb(188 188 188);
+    // colors
+    --dark-bg: #FFF;
+    --bg: #EFF5F6;
+    --light-bg: #E2EEF1;
+    --text: #141C1F;
+    --hint: #ADBCC0;
+    --cancel: #F77;
+    --save: #62DE85;
+    --icon: #5ED3F3;
+    --accent: #00C8FF;
 
-    // redesigned colors
-    --dark-bg-redesigned: #FFF;
-    --bg-redesigned: #EFF5F6;
-    --light-bg-redesigned: #E2EEF1;
-    --text-redesigned: #141C1F;
-    --hint-redesigned: #ADBCC0;
-    --cancel-redesigned: #F77;
-    --save-redesigned: #62DE85;
-    --icon-redesigned: #5ED3F3;
-    --accent-redesigned: #00C8FF;
-
-    // skeleton
-    --skeleton-color: #fff;
-    --skeleton-shadow: #9f9f9f;
-
-    // Code
-    --code-bg: #232323;
-
-    // article 
-    --card-bg: rgb(183 183 183);
-    --list-bg: rrgb(183, 183, 183);
+    // code viewer
+    --hl-main: #545454;
+    --hl-comment: #696969;
+    --hl-tag: #d91e18;
+    --hl-type: #aa5d00;
+    --hl-attribute: #aa5d00;
+    --hl-string: #008000;
+    --hl-title: #007faa;
+    --hl-keyword: #7928a1;
 }

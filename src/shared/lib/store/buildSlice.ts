@@ -12,8 +12,8 @@ export function buildSlice<State, CaseReducers extends SliceCaseReducers<State>,
         const dispatch = useDispatch();
 
         // TODO
-        // @ts-ignore
-        return useMemo(() => {return bindActionCreators(slice.actions, dispatch);
+         // @ts-ignore
+        return useMemo(() => { return bindActionCreators(slice.actions, dispatch);
         }, [dispatch]);
     };
 

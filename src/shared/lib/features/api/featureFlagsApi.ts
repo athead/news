@@ -7,17 +7,21 @@ interface UpdateFeatureFlagsOptions {
 }
 
 const featureFlagsApi = rtkApi.injectEndpoints({
-    endpoints: (build) => {return {
-        updateFeatureFlags: build.mutation<void, UpdateFeatureFlagsOptions>({
-            query: ({ userId, features }) => {return {
-                url: `/users/${userId}`,
-                method: 'PATCH',
-                body: {
-                    features,
+    endpoints: (build) => {
+        return {
+            updateFeatureFlags: build.mutation<void, UpdateFeatureFlagsOptions>({
+                query: ({ userId, features }) => {
+                    return {
+                        url: `/users/${userId}`,
+                        method: 'PATCH',
+                        body: {
+                            features,
+                        },
+                    };
                 },
-            }},
-        }),
-    }},
+            }),
+        };
+    },
 });
 
 export const updateFeatureFlagsMutation = featureFlagsApi.endpoints.updateFeatureFlags.initiate;

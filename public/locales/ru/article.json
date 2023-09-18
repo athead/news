@@ -15,6 +15,8 @@
     "views": "Просмотрам",
     "article_rate": "Оцените статью",
     "feedback_title": "Оставьте отзыв, это поможет улучшить качество материалов",
+    "editing_article": "Редактирование статьи",
+    "creating_article": "Создание статьи",
     "{{count}} views_zero": "{{count}} просмотров",
     "{{count}} views_one": "{{count}} просмотр",
     "{{count}} views_few": "{{count}} просмотра",

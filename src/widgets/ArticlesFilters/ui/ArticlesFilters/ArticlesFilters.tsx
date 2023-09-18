@@ -2,16 +2,16 @@ import { memo } from 'react';
 import { useTranslation } from 'react-i18next';
 import { classNames } from '@/shared/lib/classNames/classNames';
 import cls from './ArticlesFilters.module.scss';
-import { Card } from '@/shared/ui/redesigned/Card';
+import { Card } from '@/shared/ui/Card';
 import { ArticleSortSelector } from '@/features/ArticleSortSelector';
 import { ArticleTypeTabs } from '@/features/ArticleTypeTabs';
-import { VStack } from '@/shared/ui/redesigned/Stack';
+import { VStack } from '@/shared/ui/Stack';
 import { ArticleSortField, ArticleType } from '@/entities/Article';
 import { SortOrder } from '@/shared/types/sort';
-import { Input } from '@/shared/ui/redesigned/Input';
+import { Input } from '@/shared/ui/Input';
 // TODO
 import SearchIcon from '@/shared/assets/icons/search.svg';
-import { Icon } from '@/shared/ui/redesigned/Icon';
+import { Icon } from '@/shared/ui/Icon';
 
 interface ArticlesFiltersProps {
     className?: string;
@@ -30,7 +30,7 @@ export const ArticlesFilters = memo((props: ArticlesFiltersProps) => {
     const { t } = useTranslation();
 
     return (
-        <Card border='middle' className={classNames(cls.ArticlesFilters, {}, [className])} padding="24">
+        <Card border="middle" className={classNames(cls.ArticlesFilters, {}, [className])} padding="24">
             <VStack gap="32">
                 <Input
                     addonLeft={<Icon Svg={SearchIcon} width={16} height={16} />}

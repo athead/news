@@ -48,84 +48,71 @@
   "articles": [
     {
       "id": "1",
-      "title": "Javascript news СВЕЖАЯ",
-      "subtitle": "Что нового в JS за 2022 год?",
-      "img": "https://teknotower.com/wp-content/uploads/2020/11/js.png",
-      "views": 1022,
-      "createdAt": "26.04.2022",
-      "userId": "1",
+      "title": "sint sint voluptate ad quis ipsum",
+      "subtitle": "Enim ad non aliquip fugiat consectetur.",
+      "img": "https://picsum.photos/920/300",
+      "views": 2784,
+      "createdAt": "27.05.2022",
+      "userId": "4",
       "type": [
         "IT"
       ],
       "blocks": [
         {
           "id": "1",
-          "type": "TEXT",
-          "title": "Заголовок этого блока",
-          "paragraphs": [
-            "Программа, которую по традиции называют «Hello, world!», очень проста. Она выводит куда-либо фразу «Hello, world!», или другую подобную, средствами некоего языка.",
-            "JavaScript — это язык, программы на котором можно выполнять в разных средах. В нашем случае речь идёт о браузерах и о серверной платформе Node.js. Если до сих пор вы не написали ни строчки кода на JS и читаете этот текст в браузере, на настольном компьютере, это значит, что вы буквально в считанных секундах от своей первой JavaScript-программы.",
-            "Существуют и другие способы запуска JS-кода в браузере. Так, если говорить об обычном использовании программ на JavaScript, они загружаются в браузер для обеспечения работы веб-страниц. Как правило, код оформляют в виде отдельных файлов с расширением .js, которые подключают к веб-страницам, но программный код можно включать и непосредственно в код страницы. Всё это делается с помощью тега <script>. Когда браузер обнаруживает такой код, он выполняет его. Подробности о теге script можно посмотреть на сайте w3school.com. В частности, рассмотрим пример, демонстрирующий работу с веб-страницей средствами JavaScript, приведённый на этом ресурсе. Этот пример можно запустить и средствами данного ресурса (ищите кнопку Try it Yourself), но мы поступим немного иначе. А именно, создадим в каком-нибудь текстовом редакторе (например — в VS Code или в Notepad++) новый файл, который назовём hello.html, и добавим в него следующий код:"
-          ]
-        },
-        {
-          "id": "4",
           "type": "CODE",
-          "code": "<!DOCTYPE html>\n<html>\n  <body>\n    <p id=\"hello\"></p>\n\n    <script>\n      document.getElementById(\"hello\").innerHTML = \"Hello, world!\";\n    </script>\n  </body>\n</html>;"
-        },
-        {
-          "id": "5",
-          "type": "TEXT",
-          "title": "Заголовок этого блока",
+          "title": "Fugiat esse labore sit amet ut reprehenderit minim qui esse eu officia reprehenderit est.",
+          "code": "<!DOCTYPE html>\n<html>\n  <body>\n    <p id=\"hello\"></p>\n    <script>\n      document.getElementById(\"hello\").innerHTML = \"Hello, world!\";\n    </script>\n  </body>\n</html>;",
+          "src": "https://picsum.photos/920/300",
           "paragraphs": [
-            "Программа, которую по традиции называют «Hello, world!», очень проста. Она выводит куда-либо фразу «Hello, world!», или другую подобную, средствами некоего языка.",
-            "Существуют и другие способы запуска JS-кода в браузере. Так, если говорить об обычном использовании программ на JavaScript, они загружаются в браузер для обеспечения работы веб-страниц. Как правило, код оформляют в виде отдельных файлов с расширением .js, которые подключают к веб-страницам, но программный код можно включать и непосредственно в код страницы. Всё это делается с помощью тега <script>. Когда браузер обнаруживает такой код, он выполняет его. Подробности о теге script можно посмотреть на сайте w3school.com. В частности, рассмотрим пример, демонстрирующий работу с веб-страницей средствами JavaScript, приведённый на этом ресурсе. Этот пример можно запустить и средствами данного ресурса (ищите кнопку Try it Yourself), но мы поступим немного иначе. А именно, создадим в каком-нибудь текстовом редакторе (например — в VS Code или в Notepad++) новый файл, который назовём hello.html, и добавим в него следующий код:"
+            "Aliquip ullamco enim anim voluptate anim. Sint amet nostrud qui esse esse proident duis non nisi reprehenderit. Est non aliqua magna sit. Cillum veniam laboris et ut mollit eu labore exercitation reprehenderit consectetur enim ullamco incididunt. Ea ipsum non veniam cupidatat officia nostrud.",
+            "Cupidatat minim duis ut sit pariatur tempor nostrud ea cupidatat ea pariatur voluptate. Excepteur ad veniam dolore culpa consectetur aute commodo dolore sit eu. Do mollit voluptate dolore laborum. Dolore laboris eiusmod ex exercitation ex laboris voluptate. Anim cillum non qui magna elit mollit magna culpa anim adipisicing labore. Commodo sunt enim quis id non velit duis. Lorem nostrud culpa ut dolor dolore quis est velit commodo est sunt."
           ]
         },
         {
           "id": "2",
-          "type": "IMAGE",
-          "src": "https://hsto.org/r/w1560/getpro/habr/post_images/d56/a02/ffc/d56a02ffc62949b42904ca00c63d8cc1.png",
-          "title": "Рисунок 1 - скриншот сайта"
-        },
-        {
-          "id": "3",
-          "type": "CODE",
-          "code": "const path = require('path');\n\nconst server = jsonServer.create();\n\nconst router = jsonServer.router(path.resolve(__dirname, 'db.json'));\n\nserver.use(jsonServer.defaults({}));\nserver.use(jsonServer.bodyParser);"
-        },
-        {
-          "id": "7",
           "type": "TEXT",
-          "title": "Заголовок этого блока",
+          "title": "Ea ex deserunt ex ut.",
+          "code": "<!DOCTYPE html>\n<html>\n  <body>\n    <p id=\"hello\"></p>\n    <script>\n      document.getElementById(\"hello\").innerHTML = \"Hello, world!\";\n    </script>\n  </body>\n</html>;",
+          "src": "https://picsum.photos/920/300",
           "paragraphs": [
-            "JavaScript — это язык, программы на котором можно выполнять в разных средах. В нашем случае речь идёт о браузерах и о серверной платформе Node.js. Если до сих пор вы не написали ни строчки кода на JS и читаете этот текст в браузере, на настольном компьютере, это значит, что вы буквально в считанных секундах от своей первой JavaScript-программы.",
-            "Существуют и другие способы запуска JS-кода в браузере. Так, если говорить об обычном использовании программ на JavaScript, они загружаются в браузер для обеспечения работы веб-страниц. Как правило, код оформляют в виде отдельных файлов с расширением .js, которые подключают к веб-страницам, но программный код можно включать и непосредственно в код страницы. Всё это делается с помощью тега <script>. Когда браузер обнаруживает такой код, он выполняет его. Подробности о теге script можно посмотреть на сайте w3school.com. В частности, рассмотрим пример, демонстрирующий работу с веб-страницей средствами JavaScript, приведённый на этом ресурсе. Этот пример можно запустить и средствами данного ресурса (ищите кнопку Try it Yourself), но мы поступим немного иначе. А именно, создадим в каком-нибудь текстовом редакторе (например — в VS Code или в Notepad++) новый файл, который назовём hello.html, и добавим в него следующий код:"
+            "Amet cillum eu et culpa ut laboris laborum. Cupidatat laboris commodo cillum anim aliqua amet incididunt. Non cillum enim nulla est aliquip cupidatat.",
+            "Nisi elit et nisi labore velit culpa sit laborum mollit Lorem aute et deserunt consequat. Ea laboris et dolore exercitation consectetur reprehenderit laborum ipsum Lorem. Exercitation eiusmod cillum dolor proident exercitation qui dolore exercitation veniam esse. Ea veniam ex aute aliqua occaecat sit aliqua eiusmod veniam. Dolore nostrud Lorem ullamco Lorem. Esse consectetur culpa ad eu occaecat.",
+            "Do ut excepteur reprehenderit ut. Sunt quis voluptate occaecat eiusmod enim eu est minim sunt. Tempor Lorem occaecat cupidatat veniam."
           ]
         },
         {
-          "id": "8",
+          "id": "3",
           "type": "IMAGE",
-          "src": "https://hsto.org/r/w1560/getpro/habr/post_images/d56/a02/ffc/d56a02ffc62949b42904ca00c63d8cc1.png",
-          "title": "Рисунок 1 - скриншот сайта"
+          "title": "Ipsum deserunt elit ex commodo laboris excepteur cillum.",
+          "code": "<!DOCTYPE html>\n<html>\n  <body>\n    <p id=\"hello\"></p>\n    <script>\n      document.getElementById(\"hello\").innerHTML = \"Hello, world!\";\n    </script>\n  </body>\n</html>;",
+          "src": "https://picsum.photos/920/300",
+          "paragraphs": [
+            "Velit officia ut dolor quis ad officia deserunt incididunt dolore reprehenderit ullamco consequat velit. Cupidatat nostrud eiusmod elit consequat esse dolore. Consectetur laboris veniam excepteur elit ex do officia laborum nisi. Fugiat amet cupidatat pariatur nisi consequat cupidatat occaecat occaecat est id nulla veniam nostrud proident. Reprehenderit ut veniam id veniam consequat nulla eu laboris. Voluptate ex dolore esse do aute sunt labore do mollit et deserunt Lorem.",
+            "Magna enim quis laboris reprehenderit fugiat consequat duis proident adipisicing. Dolor ut fugiat veniam mollit. Et incididunt consequat enim occaecat proident est occaecat occaecat occaecat qui duis irure ullamco aliquip. Dolor laborum et dolore eiusmod irure mollit dolor officia enim incididunt id occaecat in. Anim sit quis eu anim cupidatat ad voluptate Lorem consequat magna et dolore. Velit proident do cupidatat Lorem ut voluptate mollit sit. Consectetur ut et fugiat consequat culpa in proident esse in cupidatat qui laboris id pariatur."
+          ]
         },
         {
-          "id": "9",
-          "type": "TEXT",
-          "title": "Заголовок этого блока",
+          "id": "4",
+          "type": "IMAGE",
+          "title": "Ea excepteur aliquip officia voluptate.",
+          "code": "<!DOCTYPE html>\n<html>\n  <body>\n    <p id=\"hello\"></p>\n    <script>\n      document.getElementById(\"hello\").innerHTML = \"Hello, world!\";\n    </script>\n  </body>\n</html>;",
+          "src": "https://picsum.photos/920/300",
           "paragraphs": [
-            "JavaScript — это язык, программы на котором можно выполнять в разных средах. В нашем случае речь идёт о браузерах и о серверной платформе Node.js. Если до сих пор вы не написали ни строчки кода на JS и читаете этот текст в браузере, на настольном компьютере, это значит, что вы буквально в считанных секундах от своей первой JavaScript-программы."
+            "Et aliqua laborum nisi culpa ex in officia adipisicing. Irure dolore qui sit commodo ipsum eiusmod veniam aliqua sunt pariatur laborum voluptate labore. Fugiat ea est fugiat consectetur ea sit cupidatat proident et reprehenderit laborum. Incididunt nulla dolore veniam enim cupidatat sint ad reprehenderit tempor Lorem commodo. Quis esse aliquip elit do sunt amet nisi nulla dolor. Est minim dolor quis anim ex velit nisi commodo pariatur consectetur exercitation. Consequat in aute nulla anim.",
+            "Voluptate deserunt aliquip veniam cupidatat labore pariatur dolor. Cillum minim voluptate nisi enim cupidatat veniam mollit elit quis velit sunt in consectetur non. Ea pariatur Lorem exercitation ipsum amet officia. Eiusmod est nostrud sint consequat ad in. Labore exercitation eu proident laboris Lorem adipisicing occaecat irure aliquip et."
           ]
         }
       ]
     },
     {
       "id": "2",
-      "title": "Python news",
-      "subtitle": "Что нового в JS за 2022 год?",
-      "img": "https://www.softo-mir.ru/wp-content/uploads/2021/08/priemyshestva-paiton.jpg",
-      "views": 5204,
-      "createdAt": "26.02.2022",
-      "userId": "1",
+      "title": "nisi incididunt veniam magna irure adipisicing",
+      "subtitle": "Labore veniam eu minim minim anim irure sit mollit aliqua mollit pariatur dolor nisi.",
+      "img": "https://picsum.photos/920/300",
+      "views": 1820,
+      "createdAt": "15.11.2022",
+      "userId": "5",
       "type": [
         "IT"
       ],
@@ -133,407 +120,440 @@
         {
           "id": "1",
           "type": "TEXT",
-          "title": "Заголовок этого блока",
+          "title": "Amet officia occaecat laborum do.",
+          "code": "<!DOCTYPE html>\n<html>\n  <body>\n    <p id=\"hello\"></p>\n    <script>\n      document.getElementById(\"hello\").innerHTML = \"Hello, world!\";\n    </script>\n  </body>\n</html>;",
+          "src": "https://picsum.photos/920/300",
           "paragraphs": [
-            "Программа, которую по традиции называют «Hello, world!», очень проста. Она выводит куда-либо фразу «Hello, world!», или другую подобную, средствами некоего языка.",
-            "JavaScript — это язык, программы на котором можно выполнять в разных средах. В нашем случае речь идёт о браузерах и о серверной платформе Node.js. Если до сих пор вы не написали ни строчки кода на JS и читаете этот текст в браузере, на настольном компьютере, это значит, что вы буквально в считанных секундах от своей первой JavaScript-программы.",
-            "Существуют и другие способы запуска JS-кода в браузере. Так, если говорить об обычном использовании программ на JavaScript, они загружаются в браузер для обеспечения работы веб-страниц. Как правило, код оформляют в виде отдельных файлов с расширением .js, которые подключают к веб-страницам, но программный код можно включать и непосредственно в код страницы. Всё это делается с помощью тега <script>. Когда браузер обнаруживает такой код, он выполняет его. Подробности о теге script можно посмотреть на сайте w3school.com. В частности, рассмотрим пример, демонстрирующий работу с веб-страницей средствами JavaScript, приведённый на этом ресурсе. Этот пример можно запустить и средствами данного ресурса (ищите кнопку Try it Yourself), но мы поступим немного иначе. А именно, создадим в каком-нибудь текстовом редакторе (например — в VS Code или в Notepad++) новый файл, который назовём hello.html, и добавим в него следующий код:"
+            "Nostrud voluptate irure pariatur commodo laboris cupidatat consectetur anim non sint. Et veniam adipisicing veniam officia. Elit officia enim sunt est consectetur officia ad pariatur cillum. Laborum ex dolore consequat irure velit deserunt adipisicing nostrud eu nostrud.",
+            "Do sit magna commodo ipsum occaecat quis anim. Veniam in aliquip veniam dolor consequat commodo. Proident minim elit Lorem aute laborum."
+          ]
+        },
+        {
+          "id": "2",
+          "type": "CODE",
+          "title": "Deserunt exercitation laboris sunt eu exercitation amet ipsum sint ea est consectetur dolore.",
+          "code": "<!DOCTYPE html>\n<html>\n  <body>\n    <p id=\"hello\"></p>\n    <script>\n      document.getElementById(\"hello\").innerHTML = \"Hello, world!\";\n    </script>\n  </body>\n</html>;",
+          "src": "https://picsum.photos/920/300",
+          "paragraphs": [
+            "Excepteur proident laboris enim fugiat cupidatat deserunt sunt nostrud do culpa culpa eiusmod amet dolore. Mollit culpa ea commodo sunt enim aliqua officia excepteur et occaecat irure ea. Nostrud et proident eiusmod ullamco nulla ut incididunt qui velit nulla tempor. Pariatur exercitation sunt dolore exercitation non est ut est excepteur. Laboris aliquip occaecat dolor incididunt et dolore enim dolore. Do reprehenderit quis voluptate in irure enim adipisicing anim laboris laborum laborum.",
+            "Reprehenderit deserunt labore esse laboris magna excepteur incididunt non duis. In Lorem aute non ipsum. Pariatur culpa excepteur commodo veniam id duis sit sunt et."
+          ]
+        },
+        {
+          "id": "3",
+          "type": "IMAGE",
+          "title": "Est ullamco enim ipsum consectetur ipsum velit minim cupidatat deserunt.",
+          "code": "<!DOCTYPE html>\n<html>\n  <body>\n    <p id=\"hello\"></p>\n    <script>\n      document.getElementById(\"hello\").innerHTML = \"Hello, world!\";\n    </script>\n  </body>\n</html>;",
+          "src": "https://picsum.photos/920/300",
+          "paragraphs": [
+            "Dolore sint sit non ex labore eu nostrud ad reprehenderit minim duis occaecat. Magna qui voluptate eu velit ad duis. Labore nostrud laboris nostrud id incididunt amet do. Do dolor est duis exercitation ea minim reprehenderit do tempor ex ea et. Consectetur duis et nulla nisi duis ad in exercitation aute excepteur. Velit deserunt ullamco culpa minim eiusmod sunt elit sunt quis eu. Est duis laboris occaecat occaecat aute pariatur quis cupidatat cupidatat exercitation minim proident minim anim.",
+            "Laborum officia sint elit anim nostrud duis sit aliquip reprehenderit. Eu cillum est aliqua in in ad esse elit id do enim voluptate tempor. Consequat nisi consequat duis laborum ipsum consectetur voluptate nisi consectetur officia ullamco dolore. Nulla sit dolore esse enim velit occaecat do ipsum laboris incididunt. Ad eiusmod labore cillum amet est non id. Sint non mollit nostrud ex."
+          ]
+        },
+        {
+          "id": "4",
+          "type": "TEXT",
+          "title": "Id dolore enim reprehenderit ad.",
+          "code": "<!DOCTYPE html>\n<html>\n  <body>\n    <p id=\"hello\"></p>\n    <script>\n      document.getElementById(\"hello\").innerHTML = \"Hello, world!\";\n    </script>\n  </body>\n</html>;",
+          "src": "https://picsum.photos/920/300",
+          "paragraphs": [
+            "Proident commodo culpa duis incididunt in aliquip esse adipisicing sit eiusmod velit sint. Esse id ea nulla nulla. Officia eu tempor elit occaecat aliqua culpa fugiat exercitation voluptate cupidatat.",
+            "Dolore exercitation dolor eiusmod ad in nisi tempor in velit pariatur quis voluptate. Eu Lorem tempor consectetur nisi anim deserunt do ex tempor tempor elit. Sit Lorem duis Lorem non nisi labore ea eu amet nisi est in id. Et ipsum ex labore nostrud sit ad magna velit.",
+            "Deserunt tempor officia labore aliquip cillum nulla eu dolor occaecat anim ad consequat dolore id. Laborum proident laborum fugiat consectetur deserunt ea adipisicing sunt incididunt ad. Nostrud do et do voluptate occaecat nostrud cillum. Laboris in mollit nulla qui tempor."
+          ]
+        },
+        {
+          "id": "5",
+          "type": "IMAGE",
+          "title": "Labore incididunt occaecat ea sit esse amet eu culpa esse laborum.",
+          "code": "<!DOCTYPE html>\n<html>\n  <body>\n    <p id=\"hello\"></p>\n    <script>\n      document.getElementById(\"hello\").innerHTML = \"Hello, world!\";\n    </script>\n  </body>\n</html>;",
+          "src": "https://picsum.photos/920/300",
+          "paragraphs": [
+            "Irure sint cillum excepteur excepteur proident laboris in irure deserunt cillum. Quis mollit sunt ad quis magna elit veniam reprehenderit veniam nisi in labore eu. Id qui adipisicing incididunt non in Lorem incididunt fugiat elit occaecat excepteur nulla. Cillum consectetur aute pariatur exercitation commodo exercitation sit non veniam ullamco irure amet.",
+            "Anim excepteur reprehenderit incididunt sint anim consequat dolor non culpa id ad et cillum nostrud. Reprehenderit do labore nisi esse sit. Eiusmod consequat enim nulla reprehenderit cupidatat est. Irure minim reprehenderit fugiat occaecat quis deserunt do exercitation pariatur aliqua exercitation deserunt occaecat. Sit quis est ullamco occaecat officia anim culpa non. Laboris commodo deserunt et eu minim amet minim. Commodo dolor in incididunt eu est nisi tempor.",
+            "Ex nisi aliquip proident labore do labore ea. Aute exercitation amet enim ea consectetur labore do aliquip adipisicing eu id aliquip. Cillum id in in labore aute amet id. Dolore culpa sit dolor dolor aliqua."
           ]
         }
       ]
     },
     {
       "id": "3",
-      "title": "Kotlin news 2019",
-      "subtitle": "Что нового в JS за 2022 год?",
-      "img": "https://developer.okta.com/assets-jekyll/blog/tutorial-kotlin-beginners-guide/kotlin-logo-social-21c8518b19eb96d96f35e0057bb92b7e1281a24820e0fa09e39c42f184bd7faa.png",
-      "views": 94002,
-      "createdAt": "26.02.2019",
+      "title": "do dolor ipsum est mollit magna",
+      "subtitle": "Tempor aliquip ut nostrud adipisicing tempor ex veniam ullamco officia labore magna Lorem non ea.",
+      "img": "https://picsum.photos/920/300",
+      "views": 3851,
+      "createdAt": "02.04.2022",
       "userId": "1",
       "type": [
-        "IT"
+        "POLITICS"
       ],
       "blocks": [
         {
           "id": "1",
-          "type": "TEXT",
-          "title": "Заголовок этого блока",
+          "type": "CODE",
+          "title": "Proident non officia irure nulla nisi cupidatat proident enim fugiat amet.",
+          "code": "<!DOCTYPE html>\n<html>\n  <body>\n    <p id=\"hello\"></p>\n    <script>\n      document.getElementById(\"hello\").innerHTML = \"Hello, world!\";\n    </script>\n  </body>\n</html>;",
+          "src": "https://picsum.photos/920/300",
           "paragraphs": [
-            "Программа, которую по традиции называют «Hello, world!», очень проста. Она выводит куда-либо фразу «Hello, world!», или другую подобную, средствами некоего языка.",
-            "JavaScript — это язык, программы на котором можно выполнять в разных средах. В нашем случае речь идёт о браузерах и о серверной платформе Node.js. Если до сих пор вы не написали ни строчки кода на JS и читаете этот текст в браузере, на настольном компьютере, это значит, что вы буквально в считанных секундах от своей первой JavaScript-программы.",
-            "Существуют и другие способы запуска JS-кода в браузере. Так, если говорить об обычном использовании программ на JavaScript, они загружаются в браузер для обеспечения работы веб-страниц. Как правило, код оформляют в виде отдельных файлов с расширением .js, которые подключают к веб-страницам, но программный код можно включать и непосредственно в код страницы. Всё это делается с помощью тега <script>. Когда браузер обнаруживает такой код, он выполняет его. Подробности о теге script можно посмотреть на сайте w3school.com. В частности, рассмотрим пример, демонстрирующий работу с веб-страницей средствами JavaScript, приведённый на этом ресурсе. Этот пример можно запустить и средствами данного ресурса (ищите кнопку Try it Yourself), но мы поступим немного иначе. А именно, создадим в каком-нибудь текстовом редакторе (например — в VS Code или в Notepad++) новый файл, который назовём hello.html, и добавим в него следующий код:"
+            "Enim aute ea aliquip pariatur ipsum fugiat. Cillum occaecat nostrud qui sint aliqua non consectetur eiusmod irure aliqua aliqua in. Voluptate dolore id laboris ullamco irure occaecat anim eiusmod nisi reprehenderit. Officia ad deserunt esse minim fugiat id consectetur amet est minim velit occaecat occaecat.",
+            "Lorem cupidatat veniam magna dolor enim. Ex officia consectetur occaecat veniam nostrud ad sit et amet culpa. Magna ex occaecat sunt reprehenderit laboris. Incididunt laborum eu irure occaecat irure. Cillum reprehenderit excepteur et officia consectetur reprehenderit exercitation aliquip duis non est incididunt aliquip pariatur. Eu labore id veniam mollit nulla exercitation eiusmod non.",
+            "Voluptate duis ullamco esse veniam ex eu aute. Ullamco amet labore consectetur in. Enim irure Lorem laborum aute do consequat."
+          ]
+        },
+        {
+          "id": "2",
+          "type": "TEXT",
+          "title": "Commodo commodo qui esse mollit dolor velit qui commodo pariatur elit reprehenderit enim aute.",
+          "code": "<!DOCTYPE html>\n<html>\n  <body>\n    <p id=\"hello\"></p>\n    <script>\n      document.getElementById(\"hello\").innerHTML = \"Hello, world!\";\n    </script>\n  </body>\n</html>;",
+          "src": "https://picsum.photos/920/300",
+          "paragraphs": [
+            "Et reprehenderit velit magna est eu. Sint Lorem elit fugiat ex mollit laborum enim eiusmod aute. In laboris cupidatat ad veniam in. Esse mollit aliqua commodo duis eu Lorem ea cillum. Non aliquip nisi laboris culpa do adipisicing est aliquip voluptate nulla exercitation esse. Ad exercitation et esse veniam exercitation voluptate enim pariatur nulla excepteur pariatur enim anim. Culpa eiusmod exercitation voluptate ad occaecat adipisicing."
+          ]
+        },
+        {
+          "id": "3",
+          "type": "TEXT",
+          "title": "In incididunt qui duis excepteur sit veniam aliqua elit sunt incididunt est.",
+          "code": "<!DOCTYPE html>\n<html>\n  <body>\n    <p id=\"hello\"></p>\n    <script>\n      document.getElementById(\"hello\").innerHTML = \"Hello, world!\";\n    </script>\n  </body>\n</html>;",
+          "src": "https://picsum.photos/920/300",
+          "paragraphs": [
+            "Officia magna elit irure exercitation duis sint et mollit incididunt Lorem occaecat. Quis elit minim id sunt magna. Do pariatur enim reprehenderit ullamco duis amet consectetur nulla laboris.",
+            "Ea amet elit exercitation deserunt ullamco culpa culpa. Ipsum nostrud reprehenderit in qui quis. Aliqua veniam laborum id aliqua commodo. Cillum consequat eiusmod in duis elit ipsum excepteur ipsum veniam."
           ]
         }
       ]
     },
     {
       "id": "4",
-      "title": "Scala news",
-      "subtitle": "Что нового в JS за 2022 год?",
-      "img": "https://cdn.otus.ru/media/public/24/49/1_1801_4f11cf_1-1801-244974.png",
-      "views": 10222,
-      "createdAt": "24.01.2022",
-      "userId": "1",
+      "title": "deserunt ad nulla veniam consequat proident",
+      "subtitle": "Ex ipsum ea pariatur duis ad do laboris ea ad aliquip.",
+      "img": "https://picsum.photos/920/300",
+      "views": 1610,
+      "createdAt": "15.04.2022",
+      "userId": "4",
       "type": [
         "IT"
       ],
       "blocks": [
         {
           "id": "1",
-          "type": "TEXT",
-          "title": "Заголовок этого блока",
+          "type": "IMAGE",
+          "title": "Aute enim cupidatat ea deserunt ullamco velit.",
+          "code": "<!DOCTYPE html>\n<html>\n  <body>\n    <p id=\"hello\"></p>\n    <script>\n      document.getElementById(\"hello\").innerHTML = \"Hello, world!\";\n    </script>\n  </body>\n</html>;",
+          "src": "https://picsum.photos/920/300",
           "paragraphs": [
-            "Программа, которую по традиции называют «Hello, world!», очень проста. Она выводит куда-либо фразу «Hello, world!», или другую подобную, средствами некоего языка.",
-            "JavaScript — это язык, программы на котором можно выполнять в разных средах. В нашем случае речь идёт о браузерах и о серверной платформе Node.js. Если до сих пор вы не написали ни строчки кода на JS и читаете этот текст в браузере, на настольном компьютере, это значит, что вы буквально в считанных секундах от своей первой JavaScript-программы.",
-            "Существуют и другие способы запуска JS-кода в браузере. Так, если говорить об обычном использовании программ на JavaScript, они загружаются в браузер для обеспечения работы веб-страниц. Как правило, код оформляют в виде отдельных файлов с расширением .js, которые подключают к веб-страницам, но программный код можно включать и непосредственно в код страницы. Всё это делается с помощью тега <script>. Когда браузер обнаруживает такой код, он выполняет его. Подробности о теге script можно посмотреть на сайте w3school.com. В частности, рассмотрим пример, демонстрирующий работу с веб-страницей средствами JavaScript, приведённый на этом ресурсе. Этот пример можно запустить и средствами данного ресурса (ищите кнопку Try it Yourself), но мы поступим немного иначе. А именно, создадим в каком-нибудь текстовом редакторе (например — в VS Code или в Notepad++) новый файл, который назовём hello.html, и добавим в него следующий код:"
+            "Nostrud aliquip do veniam adipisicing dolor aliqua. Veniam enim consectetur nisi anim anim exercitation quis anim irure. Dolore Lorem nulla consequat excepteur magna excepteur enim quis mollit ex.",
+            "Ipsum pariatur proident enim dolor id elit sit veniam elit. Deserunt ad reprehenderit esse anim enim officia ea voluptate duis id. Ut ex Lorem excepteur do aute nulla minim exercitation culpa. Culpa ut ut irure officia."
+          ]
+        },
+        {
+          "id": "2",
+          "type": "IMAGE",
+          "title": "Ex commodo ad sint exercitation Lorem do commodo excepteur tempor pariatur dolor qui.",
+          "code": "<!DOCTYPE html>\n<html>\n  <body>\n    <p id=\"hello\"></p>\n    <script>\n      document.getElementById(\"hello\").innerHTML = \"Hello, world!\";\n    </script>\n  </body>\n</html>;",
+          "src": "https://picsum.photos/920/300",
+          "paragraphs": [
+            "Sunt culpa proident eu eiusmod magna elit deserunt irure est duis et labore. Aliqua reprehenderit aliqua minim voluptate ut fugiat aliquip esse tempor nostrud proident reprehenderit. Amet tempor labore reprehenderit irure aliqua occaecat."
+          ]
+        },
+        {
+          "id": "3",
+          "type": "TEXT",
+          "title": "Aliquip consectetur excepteur ex aliqua quis exercitation velit reprehenderit commodo deserunt aliquip id.",
+          "code": "<!DOCTYPE html>\n<html>\n  <body>\n    <p id=\"hello\"></p>\n    <script>\n      document.getElementById(\"hello\").innerHTML = \"Hello, world!\";\n    </script>\n  </body>\n</html>;",
+          "src": "https://picsum.photos/920/300",
+          "paragraphs": [
+            "Culpa et adipisicing et tempor minim ut minim elit consectetur. Ea enim amet ad excepteur ad exercitation duis. Aliquip nisi mollit magna aute aute nisi cupidatat nostrud culpa ipsum sint occaecat elit mollit. Laboris do nostrud fugiat velit in aliqua fugiat anim consequat minim aute. Et esse esse enim labore in ipsum nostrud deserunt quis voluptate. Deserunt ad aute minim esse tempor elit.",
+            "Fugiat adipisicing laboris minim dolore. Lorem adipisicing excepteur eu veniam irure eiusmod consectetur id cillum magna ea sint. Sit excepteur sunt adipisicing anim nostrud. Ad consectetur ea culpa qui pariatur dolore fugiat voluptate.",
+            "Irure adipisicing pariatur exercitation elit sunt voluptate sint labore esse ea enim sint anim. Aute adipisicing amet irure consequat adipisicing elit qui reprehenderit et consectetur voluptate labore exercitation. Qui deserunt amet tempor consectetur labore sit est non adipisicing labore tempor exercitation ut esse. Cupidatat nulla officia esse voluptate labore incididunt. Laboris nulla ad velit esse culpa deserunt. Sit consequat aliquip amet minim in. Aliqua cupidatat ea fugiat occaecat occaecat consectetur ullamco est mollit deserunt pariatur sunt veniam."
           ]
         }
       ]
     },
     {
       "id": "5",
-      "title": "Golang news",
-      "subtitle": "Что нового в JS за 2022 год?",
-      "img": "https://bestarion.com/wp-content/uploads/2022/04/what-is-golang-1.png",
-      "views": 10222,
-      "createdAt": "26.02.2020",
-      "userId": "1",
-      "type": [
-        "IT"
-      ],
-      "blocks": [
-        {
-          "id": "1",
-          "type": "TEXT",
-          "title": "Заголовок этого блока",
-          "paragraphs": [
-            "Программа, которую по традиции называют «Hello, world!», очень проста. Она выводит куда-либо фразу «Hello, world!», или другую подобную, средствами некоего языка.",
-            "JavaScript — это язык, программы на котором можно выполнять в разных средах. В нашем случае речь идёт о браузерах и о серверной платформе Node.js. Если до сих пор вы не написали ни строчки кода на JS и читаете этот текст в браузере, на настольном компьютере, это значит, что вы буквально в считанных секундах от своей первой JavaScript-программы.",
-            "Существуют и другие способы запуска JS-кода в браузере. Так, если говорить об обычном использовании программ на JavaScript, они загружаются в браузер для обеспечения работы веб-страниц. Как правило, код оформляют в виде отдельных файлов с расширением .js, которые подключают к веб-страницам, но программный код можно включать и непосредственно в код страницы. Всё это делается с помощью тега <script>. Когда браузер обнаруживает такой код, он выполняет его. Подробности о теге script можно посмотреть на сайте w3school.com. В частности, рассмотрим пример, демонстрирующий работу с веб-страницей средствами JavaScript, приведённый на этом ресурсе. Этот пример можно запустить и средствами данного ресурса (ищите кнопку Try it Yourself), но мы поступим немного иначе. А именно, создадим в каком-нибудь текстовом редакторе (например — в VS Code или в Notepad++) новый файл, который назовём hello.html, и добавим в него следующий код:"
-          ]
-        }
-      ]
-    },
-    {
-      "id": "6",
-      "title": "Java news",
-      "subtitle": "Что нового в JS за 2022 год?",
-      "img": "https://andreyex.ru/wp-content/uploads/2018/05/Kak-ustanovit-Java-s-apt-na-Ubuntu-18.04.jpg",
-      "views": 1022,
-      "createdAt": "26.02.2022",
-      "userId": "1",
-      "type": [
-        "IT"
-      ],
-      "blocks": [
-        {
-          "id": "1",
-          "type": "TEXT",
-          "title": "Заголовок этого блока",
-          "paragraphs": [
-            "Программа, которую по традиции называют «Hello, world!», очень проста. Она выводит куда-либо фразу «Hello, world!», или другую подобную, средствами некоего языка.",
-            "JavaScript — это язык, программы на котором можно выполнять в разных средах. В нашем случае речь идёт о браузерах и о серверной платформе Node.js. Если до сих пор вы не написали ни строчки кода на JS и читаете этот текст в браузере, на настольном компьютере, это значит, что вы буквально в считанных секундах от своей первой JavaScript-программы.",
-            "Существуют и другие способы запуска JS-кода в браузере. Так, если говорить об обычном использовании программ на JavaScript, они загружаются в браузер для обеспечения работы веб-страниц. Как правило, код оформляют в виде отдельных файлов с расширением .js, которые подключают к веб-страницам, но программный код можно включать и непосредственно в код страницы. Всё это делается с помощью тега <script>. Когда браузер обнаруживает такой код, он выполняет его. Подробности о теге script можно посмотреть на сайте w3school.com. В частности, рассмотрим пример, демонстрирующий работу с веб-страницей средствами JavaScript, приведённый на этом ресурсе. Этот пример можно запустить и средствами данного ресурса (ищите кнопку Try it Yourself), но мы поступим немного иначе. А именно, создадим в каком-нибудь текстовом редакторе (например — в VS Code или в Notepad++) новый файл, который назовём hello.html, и добавим в него следующий код:"
-          ]
-        }
-      ]
-    },
-    {
-      "id": "7",
-      "title": "Ruby news",
-      "subtitle": "Что нового в JS за 2022 год?",
-      "img": "https://res.cloudinary.com/practicaldev/image/fetch/s--oqV3akcU--/c_imagga_scale,f_auto,fl_progressive,h_500,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/i/pgnw91fs7tpxn0wyeqh2.jpg",
-      "views": 100,
-      "createdAt": "21.02.2022",
-      "userId": "1",
-      "type": [
-        "IT"
-      ],
-      "blocks": [
-        {
-          "id": "1",
-          "type": "TEXT",
-          "title": "Заголовок этого блока",
-          "paragraphs": [
-            "Программа, которую по традиции называют «Hello, world!», очень проста. Она выводит куда-либо фразу «Hello, world!», или другую подобную, средствами некоего языка.",
-            "JavaScript — это язык, программы на котором можно выполнять в разных средах. В нашем случае речь идёт о браузерах и о серверной платформе Node.js. Если до сих пор вы не написали ни строчки кода на JS и читаете этот текст в браузере, на настольном компьютере, это значит, что вы буквально в считанных секундах от своей первой JavaScript-программы.",
-            "Существуют и другие способы запуска JS-кода в браузере. Так, если говорить об обычном использовании программ на JavaScript, они загружаются в браузер для обеспечения работы веб-страниц. Как правило, код оформляют в виде отдельных файлов с расширением .js, которые подключают к веб-страницам, но программный код можно включать и непосредственно в код страницы. Всё это делается с помощью тега <script>. Когда браузер обнаруживает такой код, он выполняет его. Подробности о теге script можно посмотреть на сайте w3school.com. В частности, рассмотрим пример, демонстрирующий работу с веб-страницей средствами JavaScript, приведённый на этом ресурсе. Этот пример можно запустить и средствами данного ресурса (ищите кнопку Try it Yourself), но мы поступим немного иначе. А именно, создадим в каком-нибудь текстовом редакторе (например — в VS Code или в Notepad++) новый файл, который назовём hello.html, и добавим в него следующий код:"
-          ]
-        }
-      ]
-    },
-    {
-      "id": "8",
-      "title": "TypeScript news",
-      "subtitle": "Что нового в JS за 2022 год?",
-      "img": "https://img-c.udemycdn.com/course/750x422/986406_89c5_3.jpg",
-      "views": 102222,
-      "createdAt": "26.02.2022",
-      "userId": "1",
-      "type": [
-        "IT"
-      ],
-      "blocks": [
-        {
-          "id": "1",
-          "type": "TEXT",
-          "title": "Заголовок этого блока",
-          "paragraphs": [
-            "Программа, которую по традиции называют «Hello, world!», очень проста. Она выводит куда-либо фразу «Hello, world!», или другую подобную, средствами некоего языка.",
-            "JavaScript — это язык, программы на котором можно выполнять в разных средах. В нашем случае речь идёт о браузерах и о серверной платформе Node.js. Если до сих пор вы не написали ни строчки кода на JS и читаете этот текст в браузере, на настольном компьютере, это значит, что вы буквально в считанных секундах от своей первой JavaScript-программы.",
-            "Существуют и другие способы запуска JS-кода в браузере. Так, если говорить об обычном использовании программ на JavaScript, они загружаются в браузер для обеспечения работы веб-страниц. Как правило, код оформляют в виде отдельных файлов с расширением .js, которые подключают к веб-страницам, но программный код можно включать и непосредственно в код страницы. Всё это делается с помощью тега <script>. Когда браузер обнаруживает такой код, он выполняет его. Подробности о теге script можно посмотреть на сайте w3school.com. В частности, рассмотрим пример, демонстрирующий работу с веб-страницей средствами JavaScript, приведённый на этом ресурсе. Этот пример можно запустить и средствами данного ресурса (ищите кнопку Try it Yourself), но мы поступим немного иначе. А именно, создадим в каком-нибудь текстовом редакторе (например — в VS Code или в Notepad++) новый файл, который назовём hello.html, и добавим в него следующий код:"
-          ]
-        }
-      ]
-    },
-    {
-      "id": "9",
-      "title": "Kotlin news",
-      "subtitle": "Что нового в JS за 2022 год?",
-      "img": "https://developer.okta.com/assets-jekyll/blog/tutorial-kotlin-beginners-guide/kotlin-logo-social-21c8518b19eb96d96f35e0057bb92b7e1281a24820e0fa09e39c42f184bd7faa.png",
-      "views": 1022,
-      "createdAt": "26.02.2022",
-      "userId": "1",
-      "type": [
-        "IT"
-      ],
-      "blocks": [
-        {
-          "id": "1",
-          "type": "TEXT",
-          "title": "Заголовок этого блока",
-          "paragraphs": [
-            "Программа, которую по традиции называют «Hello, world!», очень проста. Она выводит куда-либо фразу «Hello, world!», или другую подобную, средствами некоего языка.",
-            "JavaScript — это язык, программы на котором можно выполнять в разных средах. В нашем случае речь идёт о браузерах и о серверной платформе Node.js. Если до сих пор вы не написали ни строчки кода на JS и читаете этот текст в браузере, на настольном компьютере, это значит, что вы буквально в считанных секундах от своей первой JavaScript-программы.",
-            "Существуют и другие способы запуска JS-кода в браузере. Так, если говорить об обычном использовании программ на JavaScript, они загружаются в браузер для обеспечения работы веб-страниц. Как правило, код оформляют в виде отдельных файлов с расширением .js, которые подключают к веб-страницам, но программный код можно включать и непосредственно в код страницы. Всё это делается с помощью тега <script>. Когда браузер обнаруживает такой код, он выполняет его. Подробности о теге script можно посмотреть на сайте w3school.com. В частности, рассмотрим пример, демонстрирующий работу с веб-страницей средствами JavaScript, приведённый на этом ресурсе. Этот пример можно запустить и средствами данного ресурса (ищите кнопку Try it Yourself), но мы поступим немного иначе. А именно, создадим в каком-нибудь текстовом редакторе (например — в VS Code или в Notepad++) новый файл, который назовём hello.html, и добавим в него следующий код:"
-          ]
-        }
-      ]
-    },
-    {
-      "id": "10",
-      "title": "Python news",
-      "subtitle": "Что нового в JS за 2022 год?",
-      "img": "https://www.softo-mir.ru/wp-content/uploads/2021/08/priemyshestva-paiton.jpg",
-      "views": 1022,
-      "createdAt": "26.02.2022",
-      "userId": "1",
-      "type": [
-        "IT"
-      ],
-      "blocks": [
-        {
-          "id": "1",
-          "type": "TEXT",
-          "title": "Заголовок этого блока",
-          "paragraphs": [
-            "Программа, которую по традиции называют «Hello, world!», очень проста. Она выводит куда-либо фразу «Hello, world!», или другую подобную, средствами некоего языка.",
-            "JavaScript — это язык, программы на котором можно выполнять в разных средах. В нашем случае речь идёт о браузерах и о серверной платформе Node.js. Если до сих пор вы не написали ни строчки кода на JS и читаете этот текст в браузере, на настольном компьютере, это значит, что вы буквально в считанных секундах от своей первой JavaScript-программы.",
-            "Существуют и другие способы запуска JS-кода в браузере. Так, если говорить об обычном использовании программ на JavaScript, они загружаются в браузер для обеспечения работы веб-страниц. Как правило, код оформляют в виде отдельных файлов с расширением .js, которые подключают к веб-страницам, но программный код можно включать и непосредственно в код страницы. Всё это делается с помощью тега <script>. Когда браузер обнаруживает такой код, он выполняет его. Подробности о теге script можно посмотреть на сайте w3school.com. В частности, рассмотрим пример, демонстрирующий работу с веб-страницей средствами JavaScript, приведённый на этом ресурсе. Этот пример можно запустить и средствами данного ресурса (ищите кнопку Try it Yourself), но мы поступим немного иначе. А именно, создадим в каком-нибудь текстовом редакторе (например — в VS Code или в Notepad++) новый файл, который назовём hello.html, и добавим в него следующий код:"
-          ]
-        }
-      ]
-    },
-    {
-      "id": "11",
-      "title": "Kotlin news",
-      "subtitle": "Что нового в JS за 2022 год?",
-      "img": "https://developer.okta.com/assets-jekyll/blog/tutorial-kotlin-beginners-guide/kotlin-logo-social-21c8518b19eb96d96f35e0057bb92b7e1281a24820e0fa09e39c42f184bd7faa.png",
-      "views": 1022,
-      "createdAt": "26.02.2022",
-      "userId": "1",
-      "type": [
-        "IT"
-      ],
-      "blocks": [
-        {
-          "id": "1",
-          "type": "TEXT",
-          "title": "Заголовок этого блока",
-          "paragraphs": [
-            "Программа, которую по традиции называют «Hello, world!», очень проста. Она выводит куда-либо фразу «Hello, world!», или другую подобную, средствами некоего языка.",
-            "JavaScript — это язык, программы на котором можно выполнять в разных средах. В нашем случае речь идёт о браузерах и о серверной платформе Node.js. Если до сих пор вы не написали ни строчки кода на JS и читаете этот текст в браузере, на настольном компьютере, это значит, что вы буквально в считанных секундах от своей первой JavaScript-программы.",
-            "Существуют и другие способы запуска JS-кода в браузере. Так, если говорить об обычном использовании программ на JavaScript, они загружаются в браузер для обеспечения работы веб-страниц. Как правило, код оформляют в виде отдельных файлов с расширением .js, которые подключают к веб-страницам, но программный код можно включать и непосредственно в код страницы. Всё это делается с помощью тега <script>. Когда браузер обнаруживает такой код, он выполняет его. Подробности о теге script можно посмотреть на сайте w3school.com. В частности, рассмотрим пример, демонстрирующий работу с веб-страницей средствами JavaScript, приведённый на этом ресурсе. Этот пример можно запустить и средствами данного ресурса (ищите кнопку Try it Yourself), но мы поступим немного иначе. А именно, создадим в каком-нибудь текстовом редакторе (например — в VS Code или в Notepad++) новый файл, который назовём hello.html, и добавим в него следующий код:"
-          ]
-        }
-      ]
-    },
-    {
-      "id": "12",
-      "title": "Python news",
-      "subtitle": "Что нового в JS за 2022 год?",
-      "img": "https://www.softo-mir.ru/wp-content/uploads/2021/08/priemyshestva-paiton.jpg",
-      "views": 1022,
-      "createdAt": "26.02.2022",
-      "userId": "1",
-      "type": [
-        "IT"
-      ],
-      "blocks": [
-        {
-          "id": "1",
-          "type": "TEXT",
-          "title": "Заголовок этого блока",
-          "paragraphs": [
-            "Программа, которую по традиции называют «Hello, world!», очень проста. Она выводит куда-либо фразу «Hello, world!», или другую подобную, средствами некоего языка.",
-            "JavaScript — это язык, программы на котором можно выполнять в разных средах. В нашем случае речь идёт о браузерах и о серверной платформе Node.js. Если до сих пор вы не написали ни строчки кода на JS и читаете этот текст в браузере, на настольном компьютере, это значит, что вы буквально в считанных секундах от своей первой JavaScript-программы.",
-            "Существуют и другие способы запуска JS-кода в браузере. Так, если говорить об обычном использовании программ на JavaScript, они загружаются в браузер для обеспечения работы веб-страниц. Как правило, код оформляют в виде отдельных файлов с расширением .js, которые подключают к веб-страницам, но программный код можно включать и непосредственно в код страницы. Всё это делается с помощью тега <script>. Когда браузер обнаруживает такой код, он выполняет его. Подробности о теге script можно посмотреть на сайте w3school.com. В частности, рассмотрим пример, демонстрирующий работу с веб-страницей средствами JavaScript, приведённый на этом ресурсе. Этот пример можно запустить и средствами данного ресурса (ищите кнопку Try it Yourself), но мы поступим немного иначе. А именно, создадим в каком-нибудь текстовом редакторе (например — в VS Code или в Notepad++) новый файл, который назовём hello.html, и добавим в него следующий код:"
-          ]
-        }
-      ]
-    },
-    {
-      "id": "13",
-      "title": "Kotlin news",
-      "subtitle": "Что нового в JS за 2022 год?",
-      "img": "https://developer.okta.com/assets-jekyll/blog/tutorial-kotlin-beginners-guide/kotlin-logo-social-21c8518b19eb96d96f35e0057bb92b7e1281a24820e0fa09e39c42f184bd7faa.png",
-      "views": 1022,
-      "createdAt": "26.02.2022",
-      "userId": "1",
-      "type": [
-        "IT"
-      ],
-      "blocks": [
-        {
-          "id": "1",
-          "type": "TEXT",
-          "title": "Заголовок этого блока",
-          "paragraphs": [
-            "Программа, которую по традиции называют «Hello, world!», очень проста. Она выводит куда-либо фразу «Hello, world!», или другую подобную, средствами некоего языка.",
-            "JavaScript — это язык, программы на котором можно выполнять в разных средах. В нашем случае речь идёт о браузерах и о серверной платформе Node.js. Если до сих пор вы не написали ни строчки кода на JS и читаете этот текст в браузере, на настольном компьютере, это значит, что вы буквально в считанных секундах от своей первой JavaScript-программы.",
-            "Существуют и другие способы запуска JS-кода в браузере. Так, если говорить об обычном использовании программ на JavaScript, они загружаются в браузер для обеспечения работы веб-страниц. Как правило, код оформляют в виде отдельных файлов с расширением .js, которые подключают к веб-страницам, но программный код можно включать и непосредственно в код страницы. Всё это делается с помощью тега <script>. Когда браузер обнаруживает такой код, он выполняет его. Подробности о теге script можно посмотреть на сайте w3school.com. В частности, рассмотрим пример, демонстрирующий работу с веб-страницей средствами JavaScript, приведённый на этом ресурсе. Этот пример можно запустить и средствами данного ресурса (ищите кнопку Try it Yourself), но мы поступим немного иначе. А именно, создадим в каком-нибудь текстовом редакторе (например — в VS Code или в Notepad++) новый файл, который назовём hello.html, и добавим в него следующий код:"
-          ]
-        }
-      ]
-    },
-    {
-      "id": "14",
-      "title": "Python news",
-      "subtitle": "Что нового в JS за 2022 год?",
-      "img": "https://www.softo-mir.ru/wp-content/uploads/2021/08/priemyshestva-paiton.jpg",
-      "views": 1022,
-      "createdAt": "26.02.2022",
-      "userId": "1",
-      "type": [
-        "IT"
-      ],
-      "blocks": [
-        {
-          "id": "1",
-          "type": "TEXT",
-          "title": "Заголовок этого блока",
-          "paragraphs": [
-            "Программа, которую по традиции называют «Hello, world!», очень проста. Она выводит куда-либо фразу «Hello, world!», или другую подобную, средствами некоего языка.",
-            "JavaScript — это язык, программы на котором можно выполнять в разных средах. В нашем случае речь идёт о браузерах и о серверной платформе Node.js. Если до сих пор вы не написали ни строчки кода на JS и читаете этот текст в браузере, на настольном компьютере, это значит, что вы буквально в считанных секундах от своей первой JavaScript-программы.",
-            "Существуют и другие способы запуска JS-кода в браузере. Так, если говорить об обычном использовании программ на JavaScript, они загружаются в браузер для обеспечения работы веб-страниц. Как правило, код оформляют в виде отдельных файлов с расширением .js, которые подключают к веб-страницам, но программный код можно включать и непосредственно в код страницы. Всё это делается с помощью тега <script>. Когда браузер обнаруживает такой код, он выполняет его. Подробности о теге script можно посмотреть на сайте w3school.com. В частности, рассмотрим пример, демонстрирующий работу с веб-страницей средствами JavaScript, приведённый на этом ресурсе. Этот пример можно запустить и средствами данного ресурса (ищите кнопку Try it Yourself), но мы поступим немного иначе. А именно, создадим в каком-нибудь текстовом редакторе (например — в VS Code или в Notepad++) новый файл, который назовём hello.html, и добавим в него следующий код:"
-          ]
-        }
-      ]
-    },
-    {
-      "id": "15",
-      "title": "Kotlin news",
-      "subtitle": "Что нового в JS за 2022 год?",
-      "img": "https://developer.okta.com/assets-jekyll/blog/tutorial-kotlin-beginners-guide/kotlin-logo-social-21c8518b19eb96d96f35e0057bb92b7e1281a24820e0fa09e39c42f184bd7faa.png",
-      "views": 1022,
-      "createdAt": "26.02.2022",
-      "userId": "1",
-      "type": [
-        "IT"
-      ],
-      "blocks": [
-        {
-          "id": "1",
-          "type": "TEXT",
-          "title": "Заголовок этого блока",
-          "paragraphs": [
-            "Программа, которую по традиции называют «Hello, world!», очень проста. Она выводит куда-либо фразу «Hello, world!», или другую подобную, средствами некоего языка.",
-            "JavaScript — это язык, программы на котором можно выполнять в разных средах. В нашем случае речь идёт о браузерах и о серверной платформе Node.js. Если до сих пор вы не написали ни строчки кода на JS и читаете этот текст в браузере, на настольном компьютере, это значит, что вы буквально в считанных секундах от своей первой JavaScript-программы.",
-            "Существуют и другие способы запуска JS-кода в браузере. Так, если говорить об обычном использовании программ на JavaScript, они загружаются в браузер для обеспечения работы веб-страниц. Как правило, код оформляют в виде отдельных файлов с расширением .js, которые подключают к веб-страницам, но программный код можно включать и непосредственно в код страницы. Всё это делается с помощью тега <script>. Когда браузер обнаруживает такой код, он выполняет его. Подробности о теге script можно посмотреть на сайте w3school.com. В частности, рассмотрим пример, демонстрирующий работу с веб-страницей средствами JavaScript, приведённый на этом ресурсе. Этот пример можно запустить и средствами данного ресурса (ищите кнопку Try it Yourself), но мы поступим немного иначе. А именно, создадим в каком-нибудь текстовом редакторе (например — в VS Code или в Notepad++) новый файл, который назовём hello.html, и добавим в него следующий код:"
-          ]
-        }
-      ]
-    },
-    {
-      "id": "16",
-      "title": "Python news",
-      "subtitle": "Что нового в JS за 2022 год?",
-      "img": "https://www.softo-mir.ru/wp-content/uploads/2021/08/priemyshestva-paiton.jpg",
-      "views": 1022,
-      "createdAt": "26.02.2022",
-      "userId": "1",
-      "type": [
-        "IT"
-      ],
-      "blocks": [
-        {
-          "id": "1",
-          "type": "TEXT",
-          "title": "Заголовок этого блока",
-          "paragraphs": [
-            "Программа, которую по традиции называют «Hello, world!», очень проста. Она выводит куда-либо фразу «Hello, world!», или другую подобную, средствами некоего языка.",
-            "JavaScript — это язык, программы на котором можно выполнять в разных средах. В нашем случае речь идёт о браузерах и о серверной платформе Node.js. Если до сих пор вы не написали ни строчки кода на JS и читаете этот текст в браузере, на настольном компьютере, это значит, что вы буквально в считанных секундах от своей первой JavaScript-программы.",
-            "Существуют и другие способы запуска JS-кода в браузере. Так, если говорить об обычном использовании программ на JavaScript, они загружаются в браузер для обеспечения работы веб-страниц. Как правило, код оформляют в виде отдельных файлов с расширением .js, которые подключают к веб-страницам, но программный код можно включать и непосредственно в код страницы. Всё это делается с помощью тега <script>. Когда браузер обнаруживает такой код, он выполняет его. Подробности о теге script можно посмотреть на сайте w3school.com. В частности, рассмотрим пример, демонстрирующий работу с веб-страницей средствами JavaScript, приведённый на этом ресурсе. Этот пример можно запустить и средствами данного ресурса (ищите кнопку Try it Yourself), но мы поступим немного иначе. А именно, создадим в каком-нибудь текстовом редакторе (например — в VS Code или в Notepad++) новый файл, который назовём hello.html, и добавим в него следующий код:"
-          ]
-        }
-      ]
-    },
-    {
-      "id": "17",
-      "title": "Kotlin news",
-      "subtitle": "Что нового в JS за 2022 год?",
-      "img": "https://developer.okta.com/assets-jekyll/blog/tutorial-kotlin-beginners-guide/kotlin-logo-social-21c8518b19eb96d96f35e0057bb92b7e1281a24820e0fa09e39c42f184bd7faa.png",
-      "views": 1022,
-      "createdAt": "26.02.2022",
-      "userId": "1",
-      "type": [
-        "IT"
-      ],
-      "blocks": [
-        {
-          "id": "1",
-          "type": "TEXT",
-          "title": "Заголовок этого блока",
-          "paragraphs": [
-            "Программа, которую по традиции называют «Hello, world!», очень проста. Она выводит куда-либо фразу «Hello, world!», или другую подобную, средствами некоего языка.",
-            "JavaScript — это язык, программы на котором можно выполнять в разных средах. В нашем случае речь идёт о браузерах и о серверной платформе Node.js. Если до сих пор вы не написали ни строчки кода на JS и читаете этот текст в браузере, на настольном компьютере, это значит, что вы буквально в считанных секундах от своей первой JavaScript-программы.",
-            "Существуют и другие способы запуска JS-кода в браузере. Так, если говорить об обычном использовании программ на JavaScript, они загружаются в браузер для обеспечения работы веб-страниц. Как правило, код оформляют в виде отдельных файлов с расширением .js, которые подключают к веб-страницам, но программный код можно включать и непосредственно в код страницы. Всё это делается с помощью тега <script>. Когда браузер обнаруживает такой код, он выполняет его. Подробности о теге script можно посмотреть на сайте w3school.com. В частности, рассмотрим пример, демонстрирующий работу с веб-страницей средствами JavaScript, приведённый на этом ресурсе. Этот пример можно запустить и средствами данного ресурса (ищите кнопку Try it Yourself), но мы поступим немного иначе. А именно, создадим в каком-нибудь текстовом редакторе (например — в VS Code или в Notepad++) новый файл, который назовём hello.html, и добавим в него следующий код:"
-          ]
-        }
-      ]
-    },
-    {
-      "id": "18",
-      "title": "Экономическая статья - ИНФЛЯЦИЯ!",
-      "subtitle": "Экономика",
-      "img": "https://www.mirea.ru/upload/iblock/7cf/vvp_rf2018_1.jpg",
-      "views": 1022,
-      "createdAt": "26.02.2022",
-      "userId": "1",
+      "title": "consectetur aliqua qui laboris qui amet",
+      "subtitle": "Nisi esse laborum esse ullamco laboris esse eiusmod enim.",
+      "img": "https://picsum.photos/920/300",
+      "views": 1740,
+      "createdAt": "14.06.2022",
+      "userId": "3",
       "type": [
         "ECONOMICS"
       ],
       "blocks": [
         {
           "id": "1",
-          "type": "TEXT",
-          "title": "Заголовок этого блока",
+          "type": "CODE",
+          "title": "Esse nostrud in deserunt dolor sint anim reprehenderit officia ex amet esse.",
+          "code": "<!DOCTYPE html>\n<html>\n  <body>\n    <p id=\"hello\"></p>\n    <script>\n      document.getElementById(\"hello\").innerHTML = \"Hello, world!\";\n    </script>\n  </body>\n</html>;",
+          "src": "https://picsum.photos/920/300",
           "paragraphs": [
-            "Программа, которую по традиции называют «Hello, world!», очень проста. Она выводит куда-либо фразу «Hello, world!», или другую подобную, средствами некоего языка.",
-            "JavaScript — это язык, программы на котором можно выполнять в разных средах. В нашем случае речь идёт о браузерах и о серверной платформе Node.js. Если до сих пор вы не написали ни строчки кода на JS и читаете этот текст в браузере, на настольном компьютере, это значит, что вы буквально в считанных секундах от своей первой JavaScript-программы.",
-            "Существуют и другие способы запуска JS-кода в браузере. Так, если говорить об обычном использовании программ на JavaScript, они загружаются в браузер для обеспечения работы веб-страниц. Как правило, код оформляют в виде отдельных файлов с расширением .js, которые подключают к веб-страницам, но программный код можно включать и непосредственно в код страницы. Всё это делается с помощью тега <script>. Когда браузер обнаруживает такой код, он выполняет его. Подробности о теге script можно посмотреть на сайте w3school.com. В частности, рассмотрим пример, демонстрирующий работу с веб-страницей средствами JavaScript, приведённый на этом ресурсе. Этот пример можно запустить и средствами данного ресурса (ищите кнопку Try it Yourself), но мы поступим немного иначе. А именно, создадим в каком-нибудь текстовом редакторе (например — в VS Code или в Notepad++) новый файл, который назовём hello.html, и добавим в него следующий код:"
+            "Minim magna qui ea id fugiat aute ea labore cupidatat culpa non consectetur. Voluptate laboris ullamco magna qui ipsum culpa id. Laboris fugiat esse nostrud sint incididunt incididunt aliquip. Fugiat fugiat in pariatur excepteur proident officia est. Pariatur qui mollit irure culpa in duis magna occaecat proident nulla laborum aliqua fugiat ut. Ullamco pariatur adipisicing enim et esse occaecat aute voluptate.",
+            "Laboris occaecat tempor nisi enim commodo in veniam id id quis commodo velit. Dolore laborum sit velit voluptate. Nostrud ullamco pariatur pariatur magna commodo consequat tempor consectetur laborum magna est aliqua amet. Id veniam fugiat sunt Lorem irure irure nulla veniam mollit laboris voluptate.",
+            "Officia et enim dolore laborum sit culpa nostrud. Labore laboris nisi minim laborum cupidatat ipsum laboris pariatur fugiat eu labore ipsum velit. Magna enim fugiat occaecat in. Voluptate veniam duis ipsum nisi mollit. Laboris aliqua magna in deserunt. Minim fugiat incididunt est velit minim ea qui sunt do."
+          ]
+        },
+        {
+          "id": "2",
+          "type": "TEXT",
+          "title": "Tempor dolor eiusmod aliquip deserunt consequat ex reprehenderit nisi.",
+          "code": "<!DOCTYPE html>\n<html>\n  <body>\n    <p id=\"hello\"></p>\n    <script>\n      document.getElementById(\"hello\").innerHTML = \"Hello, world!\";\n    </script>\n  </body>\n</html>;",
+          "src": "https://picsum.photos/920/300",
+          "paragraphs": [
+            "Consequat proident ea officia enim nulla laborum laboris est. Amet magna adipisicing aliquip voluptate Lorem. Eu occaecat aliquip proident ad aliqua proident qui exercitation commodo adipisicing aliqua magna elit culpa. Quis aliqua ut incididunt adipisicing nisi anim aliqua ipsum ipsum ex et Lorem nulla cillum. Ex aute officia labore excepteur esse anim ullamco voluptate commodo do. Do voluptate voluptate consequat deserunt ullamco culpa labore.",
+            "Aute sunt ex in aliqua. Ipsum Lorem commodo exercitation occaecat labore dolor officia sint sint. Sit minim culpa ad velit irure veniam. Aute sint veniam ullamco fugiat est labore cupidatat culpa aute magna dolore aliqua. Labore exercitation sit mollit velit proident adipisicing voluptate eiusmod irure laboris. Commodo consectetur anim tempor qui ipsum nisi exercitation minim consectetur est. Culpa magna id voluptate in pariatur nostrud."
+          ]
+        },
+        {
+          "id": "3",
+          "type": "CODE",
+          "title": "Enim commodo amet consectetur sunt irure ullamco amet cillum occaecat nisi veniam elit ad.",
+          "code": "<!DOCTYPE html>\n<html>\n  <body>\n    <p id=\"hello\"></p>\n    <script>\n      document.getElementById(\"hello\").innerHTML = \"Hello, world!\";\n    </script>\n  </body>\n</html>;",
+          "src": "https://picsum.photos/920/300",
+          "paragraphs": [
+            "Minim eu in incididunt magna aliqua velit reprehenderit sunt labore voluptate exercitation. Mollit minim cupidatat veniam eiusmod mollit irure. Laboris mollit laboris aliqua duis occaecat do labore occaecat. Pariatur qui sint consequat irure qui esse. Irure pariatur ex mollit id nulla laborum ipsum non ullamco adipisicing. Fugiat do ut id reprehenderit nisi nisi laborum quis aute. Do velit nostrud sit nisi.",
+            "Eu adipisicing nulla ullamco nulla proident exercitation qui sunt Lorem consectetur do consectetur. Tempor occaecat commodo et nulla dolor Lorem incididunt veniam incididunt magna. Incididunt dolor veniam proident ex minim excepteur nulla adipisicing id Lorem. Non ut laboris eiusmod nulla. In dolore dolore sit ipsum commodo ea qui et fugiat consequat elit. Ea id excepteur anim anim sunt occaecat enim aliquip ad pariatur ex commodo excepteur dolor.",
+            "Non do ullamco aliqua duis ut laborum. Duis adipisicing nulla in cillum. Id Lorem eu ipsum consectetur laboris duis commodo ut occaecat. Commodo nostrud duis Lorem sunt consectetur officia ex excepteur sit in magna cupidatat aliquip. Minim laboris tempor proident adipisicing. Enim adipisicing dolore id aliquip."
+          ]
+        },
+        {
+          "id": "4",
+          "type": "IMAGE",
+          "title": "Laborum nulla nulla elit eu nostrud magna mollit cillum laboris officia aliqua labore magna.",
+          "code": "<!DOCTYPE html>\n<html>\n  <body>\n    <p id=\"hello\"></p>\n    <script>\n      document.getElementById(\"hello\").innerHTML = \"Hello, world!\";\n    </script>\n  </body>\n</html>;",
+          "src": "https://picsum.photos/920/300",
+          "paragraphs": [
+            "Labore est ipsum sunt culpa minim pariatur adipisicing officia. Sint Lorem excepteur mollit culpa labore qui Lorem incididunt dolor. Nostrud voluptate minim nulla elit laboris labore ea. Occaecat dolore id eu sunt nostrud ut do nisi esse sint fugiat Lorem nulla eiusmod.",
+            "Minim aute nostrud ea nulla in veniam consequat minim. Amet irure dolore adipisicing dolore anim quis velit incididunt id incididunt incididunt id ex reprehenderit. Proident laborum consectetur culpa anim non occaecat. Consequat excepteur excepteur elit exercitation sunt proident dolore cupidatat duis proident non officia. Aute eiusmod laboris quis exercitation occaecat adipisicing velit id laborum labore qui officia ex velit. Velit dolor laborum id velit anim."
           ]
         }
       ]
     },
     {
-      "id": "18",
-      "title": "Научная статья - Биология",
-      "subtitle": "БиологиЯ",
-      "img": "https://img.freepik.com/free-vector/science-word-theme_23-2148540555.jpg?w=2000",
-      "views": 1022,
-      "createdAt": "26.02.2022",
+      "id": "6",
+      "title": "aliqua dolore quis nulla do quis",
+      "subtitle": "Consequat incididunt nostrud enim consequat exercitation ullamco ea enim.",
+      "img": "https://picsum.photos/920/300",
+      "views": 4144,
+      "createdAt": "30.06.2022",
+      "userId": "5",
+      "type": [
+        "ECONOMICS"
+      ],
+      "blocks": [
+        {
+          "id": "1",
+          "type": "CODE",
+          "title": "Ut dolor occaecat quis aliquip elit Lorem aliqua ut nostrud ea proident dolore.",
+          "code": "<!DOCTYPE html>\n<html>\n  <body>\n    <p id=\"hello\"></p>\n    <script>\n      document.getElementById(\"hello\").innerHTML = \"Hello, world!\";\n    </script>\n  </body>\n</html>;",
+          "src": "https://picsum.photos/920/300",
+          "paragraphs": [
+            "Duis consequat officia Lorem labore exercitation veniam dolor nulla non dolore dolor laboris enim laboris. Aute cupidatat adipisicing in id dolor pariatur labore ut exercitation commodo. Exercitation qui do eiusmod esse officia nulla ipsum amet ipsum. Reprehenderit et irure elit irure adipisicing nostrud culpa sint sunt aliquip id do. Duis anim tempor id excepteur voluptate. Enim pariatur Lorem laborum minim irure veniam sit consequat ipsum non exercitation nostrud sunt minim.",
+            "Elit voluptate occaecat proident fugiat. Deserunt irure voluptate commodo consectetur consectetur reprehenderit ut laborum nulla ea consectetur veniam. Officia fugiat eu labore eu elit sit Lorem duis est elit eiusmod velit magna. Occaecat do non incididunt dolore ipsum excepteur mollit ex exercitation cupidatat."
+          ]
+        },
+        {
+          "id": "2",
+          "type": "CODE",
+          "title": "Veniam nisi fugiat incididunt sit labore eiusmod irure voluptate tempor.",
+          "code": "<!DOCTYPE html>\n<html>\n  <body>\n    <p id=\"hello\"></p>\n    <script>\n      document.getElementById(\"hello\").innerHTML = \"Hello, world!\";\n    </script>\n  </body>\n</html>;",
+          "src": "https://picsum.photos/920/300",
+          "paragraphs": [
+            "Duis adipisicing in culpa esse dolore nulla et eu laboris do cupidatat consequat. Incididunt qui sit reprehenderit ad irure ea nisi nisi occaecat ut ad sunt. Officia quis laborum do duis cupidatat sit cillum. Et sint proident aute duis ullamco esse laboris ut velit. Nostrud exercitation labore est ullamco culpa Lorem qui esse. Nostrud quis dolore ex sunt do consectetur id adipisicing ea Lorem. In ex labore est nostrud ullamco enim velit esse cupidatat culpa.",
+            "Enim qui ea esse ad velit pariatur adipisicing sint. Ipsum anim anim do laborum velit incididunt eu ex laboris aute magna et enim consectetur. Sunt ex nulla quis qui. Enim eu esse tempor pariatur sint eu consectetur adipisicing velit et tempor esse. Nostrud mollit nulla est cupidatat ullamco nulla amet magna tempor culpa excepteur quis aliqua fugiat. Deserunt commodo duis Lorem ex tempor sint eiusmod excepteur sunt id sunt."
+          ]
+        },
+        {
+          "id": "3",
+          "type": "IMAGE",
+          "title": "Cillum veniam labore eu dolor officia reprehenderit consequat cupidatat nostrud consectetur cillum nulla.",
+          "code": "<!DOCTYPE html>\n<html>\n  <body>\n    <p id=\"hello\"></p>\n    <script>\n      document.getElementById(\"hello\").innerHTML = \"Hello, world!\";\n    </script>\n  </body>\n</html>;",
+          "src": "https://picsum.photos/920/300",
+          "paragraphs": [
+            "Officia esse sint incididunt amet non ut eu commodo. Proident adipisicing sint consectetur amet dolor ut consectetur officia sit nisi amet labore minim. Labore exercitation quis elit anim ullamco deserunt occaecat consequat sint ea. Commodo sint cillum consectetur irure in officia ipsum aliquip elit aliqua magna. Commodo deserunt ullamco est sit culpa anim cupidatat irure voluptate exercitation deserunt. Nulla sint minim consequat qui velit. Fugiat deserunt proident cupidatat irure proident in incididunt voluptate cupidatat cupidatat enim."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "7",
+      "title": "mollit mollit cupidatat voluptate sit sint",
+      "subtitle": "Nisi in quis Lorem cillum cupidatat.",
+      "img": "https://picsum.photos/920/300",
+      "views": 3351,
+      "createdAt": "18.07.2022",
       "userId": "1",
+      "type": [
+        "IT",
+        "ECONOMICS"
+      ],
+      "blocks": [
+        {
+          "id": "1",
+          "type": "IMAGE",
+          "title": "Proident ipsum cillum do cupidatat magna irure Lorem exercitation nulla.",
+          "code": "<!DOCTYPE html>\n<html>\n  <body>\n    <p id=\"hello\"></p>\n    <script>\n      document.getElementById(\"hello\").innerHTML = \"Hello, world!\";\n    </script>\n  </body>\n</html>;",
+          "src": "https://picsum.photos/920/300",
+          "paragraphs": [
+            "Dolor sit labore consequat enim et officia do ea aliquip. Voluptate veniam ullamco aliquip incididunt irure fugiat. Esse velit mollit minim ea laborum. Sint sunt do incididunt aliqua velit.",
+            "Voluptate in eiusmod officia cupidatat enim eu dolore et in sit. Irure et cillum cillum cillum aliqua mollit id deserunt. Anim ad et exercitation aute laboris commodo amet irure elit ex esse.",
+            "Duis voluptate fugiat sint quis reprehenderit minim enim amet officia qui ut fugiat in. Aute nostrud nisi incididunt excepteur tempor id enim voluptate reprehenderit tempor dolor quis. In sit excepteur ut ullamco ad exercitation ut id voluptate reprehenderit labore pariatur. Aute sunt proident mollit consequat quis reprehenderit sit eiusmod."
+          ]
+        },
+        {
+          "id": "2",
+          "type": "CODE",
+          "title": "Commodo nulla culpa sint nulla labore occaecat ipsum eiusmod quis.",
+          "code": "<!DOCTYPE html>\n<html>\n  <body>\n    <p id=\"hello\"></p>\n    <script>\n      document.getElementById(\"hello\").innerHTML = \"Hello, world!\";\n    </script>\n  </body>\n</html>;",
+          "src": "https://picsum.photos/920/300",
+          "paragraphs": [
+            "Adipisicing do id pariatur aute pariatur id veniam. Adipisicing fugiat nostrud cillum ad. Consequat reprehenderit cillum ipsum irure culpa. Do non enim voluptate anim laborum cupidatat et in consectetur laboris mollit cillum consectetur. Deserunt aliqua magna consequat mollit eiusmod ipsum consectetur labore minim et. Laborum ullamco quis do amet proident commodo aliquip et do ad enim. Qui exercitation quis ea consectetur cillum sunt.",
+            "Sit nisi consectetur exercitation exercitation reprehenderit velit. Esse ex nostrud velit ad fugiat nostrud commodo irure enim do dolor fugiat laboris officia. Nisi cupidatat anim id Lorem aute dolore in. In consectetur proident excepteur sint dolore do eu sit sint tempor. Ex Lorem sint dolore sunt sunt deserunt aliquip cupidatat esse do veniam elit dolore officia. Consequat commodo qui ut ut ullamco ut velit sit.",
+            "Tempor labore laboris ea culpa. Exercitation commodo incididunt ex cupidatat veniam quis ea velit. Consequat pariatur sit cupidatat elit esse in. Irure et in excepteur excepteur adipisicing culpa exercitation officia laboris nulla consectetur. Minim deserunt reprehenderit minim dolore reprehenderit nostrud proident adipisicing incididunt."
+          ]
+        },
+        {
+          "id": "3",
+          "type": "CODE",
+          "title": "Adipisicing ullamco elit aliqua aliqua deserunt veniam id culpa.",
+          "code": "<!DOCTYPE html>\n<html>\n  <body>\n    <p id=\"hello\"></p>\n    <script>\n      document.getElementById(\"hello\").innerHTML = \"Hello, world!\";\n    </script>\n  </body>\n</html>;",
+          "src": "https://picsum.photos/920/300",
+          "paragraphs": [
+            "Lorem nulla adipisicing elit incididunt elit labore id mollit consectetur eu. Nulla aliquip pariatur dolore sit non adipisicing duis exercitation. Officia ipsum consectetur et velit adipisicing aliqua dolor duis amet esse.",
+            "Magna nisi eiusmod ad qui. Lorem pariatur officia sint do tempor ipsum eu. Non velit officia tempor enim do minim dolore eiusmod ut tempor aute incididunt culpa."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "8",
+      "title": "consequat excepteur ullamco aliquip adipisicing minim",
+      "subtitle": "Excepteur reprehenderit commodo Lorem irure commodo eu veniam cillum labore eu est.",
+      "img": "https://picsum.photos/920/300",
+      "views": 4083,
+      "createdAt": "21.09.2022",
+      "userId": "3",
+      "type": [
+        "IT",
+        "SCIENCE"
+      ],
+      "blocks": [
+        {
+          "id": "1",
+          "type": "TEXT",
+          "title": "Occaecat sit esse laborum labore non ad non aliquip quis quis officia sit enim tempor.",
+          "code": "<!DOCTYPE html>\n<html>\n  <body>\n    <p id=\"hello\"></p>\n    <script>\n      document.getElementById(\"hello\").innerHTML = \"Hello, world!\";\n    </script>\n  </body>\n</html>;",
+          "src": "https://picsum.photos/920/300",
+          "paragraphs": [
+            "Tempor proident ipsum reprehenderit proident quis. Irure ut cillum ut mollit et exercitation ad officia cupidatat proident veniam proident. Eu qui esse laboris magna aliquip Lorem. Magna proident anim ullamco do cupidatat mollit fugiat laborum adipisicing. Nostrud incididunt id do quis ipsum qui qui ex id dolor reprehenderit est. Pariatur consequat commodo proident dolore voluptate Lorem culpa amet voluptate ipsum."
+          ]
+        },
+        {
+          "id": "2",
+          "type": "IMAGE",
+          "title": "Aliqua nisi fugiat nisi non consequat reprehenderit non.",
+          "code": "<!DOCTYPE html>\n<html>\n  <body>\n    <p id=\"hello\"></p>\n    <script>\n      document.getElementById(\"hello\").innerHTML = \"Hello, world!\";\n    </script>\n  </body>\n</html>;",
+          "src": "https://picsum.photos/920/300",
+          "paragraphs": [
+            "Ad irure cupidatat sunt proident laboris deserunt duis adipisicing velit cupidatat ullamco consectetur commodo. Nostrud et culpa proident sint ad. Laboris nostrud esse incididunt dolore.",
+            "Ea Lorem anim sunt cupidatat commodo eu proident commodo. Exercitation eiusmod aliquip duis fugiat voluptate est sit fugiat ad. Veniam qui occaecat ullamco magna amet tempor eu. Adipisicing commodo ea laborum mollit Lorem aliquip duis adipisicing cillum mollit sunt.",
+            "Eu id officia cillum do ut. Nostrud elit proident nostrud ad amet. Nulla Lorem nisi reprehenderit esse veniam officia in minim ex laboris proident."
+          ]
+        },
+        {
+          "id": "3",
+          "type": "TEXT",
+          "title": "Laborum esse dolor minim ad elit id dolore est et dolor velit dolore pariatur.",
+          "code": "<!DOCTYPE html>\n<html>\n  <body>\n    <p id=\"hello\"></p>\n    <script>\n      document.getElementById(\"hello\").innerHTML = \"Hello, world!\";\n    </script>\n  </body>\n</html>;",
+          "src": "https://picsum.photos/920/300",
+          "paragraphs": [
+            "Aliqua est nisi dolore culpa sit adipisicing ut. Qui reprehenderit id cillum laborum labore magna nisi sunt aliqua. Et et veniam sint sint culpa aute pariatur. Fugiat est officia culpa excepteur elit officia ea ex. Proident excepteur incididunt tempor enim ad. Consequat sit occaecat exercitation incididunt irure aliquip tempor velit quis veniam.",
+            "Esse magna velit aliqua commodo. Quis amet voluptate nulla nisi. In ad irure proident sint id in non minim tempor ullamco velit nisi aliquip. Minim deserunt labore exercitation quis. Sit do amet aliqua elit ea cillum duis Lorem. Aliqua id nisi in amet sunt ullamco laboris exercitation exercitation incididunt reprehenderit.",
+            "Sint ut non cupidatat non occaecat cillum esse sint in non do. Voluptate irure culpa enim consectetur. Consectetur fugiat mollit aute quis cillum proident exercitation sint veniam mollit nulla reprehenderit sit culpa. Velit mollit minim tempor officia consequat officia. Voluptate est ut nisi cupidatat anim nisi in enim cillum cupidatat exercitation sit sit id. Sint exercitation sint deserunt tempor aliqua. Id eu ut eiusmod voluptate ea voluptate commodo ut eiusmod labore."
+          ]
+        },
+        {
+          "id": "4",
+          "type": "TEXT",
+          "title": "Esse voluptate deserunt nulla aliquip ad ipsum in.",
+          "code": "<!DOCTYPE html>\n<html>\n  <body>\n    <p id=\"hello\"></p>\n    <script>\n      document.getElementById(\"hello\").innerHTML = \"Hello, world!\";\n    </script>\n  </body>\n</html>;",
+          "src": "https://picsum.photos/920/300",
+          "paragraphs": [
+            "Culpa veniam id ipsum non elit commodo ipsum consequat ullamco adipisicing officia enim aute. Culpa culpa sit non anim ipsum et duis laboris anim. Et laboris incididunt est nostrud labore laborum aliqua. Est ullamco aute anim nostrud sint cillum occaecat cillum proident. Aliquip occaecat aute et et reprehenderit sunt. Anim non exercitation velit aliquip occaecat. In cupidatat consequat ut esse ad mollit laboris.",
+            "Eu deserunt anim ullamco occaecat. Enim enim aute esse id nostrud amet reprehenderit esse sunt exercitation. Ad deserunt nulla consequat tempor labore pariatur. Incididunt incididunt aliquip veniam cillum laboris veniam ullamco Lorem ea ipsum tempor officia.",
+            "Adipisicing amet velit proident ea sit culpa exercitation excepteur ex ea. Exercitation labore deserunt aute excepteur sit mollit consectetur. Sunt consequat ea do aute veniam commodo duis aute laborum. Culpa occaecat veniam sit in et ea. Labore et proident dolor tempor veniam adipisicing dolor elit. Veniam incididunt ipsum aliqua eiusmod ipsum fugiat non culpa occaecat deserunt aliqua eiusmod."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "9",
+      "title": "dolor ut elit qui labore veniam",
+      "subtitle": "Ad incididunt reprehenderit consequat cupidatat aliqua amet nisi magna sunt.",
+      "img": "https://picsum.photos/920/300",
+      "views": 4582,
+      "createdAt": "09.07.2022",
+      "userId": "3",
+      "type": [
+        "ECONOMICS",
+        "IT",
+        "POLITICS"
+      ],
+      "blocks": [
+        {
+          "id": "1",
+          "type": "IMAGE",
+          "title": "Dolor culpa est incididunt esse incididunt ad ullamco.",
+          "code": "<!DOCTYPE html>\n<html>\n  <body>\n    <p id=\"hello\"></p>\n    <script>\n      document.getElementById(\"hello\").innerHTML = \"Hello, world!\";\n    </script>\n  </body>\n</html>;",
+          "src": "https://picsum.photos/920/300",
+          "paragraphs": [
+            "Cupidatat culpa incididunt dolor mollit tempor consequat velit. Ullamco aute ea do cillum sint esse consequat ad incididunt. Nulla qui incididunt exercitation adipisicing. Consequat labore est dolore proident magna dolor minim ipsum reprehenderit sint. Elit tempor voluptate aliquip nisi minim pariatur sit fugiat velit culpa proident officia.",
+            "Dolor et qui voluptate ut irure fugiat sunt veniam reprehenderit officia do. Cupidatat tempor mollit laboris ea cupidatat. Minim magna ipsum pariatur nostrud eiusmod elit. Adipisicing consequat reprehenderit sit quis laborum ad.",
+            "Et eiusmod anim consectetur aliquip sit elit culpa tempor cupidatat commodo do ex voluptate. Exercitation id ad ex dolor nisi voluptate reprehenderit nostrud consequat fugiat qui culpa tempor qui. Qui enim ad qui nostrud nisi amet. Consectetur quis ea cupidatat elit commodo id ut anim sunt culpa velit laborum aliqua. Cupidatat dolor occaecat proident nostrud deserunt quis proident minim quis ut sunt irure fugiat."
+          ]
+        },
+        {
+          "id": "2",
+          "type": "IMAGE",
+          "title": "Do duis enim Lorem labore fugiat irure amet laborum nostrud nisi.",
+          "code": "<!DOCTYPE html>\n<html>\n  <body>\n    <p id=\"hello\"></p>\n    <script>\n      document.getElementById(\"hello\").innerHTML = \"Hello, world!\";\n    </script>\n  </body>\n</html>;",
+          "src": "https://picsum.photos/920/300",
+          "paragraphs": [
+            "Ut ex quis cillum elit dolore deserunt eiusmod eiusmod aliqua enim quis commodo mollit exercitation. Duis quis officia reprehenderit aliquip incididunt fugiat. Cupidatat mollit ex ad deserunt occaecat incididunt est consequat commodo et occaecat enim aute eiusmod. Aute est duis sunt ad consequat nostrud velit. Irure labore amet non tempor deserunt in nulla Lorem fugiat adipisicing est Lorem aute. Fugiat dolore pariatur duis deserunt ad ullamco minim. Nostrud laboris deserunt velit fugiat.",
+            "Elit elit sunt est sint nostrud minim elit est amet adipisicing. Magna tempor est exercitation excepteur commodo elit veniam sunt veniam incididunt ea nisi. Ea ea cupidatat eiusmod consequat exercitation aute. Sunt qui magna velit do consectetur laborum ullamco ipsum excepteur elit consectetur."
+          ]
+        },
+        {
+          "id": "3",
+          "type": "CODE",
+          "title": "Eiusmod eiusmod velit aute ea sunt.",
+          "code": "<!DOCTYPE html>\n<html>\n  <body>\n    <p id=\"hello\"></p>\n    <script>\n      document.getElementById(\"hello\").innerHTML = \"Hello, world!\";\n    </script>\n  </body>\n</html>;",
+          "src": "https://picsum.photos/920/300",
+          "paragraphs": [
+            "Incididunt elit dolore minim ea ut nisi eu ipsum ex anim excepteur. Anim velit et qui pariatur sunt. Qui est eiusmod elit ad aliquip aute sint est dolor ipsum cillum. Sit culpa quis magna cupidatat proident officia ea velit consequat laborum fugiat excepteur labore occaecat. Culpa qui sunt sunt dolor aute. Dolore aliquip excepteur in dolor minim dolor dolor id voluptate nulla deserunt. Enim non aute ut veniam adipisicing in velit."
+          ]
+        },
+        {
+          "id": "4",
+          "type": "CODE",
+          "title": "Culpa incididunt fugiat incididunt culpa est proident excepteur cillum adipisicing nisi sunt aliqua cupidatat aute.",
+          "code": "<!DOCTYPE html>\n<html>\n  <body>\n    <p id=\"hello\"></p>\n    <script>\n      document.getElementById(\"hello\").innerHTML = \"Hello, world!\";\n    </script>\n  </body>\n</html>;",
+          "src": "https://picsum.photos/920/300",
+          "paragraphs": [
+            "Ea aute ipsum excepteur fugiat ea deserunt id occaecat mollit labore Lorem in. Incididunt do elit voluptate sit velit ex deserunt exercitation. Mollit commodo reprehenderit non irure amet eiusmod. Eiusmod non dolore ullamco voluptate laborum do qui est sint dolore minim."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "10",
+      "title": "irure laboris velit dolor proident voluptate",
+      "subtitle": "Anim cupidatat adipisicing velit ut id excepteur incididunt laboris adipisicing voluptate ipsum amet.",
+      "img": "https://picsum.photos/920/300",
+      "views": 2506,
+      "createdAt": "06.03.2022",
+      "userId": "2",
       "type": [
         "SCIENCE"
       ],
@@ -541,158 +561,657 @@
         {
           "id": "1",
           "type": "TEXT",
-          "title": "Заголовок этого блока",
+          "title": "Enim anim cillum id pariatur.",
+          "code": "<!DOCTYPE html>\n<html>\n  <body>\n    <p id=\"hello\"></p>\n    <script>\n      document.getElementById(\"hello\").innerHTML = \"Hello, world!\";\n    </script>\n  </body>\n</html>;",
+          "src": "https://picsum.photos/920/300",
           "paragraphs": [
-            "Программа, которую по традиции называют «Hello, world!», очень проста. Она выводит куда-либо фразу «Hello, world!», или другую подобную, средствами некоего языка.",
-            "JavaScript — это язык, программы на котором можно выполнять в разных средах. В нашем случае речь идёт о браузерах и о серверной платформе Node.js. Если до сих пор вы не написали ни строчки кода на JS и читаете этот текст в браузере, на настольном компьютере, это значит, что вы буквально в считанных секундах от своей первой JavaScript-программы.",
-            "Существуют и другие способы запуска JS-кода в браузере. Так, если говорить об обычном использовании программ на JavaScript, они загружаются в браузер для обеспечения работы веб-страниц. Как правило, код оформляют в виде отдельных файлов с расширением .js, которые подключают к веб-страницам, но программный код можно включать и непосредственно в код страницы. Всё это делается с помощью тега <script>. Когда браузер обнаруживает такой код, он выполняет его. Подробности о теге script можно посмотреть на сайте w3school.com. В частности, рассмотрим пример, демонстрирующий работу с веб-страницей средствами JavaScript, приведённый на этом ресурсе. Этот пример можно запустить и средствами данного ресурса (ищите кнопку Try it Yourself), но мы поступим немного иначе. А именно, создадим в каком-нибудь текстовом редакторе (например — в VS Code или в Notepad++) новый файл, который назовём hello.html, и добавим в него следующий код:"
+            "Aliquip nulla deserunt commodo mollit commodo voluptate ea tempor aute do. Deserunt velit sint ex elit deserunt velit. Culpa ipsum ipsum tempor dolor ea minim. Veniam mollit elit adipisicing veniam elit reprehenderit ipsum magna dolore.",
+            "Consectetur fugiat ut excepteur officia. Adipisicing cillum veniam qui minim non nulla sint eiusmod commodo culpa do eiusmod enim fugiat. Nostrud id exercitation aliqua eiusmod in minim in. Duis occaecat labore adipisicing cillum reprehenderit magna nisi aliquip reprehenderit aliquip ut tempor."
+          ]
+        },
+        {
+          "id": "2",
+          "type": "IMAGE",
+          "title": "Exercitation qui deserunt occaecat ex anim labore.",
+          "code": "<!DOCTYPE html>\n<html>\n  <body>\n    <p id=\"hello\"></p>\n    <script>\n      document.getElementById(\"hello\").innerHTML = \"Hello, world!\";\n    </script>\n  </body>\n</html>;",
+          "src": "https://picsum.photos/920/300",
+          "paragraphs": [
+            "Ipsum nostrud laborum culpa exercitation dolor est occaecat proident. Irure esse culpa nostrud culpa laborum exercitation Lorem fugiat ex quis laboris voluptate. Adipisicing nostrud exercitation laboris velit sit officia non ad anim aliquip mollit sint nostrud. Voluptate labore officia cupidatat velit quis reprehenderit officia ea ad commodo sit in ad nisi. Ad ullamco cupidatat minim sit incididunt excepteur sunt ipsum nisi fugiat irure esse. Voluptate laborum irure nisi ex labore quis Lorem est culpa sint. Fugiat tempor do ut commodo duis."
+          ]
+        },
+        {
+          "id": "3",
+          "type": "IMAGE",
+          "title": "Ex magna incididunt non eu quis commodo non dolor mollit non elit commodo veniam.",
+          "code": "<!DOCTYPE html>\n<html>\n  <body>\n    <p id=\"hello\"></p>\n    <script>\n      document.getElementById(\"hello\").innerHTML = \"Hello, world!\";\n    </script>\n  </body>\n</html>;",
+          "src": "https://picsum.photos/920/300",
+          "paragraphs": [
+            "Enim mollit elit qui anim elit. Id Lorem esse ea proident adipisicing elit dolore sunt qui dolor elit ut. Est velit excepteur nulla pariatur esse aliquip minim qui magna do ipsum officia.",
+            "Adipisicing sunt in velit in Lorem. Dolore enim minim laborum ex ad in irure non minim id. Do ex qui sunt fugiat occaecat eiusmod aliqua exercitation ipsum laborum elit commodo. Dolor eu cupidatat sint minim occaecat ad eiusmod id voluptate. Officia ad aliqua qui Lorem amet anim commodo non deserunt aliqua ullamco ex voluptate."
+          ]
+        },
+        {
+          "id": "4",
+          "type": "CODE",
+          "title": "Reprehenderit sunt minim aute elit Lorem pariatur ullamco tempor excepteur aute voluptate ullamco.",
+          "code": "<!DOCTYPE html>\n<html>\n  <body>\n    <p id=\"hello\"></p>\n    <script>\n      document.getElementById(\"hello\").innerHTML = \"Hello, world!\";\n    </script>\n  </body>\n</html>;",
+          "src": "https://picsum.photos/920/300",
+          "paragraphs": [
+            "Est enim deserunt nulla deserunt commodo fugiat enim. Duis pariatur laboris sint et excepteur fugiat id anim aute. Sint est laborum adipisicing excepteur tempor tempor. Adipisicing labore ea irure elit sit aute. Id ullamco nulla culpa excepteur eu sunt aliqua proident dolor commodo tempor ut tempor. Id nulla aute qui elit qui proident. Laborum anim et occaecat labore elit et ea.",
+            "Commodo velit nulla aute ipsum irure magna nisi nostrud culpa quis ad fugiat. Non commodo laborum fugiat do nostrud nisi aliquip eu. Do cupidatat aute in est laboris in excepteur veniam et. Esse sint reprehenderit voluptate consequat mollit occaecat. Sit incididunt aliqua non anim quis nostrud consectetur velit tempor culpa. Est ullamco nostrud pariatur duis irure consequat velit nostrud nostrud ipsum commodo irure amet.",
+            "Id nulla est irure velit adipisicing enim cillum cillum sunt exercitation velit fugiat nisi consectetur. Amet culpa excepteur mollit labore aute mollit dolore Lorem proident sunt aliqua. Voluptate anim proident magna velit esse. Do in officia culpa sunt nisi sint. Occaecat aliqua id id excepteur mollit et ullamco eiusmod nisi voluptate pariatur minim laborum. Mollit Lorem consectetur labore minim dolore nisi consectetur consectetur eiusmod consectetur exercitation dolore anim."
           ]
         }
       ]
-    },
-    {
-      "title": "TESTING ARTICLE",
-      "subtitle": "БиологиЯ",
-      "img": "https://avatars.mds.yandex.net/get-zen_doc/2746556/pub_5f50dd7e1a1ddf4776aa5569_5f50decd2506f211d1de6284/scale_1200",
-      "views": 1022,
-      "createdAt": "26.02.2022",
-      "userId": "1",
-      "type": [
-        "SCIENCE"
-      ],
-      "blocks": [],
-      "id": "4hbZuPA"
-    },
-    {
-      "title": "TESTING ARTICLE",
-      "subtitle": "БиологиЯ",
-      "img": "https://avatars.mds.yandex.net/get-zen_doc/2746556/pub_5f50dd7e1a1ddf4776aa5569_5f50decd2506f211d1de6284/scale_1200",
-      "views": 1022,
-      "createdAt": "26.02.2022",
-      "userId": "1",
-      "type": [
-        "SCIENCE"
-      ],
-      "blocks": [],
-      "id": "Mkl1TdI"
-    },
-    {
-      "title": "TESTING ARTICLE",
-      "subtitle": "БиологиЯ",
-      "img": "https://avatars.mds.yandex.net/get-zen_doc/2746556/pub_5f50dd7e1a1ddf4776aa5569_5f50decd2506f211d1de6284/scale_1200",
-      "views": 1022,
-      "createdAt": "26.02.2022",
-      "userId": "1",
-      "type": [
-        "SCIENCE"
-      ],
-      "blocks": [],
-      "id": "4JGIZuz"
     }
   ],
   "comments": [
     {
       "id": "1",
-      "text": "some comment",
-      "articleId": "1",
-      "userId": "1"
+      "text": "Id eiusmod nisi culpa sint labore sint et ut dolore ullamco reprehenderit sit.",
+      "articleId": "8",
+      "userId": "4"
     },
     {
       "id": "2",
-      "text": "some comment 2",
-      "articleId": "1",
+      "text": "Id cillum officia ex mollit nostrud fugiat consectetur cupidatat incididunt magna labore.",
+      "articleId": "2",
       "userId": "1"
     },
     {
       "id": "3",
-      "text": "some comment 3",
+      "text": "Amet nisi fugiat id velit fugiat sint sit amet elit dolore.",
+      "articleId": "4",
+      "userId": "3"
+    },
+    {
+      "id": "4",
+      "text": "Laborum nisi voluptate quis fugiat dolor aute non consequat exercitation nulla reprehenderit amet officia reprehenderit.",
+      "articleId": "7",
+      "userId": "3"
+    },
+    {
+      "id": "5",
+      "text": "Aute ipsum dolor occaecat laboris sint.",
+      "articleId": "7",
+      "userId": "1"
+    },
+    {
+      "id": "6",
+      "text": "Ut nulla et aliquip ea minim esse ad duis mollit deserunt sit consectetur eiusmod.",
+      "articleId": "6",
+      "userId": "3"
+    },
+    {
+      "id": "7",
+      "text": "Officia ad fugiat quis excepteur commodo consectetur.",
+      "articleId": "1",
+      "userId": "3"
+    },
+    {
+      "id": "8",
+      "text": "Minim voluptate laborum anim occaecat veniam et.",
+      "articleId": "1",
+      "userId": "4"
+    },
+    {
+      "id": "9",
+      "text": "Anim adipisicing Lorem est reprehenderit enim enim dolore.",
+      "articleId": "2",
+      "userId": "1"
+    },
+    {
+      "id": "10",
+      "text": "Pariatur laboris laboris ea laboris minim aliqua nostrud commodo.",
+      "articleId": "4",
+      "userId": "3"
+    },
+    {
+      "id": "11",
+      "text": "Eiusmod nisi voluptate consequat Lorem Lorem amet deserunt in cupidatat magna.",
+      "articleId": "3",
+      "userId": "2"
+    },
+    {
+      "id": "12",
+      "text": "Ipsum enim esse occaecat eu aute aute ex tempor ullamco cillum dolore et.",
+      "articleId": "10",
+      "userId": "4"
+    },
+    {
+      "id": "13",
+      "text": "Cillum adipisicing Lorem ea ad laborum labore ad duis quis culpa occaecat eu ad sint.",
+      "articleId": "6",
+      "userId": "1"
+    },
+    {
+      "id": "14",
+      "text": "Est cillum enim ex quis non tempor officia voluptate sint non.",
+      "articleId": "6",
+      "userId": "1"
+    },
+    {
+      "id": "15",
+      "text": "Proident ut exercitation duis nisi anim eu ullamco ipsum officia reprehenderit nisi do ea elit.",
+      "articleId": "6",
+      "userId": "2"
+    },
+    {
+      "id": "16",
+      "text": "Sunt esse voluptate ullamco consectetur est voluptate voluptate aliquip ipsum elit ut ea et.",
+      "articleId": "9",
+      "userId": "4"
+    },
+    {
+      "id": "17",
+      "text": "Nisi labore in exercitation sint ea ipsum nisi.",
+      "articleId": "5",
+      "userId": "4"
+    },
+    {
+      "id": "18",
+      "text": "Sint incididunt consectetur proident eiusmod consectetur consectetur amet commodo magna laborum do duis velit.",
+      "articleId": "9",
+      "userId": "2"
+    },
+    {
+      "id": "19",
+      "text": "Nulla enim minim elit pariatur id culpa.",
+      "articleId": "6",
+      "userId": "3"
+    },
+    {
+      "id": "20",
+      "text": "Velit in sunt amet consequat anim cupidatat nostrud commodo deserunt do ex sint culpa ex.",
+      "articleId": "10",
+      "userId": "4"
+    },
+    {
+      "id": "21",
+      "text": "Lorem enim velit Lorem ex minim occaecat sit magna mollit dolore incididunt elit.",
       "articleId": "1",
       "userId": "1"
     },
     {
-      "articleId": "1",
-      "userId": "1",
-      "text": "123",
-      "id": "4Cljjzl"
+      "id": "22",
+      "text": "Duis nostrud id ullamco nostrud qui consequat cupidatat non nisi exercitation.",
+      "articleId": "8",
+      "userId": "4"
     },
     {
-      "articleId": "1",
-      "userId": "1",
-      "text": "123asfasf",
-      "id": "AEM4Dvc"
+      "id": "23",
+      "text": "Non et in id anim amet ullamco aliqua eiusmod id tempor eu.",
+      "articleId": "9",
+      "userId": "1"
     },
     {
-      "articleId": "1",
-      "userId": "2",
-      "text": "123asfasf",
-      "id": "IFEOWl0"
+      "id": "24",
+      "text": "Anim enim consequat enim culpa cillum.",
+      "articleId": "8",
+      "userId": "5"
     },
     {
+      "id": "25",
+      "text": "Ex veniam magna veniam ullamco duis enim ex laborum mollit et sit aliqua minim.",
       "articleId": "1",
-      "userId": "2",
-      "text": "привет мир",
-      "id": "dBacYRZ"
+      "userId": "3"
     },
     {
-      "articleId": "1",
-      "userId": "2",
-      "text": "хехехехе",
-      "id": "rBX_C-e"
+      "id": "26",
+      "text": "Culpa consectetur Lorem eu ut exercitation cupidatat duis sint cupidatat officia.",
+      "articleId": "10",
+      "userId": "5"
     },
     {
-      "articleId": "1",
-      "userId": "2",
-      "text": "фыафыа",
-      "id": "5k0ApX-"
+      "id": "27",
+      "text": "Aliqua occaecat aliquip duis sint ad proident ex minim exercitation est.",
+      "articleId": "5",
+      "userId": "5"
     },
     {
-      "articleId": "1",
-      "userId": "2",
-      "text": "sdfsdfsd",
-      "id": "w-HDIRq"
+      "id": "28",
+      "text": "Eiusmod quis nostrud dolor non.",
+      "articleId": "8",
+      "userId": "1"
     },
     {
-      "articleId": "1",
-      "userId": "2",
-      "text": "asdasdasd",
-      "id": "MVvGQoZ"
+      "id": "29",
+      "text": "Velit reprehenderit sunt qui magna in velit sit dolor qui excepteur magna officia Lorem.",
+      "articleId": "3",
+      "userId": "3"
     },
     {
-      "articleId": "1",
-      "userId": "1",
-      "text": "Привет",
-      "id": "YiOaHx0"
-    },
-    {
+      "id": "30",
+      "text": "Lorem aute minim et nulla id anim culpa ullamco laborum ex in est eu.",
       "articleId": "7",
-      "userId": "1",
-      "text": "123",
-      "id": "0UOZEoy"
+      "userId": "2"
     },
     {
-      "articleId": "7",
-      "userId": "1",
-      "text": "asd",
-      "id": "OLjIK3k"
+      "id": "31",
+      "text": "Nisi ex esse labore enim ullamco ad veniam.",
+      "articleId": "2",
+      "userId": "1"
     },
     {
-      "articleId": "7",
-      "userId": "1",
-      "text": "3333",
-      "id": "3aFsXCK"
+      "id": "32",
+      "text": "Et nisi adipisicing Lorem enim ipsum aliqua incididunt est.",
+      "articleId": "1",
+      "userId": "3"
     },
     {
+      "id": "33",
+      "text": "Proident nulla voluptate est fugiat esse enim excepteur.",
+      "articleId": "4",
+      "userId": "4"
+    },
+    {
+      "id": "34",
+      "text": "Eiusmod sunt cillum cupidatat ut sunt ea ad fugiat id enim velit eiusmod anim.",
+      "articleId": "8",
+      "userId": "1"
+    },
+    {
+      "id": "35",
+      "text": "Veniam veniam quis proident irure laboris consectetur consectetur nostrud magna voluptate esse aliquip aute.",
+      "articleId": "10",
+      "userId": "4"
+    },
+    {
+      "id": "36",
+      "text": "Qui excepteur enim eu minim fugiat nostrud duis elit velit sint sint minim nisi non.",
+      "articleId": "4",
+      "userId": "4"
+    },
+    {
+      "id": "37",
+      "text": "Magna voluptate aliqua ut voluptate ad deserunt aute irure commodo.",
+      "articleId": "3",
+      "userId": "3"
+    },
+    {
+      "id": "38",
+      "text": "Mollit incididunt consequat exercitation excepteur elit ipsum qui ea labore reprehenderit sit tempor sit Lorem.",
+      "articleId": "10",
+      "userId": "2"
+    },
+    {
+      "id": "39",
+      "text": "Elit aliquip esse enim voluptate nostrud consectetur sunt quis labore quis et irure.",
+      "articleId": "6",
+      "userId": "3"
+    },
+    {
+      "id": "40",
+      "text": "Amet qui eu adipisicing nostrud ut mollit aute excepteur voluptate et labore ipsum.",
+      "articleId": "10",
+      "userId": "2"
+    },
+    {
+      "id": "41",
+      "text": "Enim occaecat magna non occaecat excepteur adipisicing sint.",
       "articleId": "7",
-      "userId": "1",
-      "text": "asd",
-      "id": "qIgLdZM"
+      "userId": "2"
+    },
+    {
+      "id": "42",
+      "text": "Consequat voluptate laboris duis aliquip ipsum eu proident velit.",
+      "articleId": "7",
+      "userId": "4"
+    },
+    {
+      "id": "43",
+      "text": "Non nulla ex non magna.",
+      "articleId": "8",
+      "userId": "3"
+    },
+    {
+      "id": "44",
+      "text": "Veniam eiusmod in elit incididunt amet nulla fugiat sint ea adipisicing.",
+      "articleId": "10",
+      "userId": "2"
+    },
+    {
+      "id": "45",
+      "text": "Magna pariatur nulla non ipsum voluptate aute ad laborum labore consectetur laborum laboris non.",
+      "articleId": "3",
+      "userId": "4"
+    },
+    {
+      "id": "46",
+      "text": "Aute ullamco occaecat sunt cillum aute commodo irure dolor laboris consequat tempor.",
+      "articleId": "2",
+      "userId": "4"
+    },
+    {
+      "id": "47",
+      "text": "Labore deserunt dolore cupidatat occaecat commodo irure fugiat tempor ex.",
+      "articleId": "6",
+      "userId": "5"
+    },
+    {
+      "id": "48",
+      "text": "Labore fugiat fugiat nostrud ullamco.",
+      "articleId": "6",
+      "userId": "2"
+    },
+    {
+      "id": "49",
+      "text": "Nisi consectetur ipsum adipisicing nulla do aliqua tempor pariatur adipisicing in quis deserunt laboris.",
+      "articleId": "3",
+      "userId": "2"
+    },
+    {
+      "id": "50",
+      "text": "Id labore in laborum commodo non proident nostrud ex consectetur amet.",
+      "articleId": "8",
+      "userId": "3"
+    },
+    {
+      "id": "51",
+      "text": "Voluptate sit tempor aute fugiat veniam laboris cupidatat ullamco cillum nostrud officia sit ea pariatur.",
+      "articleId": "4",
+      "userId": "3"
+    },
+    {
+      "id": "52",
+      "text": "Exercitation excepteur est nulla aute in fugiat nisi cupidatat qui aute enim.",
+      "articleId": "9",
+      "userId": "5"
+    },
+    {
+      "id": "53",
+      "text": "Pariatur dolore in non cupidatat.",
+      "articleId": "2",
+      "userId": "2"
+    },
+    {
+      "id": "54",
+      "text": "Non esse laboris nostrud elit nisi non mollit.",
+      "articleId": "5",
+      "userId": "4"
+    },
+    {
+      "id": "55",
+      "text": "Do et quis culpa id incididunt eu ipsum dolore ex irure.",
+      "articleId": "2",
+      "userId": "1"
+    },
+    {
+      "id": "56",
+      "text": "Sit laborum sit et consectetur laborum qui reprehenderit nostrud ut adipisicing Lorem nostrud eu id.",
+      "articleId": "6",
+      "userId": "2"
+    },
+    {
+      "id": "57",
+      "text": "Magna irure velit nulla ea et et ut dolore.",
+      "articleId": "1",
+      "userId": "1"
+    },
+    {
+      "id": "58",
+      "text": "Ad enim tempor cillum Lorem elit culpa ullamco incididunt id non velit.",
+      "articleId": "8",
+      "userId": "5"
+    },
+    {
+      "id": "59",
+      "text": "Non sit sunt elit est in ipsum ex laboris velit pariatur.",
+      "articleId": "9",
+      "userId": "3"
+    },
+    {
+      "id": "60",
+      "text": "Nisi dolor sit esse excepteur commodo ullamco nulla dolor enim.",
+      "articleId": "7",
+      "userId": "4"
+    },
+    {
+      "id": "61",
+      "text": "In ea pariatur voluptate et exercitation.",
+      "articleId": "4",
+      "userId": "3"
+    },
+    {
+      "id": "62",
+      "text": "Exercitation commodo do magna laboris velit.",
+      "articleId": "1",
+      "userId": "1"
+    },
+    {
+      "id": "63",
+      "text": "Commodo consectetur do exercitation fugiat cupidatat.",
+      "articleId": "6",
+      "userId": "5"
+    },
+    {
+      "id": "64",
+      "text": "Lorem eu commodo id ad ullamco pariatur sint labore magna culpa pariatur eiusmod esse.",
+      "articleId": "7",
+      "userId": "3"
+    },
+    {
+      "id": "65",
+      "text": "Aliqua velit in ut eiusmod pariatur irure qui anim elit.",
+      "articleId": "10",
+      "userId": "3"
+    },
+    {
+      "id": "66",
+      "text": "Est et tempor et esse non dolore labore.",
+      "articleId": "2",
+      "userId": "3"
+    },
+    {
+      "id": "67",
+      "text": "Deserunt exercitation ut excepteur nisi aliqua cupidatat exercitation aliquip.",
+      "articleId": "2",
+      "userId": "1"
+    },
+    {
+      "id": "68",
+      "text": "Minim ex esse laborum aliqua proident irure amet nostrud laborum velit enim.",
+      "articleId": "5",
+      "userId": "1"
+    },
+    {
+      "id": "69",
+      "text": "Veniam dolor consectetur aliquip ut deserunt ea sint.",
+      "articleId": "8",
+      "userId": "5"
+    },
+    {
+      "id": "70",
+      "text": "Officia consequat reprehenderit consequat laborum nisi.",
+      "articleId": "3",
+      "userId": "3"
+    },
+    {
+      "id": "71",
+      "text": "Qui sunt mollit velit anim qui ad cillum qui.",
+      "articleId": "7",
+      "userId": "2"
+    },
+    {
+      "id": "72",
+      "text": "Est eiusmod minim consequat quis duis consectetur cillum culpa.",
+      "articleId": "1",
+      "userId": "3"
+    },
+    {
+      "id": "73",
+      "text": "Consequat sunt in sit eu proident sunt dolor commodo ut commodo consequat reprehenderit.",
+      "articleId": "7",
+      "userId": "5"
+    },
+    {
+      "id": "74",
+      "text": "Cupidatat excepteur tempor commodo nostrud est cupidatat dolor veniam enim.",
+      "articleId": "8",
+      "userId": "2"
+    },
+    {
+      "id": "75",
+      "text": "Qui do laboris nisi in sunt occaecat consequat eiusmod.",
+      "articleId": "2",
+      "userId": "3"
+    },
+    {
+      "id": "76",
+      "text": "Irure ipsum cillum laboris officia eu labore deserunt culpa qui et voluptate nulla excepteur.",
+      "articleId": "5",
+      "userId": "1"
+    },
+    {
+      "id": "77",
+      "text": "Duis laborum esse esse amet qui.",
+      "articleId": "9",
+      "userId": "5"
+    },
+    {
+      "id": "78",
+      "text": "Sint eiusmod sint ullamco duis non elit exercitation pariatur.",
+      "articleId": "6",
+      "userId": "1"
+    },
+    {
+      "id": "79",
+      "text": "Eiusmod esse ea proident et voluptate.",
+      "articleId": "2",
+      "userId": "2"
+    },
+    {
+      "id": "80",
+      "text": "Proident tempor elit aliqua cupidatat elit dolor.",
+      "articleId": "5",
+      "userId": "3"
+    },
+    {
+      "id": "81",
+      "text": "Pariatur occaecat duis fugiat velit eu esse.",
+      "articleId": "1",
+      "userId": "1"
+    },
+    {
+      "id": "82",
+      "text": "Lorem ut aliqua ut aliquip laboris nisi ea Lorem.",
+      "articleId": "3",
+      "userId": "4"
+    },
+    {
+      "id": "83",
+      "text": "Sunt enim veniam deserunt ad Lorem duis aliquip officia qui do magna.",
+      "articleId": "2",
+      "userId": "3"
+    },
+    {
+      "id": "84",
+      "text": "Sit officia consequat esse sit.",
+      "articleId": "3",
+      "userId": "5"
+    },
+    {
+      "id": "85",
+      "text": "Commodo eiusmod veniam et laborum culpa reprehenderit pariatur dolore id.",
+      "articleId": "8",
+      "userId": "5"
+    },
+    {
+      "id": "86",
+      "text": "Ut minim cupidatat fugiat et ex aliqua occaecat et est do adipisicing consectetur nisi eu.",
+      "articleId": "2",
+      "userId": "2"
+    },
+    {
+      "id": "87",
+      "text": "Id ex nostrud dolor sunt anim velit sit veniam duis nostrud sit eiusmod commodo.",
+      "articleId": "2",
+      "userId": "3"
+    },
+    {
+      "id": "88",
+      "text": "Sunt aute elit exercitation esse qui laborum sunt elit Lorem Lorem nostrud.",
+      "articleId": "4",
+      "userId": "3"
+    },
+    {
+      "id": "89",
+      "text": "Nostrud sunt sint veniam anim.",
+      "articleId": "5",
+      "userId": "4"
+    },
+    {
+      "id": "90",
+      "text": "Aliquip id magna enim magna duis.",
+      "articleId": "3",
+      "userId": "3"
+    },
+    {
+      "id": "91",
+      "text": "Minim nostrud sunt reprehenderit reprehenderit consectetur.",
+      "articleId": "8",
+      "userId": "1"
+    },
+    {
+      "id": "92",
+      "text": "Non laboris labore nostrud reprehenderit et ullamco consequat.",
+      "articleId": "6",
+      "userId": "3"
+    },
+    {
+      "id": "93",
+      "text": "Velit incididunt irure ad in reprehenderit duis irure in Lorem reprehenderit occaecat nulla.",
+      "articleId": "5",
+      "userId": "1"
+    },
+    {
+      "id": "94",
+      "text": "Non nulla id ipsum ipsum do incididunt labore reprehenderit.",
+      "articleId": "6",
+      "userId": "5"
+    },
+    {
+      "id": "95",
+      "text": "Laborum duis ut irure Lorem veniam non eu dolore.",
+      "articleId": "2",
+      "userId": "3"
+    },
+    {
+      "id": "96",
+      "text": "Aute ipsum sunt consectetur fugiat consectetur ullamco ex exercitation.",
+      "articleId": "10",
+      "userId": "5"
+    },
+    {
+      "id": "97",
+      "text": "Laboris ad sunt commodo laborum cillum commodo sint deserunt dolor.",
+      "articleId": "8",
+      "userId": "4"
+    },
+    {
+      "id": "98",
+      "text": "Voluptate incididunt officia nulla dolore fugiat.",
+      "articleId": "8",
+      "userId": "1"
+    },
+    {
+      "id": "99",
+      "text": "Laboris reprehenderit cillum labore occaecat Lorem magna.",
+      "articleId": "4",
+      "userId": "3"
+    },
+    {
+      "id": "100",
+      "text": "Voluptate consequat id qui culpa laborum tempor occaecat esse.",
+      "articleId": "7",
+      "userId": "5"
     }
   ],
   "users": [
     {
       "id": "1",
       "username": "admin",
-      "password": "123",
+      "password": "admin",
       "roles": [
         "ADMIN"
       ],
@@ -701,9 +1220,6 @@
         "theme": "app_light_theme",
         "isFirstVisit": true,
         "isArticlePageHasOpened": true
-      },
-      "features": {
-        "isAppRedesigned": true
       }
     },
     {
@@ -713,12 +1229,15 @@
       "roles": [
         "USER"
       ],
-      "avatar": "https://xakep.ru/wp-content/uploads/2018/05/171485/KuroiSH-hacker.jpg"
+      "avatar": "https://xakep.ru/wp-content/uploads/2018/05/171485/KuroiSH-hacker.jpg",
+      "jsonSettings": {
+        "isArticlePageHasOpened": true
+      }
     },
     {
       "id": "3",
       "username": "manager",
-      "password": "123",
+      "password": "manager",
       "roles": [
         "MANAGER"
       ],
@@ -727,7 +1246,16 @@
     {
       "id": "4",
       "username": "testuser",
-      "password": "123",
+      "password": "1234",
+      "roles": [
+        "ADMIN"
+      ],
+      "avatar": "https://xakep.ru/wp-content/uploads/2018/05/171485/KuroiSH-hacker.jpg"
+    },
+    {
+      "id": "5",
+      "username": "testuser2",
+      "password": "12345",
       "roles": [
         "ADMIN"
       ],
@@ -739,7 +1267,7 @@
       "id": "1",
       "firstname": "jgh",
       "lastname": "asf",
-      "age": 465,
+      "age": 46,
       "currency": "RUB",
       "country": "Belarus",
       "city": "Moscow",
@@ -758,14 +1286,36 @@
       "avatar": "https://xakep.ru/wp-content/uploads/2018/05/171485/KuroiSH-hacker.jpg"
     },
     {
+      "id": "3",
+      "firstname": "TEST USER 1",
+      "lastname": "USER1",
+      "age": 18,
+      "currency": "RUB",
+      "country": "Russia",
+      "city": "Moscow",
+      "username": "user",
+      "avatar": "https://xakep.ru/wp-content/uploads/2018/05/171485/KuroiSH-hacker.jpg"
+    },
+    {
       "id": "4",
-      "firstname": "TEST USER",
-      "lastname": "USER",
+      "firstname": "TEST USER2",
+      "lastname": "USER2",
       "age": 18,
       "currency": "RUB",
       "country": "Russia",
       "city": "Moscow",
       "username": "testuser",
+      "avatar": "https://xakep.ru/wp-content/uploads/2018/05/171485/KuroiSH-hacker.jpg"
+    },
+    {
+      "id": "5",
+      "firstname": "TEST USER3",
+      "lastname": "USER3",
+      "age": 18,
+      "currency": "RUB",
+      "country": "Russia",
+      "city": "Moscow",
+      "username": "testuser2",
       "avatar": "https://xakep.ru/wp-content/uploads/2018/05/171485/KuroiSH-hacker.jpg"
     }
   ],

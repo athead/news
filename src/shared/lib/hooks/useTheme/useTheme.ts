@@ -22,7 +22,7 @@ export function useTheme(): UseThemeResult {
             default:
                 newTheme = Theme.LIGHT;
         }
-        
+
         setTheme?.(newTheme);
 
         saveAction?.(newTheme);

@@ -1,9 +1,8 @@
 import { memo } from 'react';
 import { useTranslation } from 'react-i18next';
 import { classNames } from '@/shared/lib/classNames/classNames';
-import { Card } from '@/shared/ui/deprecated/Card';
-import { Input } from '@/shared/ui/deprecated/Input';
-
+import { Card } from '@/shared/ui/Card';
+import { Input } from '@/shared/ui/Input';
 
 import cls from './ArticlesPageFilters.module.scss';
 import { ArticleViewSelector } from '@/features/ArticleViewSelector';

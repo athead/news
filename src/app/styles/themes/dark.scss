@@ -1,30 +1,22 @@
 .app_dark_theme {
-    --bg-color: rgb(16 16 16);
-    --inverted-bg-color: rgb(214 214 214);
-    --primary-color: rgb(253 253 253);
-    --secondary-color: rgb(188 188 188);
-    --inverted-primary-color: rgb(22 20 30);
-    --inverted-secondary-color: rgb(51 51 51);
+    // colors
+    --dark-bg: #090F11;
+    --bg: #0C1214;
+    --light-bg: #151C1F;
+    --text: #DBDBDB;
+    --hint: #555;
+    --cancel: #D95757;
+    --save: #6CD98B;
+    --icon: #74A2B2;
+    --accent: #5ED3F3;
 
-    // redesigned colors
-    --dark-bg-redesigned: #090F11;
-    --bg-redesigned: #0C1214;
-    --light-bg-redesigned: #151C1F;
-    --text-redesigned: #DBDBDB;
-    --hint-redesigned: #555;
-    --cancel-redesigned: #D95757;
-    --save-redesigned: #6CD98B;
-    --icon-redesigned: #74A2B2;
-    --accent-redesigned: #5ED3F3;
-
-    // skeleton
-    --skeleton-color: #000;
-    --skeleton-shadow: #3f3f3f;
-
-    // Code component
-    --code-bg: #dfdfdf;
-
-    // article
-    --card-bg: rgb(55 55 55);
-    --list-bg: rgb(55 55 55);
+    // code viewer
+    --hl-main: #f8f8f2;
+    --hl-comment: #d4d0ab;
+    --hl-tag: #ffa07a;
+    --hl-type: #f5ab35;
+    --hl-attribute: #ffd700;
+    --hl-string: #abe338;
+    --hl-title: #00e0e0;
+    --hl-keyword: #dcc6e0;
 }

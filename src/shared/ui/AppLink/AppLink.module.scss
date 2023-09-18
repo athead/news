@@ -1,0 +1,19 @@
+.AppLink {
+    cursor: pointer;
+}
+
+.primary {
+    color: var(--text);
+
+    &:hover {
+        color: var(--accent);
+    }
+}
+
+.red {
+    color: var(--cancel);
+
+    &:hover {
+        opacity: 0.8;
+    }
+}

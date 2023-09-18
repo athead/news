@@ -9,6 +9,7 @@ import { ArticleDetailsPageSchema } from '@/pages/ArticleDetailsPage';
 import { ArticlesPageSchema } from '@/pages/ArticlesPage';
 import { rtkApi } from '@/shared/api/rtkApi';
 import { ScrollRestoreSchema } from '@/widgets/Page';
+import { ArticleEditorSchema } from '@/features/articleEditor';
 
 export interface StateSchema {
     user: UserSchema;
@@ -22,6 +23,7 @@ export interface StateSchema {
     addCommentForm?: AddCommentFormSchema;
     articlesPage?: ArticlesPageSchema;
     articleDetailsPage?: ArticleDetailsPageSchema;
+    articleDetailsEditor?: ArticleEditorSchema;
 }
 
 export type StateSchemaKey = keyof StateSchema;

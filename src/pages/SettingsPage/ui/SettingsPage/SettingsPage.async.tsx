@@ -1,3 +1,5 @@
 import { lazy } from 'react';
 
-export const SettingsPageAsync = lazy(() => {return import('./SettingsPage')});
+export const SettingsPageAsync = lazy(() => {
+    return import('./SettingsPage');
+});

@@ -15,6 +15,8 @@
     "views": "Views",
     "article_rate": "Rate article",
     "feedback_title": "Enter your feedback to improve articles quality",
+    "editing_article": "Article editor",
+    "creating_article": "Article creator",
     "{{count}} views_one": "{{count}} view",
     "{{count}} views_other": "{{count}} views"
 }

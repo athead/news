@@ -18,17 +18,9 @@
 .app {
     min-height: 100vh;
     font: var(--font-m);
-    color: var(--primary-color);
-    background: var(--bg-color);
+    color: var(--text);
+    background: var(--bg);
 }
-
-.app_redesigned {
-    min-height: 100vh;
-    font: var(--font-m);
-    color: var(--text-redesigned);
-    background: var(--bg-redesigned);
-}
-
 
 .content-page {
     display: flex;
@@ -41,26 +33,12 @@
 }
 
 *::-webkit-scrollbar-track {
-    background: var(--light-bg-redesigned); 
+    // background: var(--light-bg); 
+    border-radius: 20px;
 }
 
 *::-webkit-scrollbar-thumb {
-    background-color: var(--icon-redesigned); 
-    border: 1px solid var(--accent-redesigned); 
+    background-color: var(--light-bg); 
+    border: 1px solid var(--hint); 
     border-radius: 20px; 
-}
-
-.app_redesigned *::-webkit-scrollbar {
-    width: 12px; /* ширина всей полосы прокрутки */
-    height: 8px;
-}
-
-.app_redesigned *::-webkit-scrollbar-track {
-    background: var(--card-bg); /* цвет зоны отслеживания */
-}
-
-.app_redesigned *::-webkit-scrollbar-thumb {
-    background-color: var(--inverted-primary-color); /* цвет бегунка */
-    border: 2px solid var(--primary-color); /* отступ вокруг бегунка */
-    border-radius: 20px; /* округлось бегунка */
 }

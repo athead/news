@@ -1,12 +1,10 @@
 import { memo } from 'react';
 import { classNames } from '@/shared/lib/classNames/classNames';
-import { Card as CardDeprecated } from '@/shared/ui/deprecated/Card';
-import { Card as CardRedesigned } from '@/shared/ui/redesigned/Card';
-import { Skeleton as SkeletonDeprecated } from '@/shared/ui/deprecated/Skeleton';
-import { Skeleton as SkeletonRedesigned } from '@/shared/ui/redesigned/Skeleton';
+import { Card } from '@/shared/ui/Card';
+import { Skeleton } from '@/shared/ui/Skeleton';
 import { ArticleView } from '../../model/consts/consts';
 import cls from './ArticleListItem.module.scss';
-import { ToggleFeatures, toggleFeatures } from '@/shared/lib/features';
+import { HStack, VStack } from '@/shared/ui/Stack';
 
 interface ArticleListItemSkeletonProps {
     className?: string;
@@ -16,77 +14,64 @@ interface ArticleListItemSkeletonProps {
 export const ArticleListItemSkeleton = memo((props: ArticleListItemSkeletonProps) => {
     const { className, view } = props;
 
-    const mainClass = toggleFeatures({
-        name: 'isAppRedesigned',
-        on: () => {return cls.ArticleListItemRedesigned},
-        off: () => {return cls.ArticleListItem},
-    });
-
-    const Skeleton = toggleFeatures({
-        name: 'isAppRedesigned',
-        on: () => {return SkeletonRedesigned},
-        off: () => {return SkeletonDeprecated},
-    });
-
     if (view === ArticleView.BLOCK) {
         const cardContent = (
-            <>
-                <div className={cls.header}>
-                    <Skeleton borderRadius="50%" height={30} width={30} />
-                    <Skeleton width={150} height={16} className={cls.username} />
-                    <Skeleton width={150} height={16} className={cls.date} />
-                </div>
-                <Skeleton width={250} height={24} className={cls.title} />
-                <Skeleton height={200} className={cls.img} />
-                <div className={cls.footer}>
-                    <Skeleton height={36} width={200} />
-                </div>
-            </>
+            <VStack max gap="16">
+                <HStack gap="8">
+                    <Skeleton className={cls.avatar} width={32} height={32} borderRadius="50%" />
+                    <Skeleton width={100} height={20} borderRadius="10px" />
+                    <Skeleton width={100} height={20} borderRadius="10px" />
+                </HStack>
+                <Skeleton width={160} height={30} borderRadius="10px" />
+                <Skeleton width={260} height={20} borderRadius="10px" />
+                <Skeleton height={300} className={cls.img} borderRadius="24px" />
+                <Skeleton width="30%" height={20} borderRadius="10px" />
+                <Skeleton width="10%" height={20} borderRadius="10px" />
+                <Skeleton width="60%" height={20} borderRadius="10px" />
+                <HStack max justify="between">
+                    <Skeleton width={160} height={36} borderRadius="50px" />
+                    <Skeleton width={70} height={20} borderRadius="10px" />
+                </HStack>
+            </VStack>
         );
         return (
-            <div className={classNames(mainClass, {}, [className, cls[view]])}>
-                <ToggleFeatures
-                    feature="isAppRedesigned"
-                    on={
-                        <CardRedesigned border="round" className={cls.card}>
-                            {cardContent}
-                        </CardRedesigned>
-                    }
-                    off={<CardDeprecated className={cls.card}>{cardContent}</CardDeprecated>}
-                />
-            </div>
+            <Card
+                padding="24"
+                border="middle"
+                max
+                data-testid="ArticleListItem"
+                className={classNames(cls.ArticleListItem, {}, [className, cls[view]])}
+            >
+                {cardContent}
+            </Card>
         );
     }
 
     const cardContent = (
         <>
-            <ToggleFeatures
-                feature="isAppRedesigned"
-                on={<Skeleton width="100%" height={150} borderRadius="32px" className={cls.img} />}
-                off={
-                    <div className={cls.imageWrapper}>
-                        <Skeleton width={200} height={200} className={cls.img} />
-                    </div>
-                }
-            />
-            <div className={cls.infoWrapper}>
-                <Skeleton width={130} height={16} />
-            </div>
-            <Skeleton width={150} height={16} className={cls.title} />
+            <Skeleton width="100%" height={150} borderRadius="20px" className={cls.img} />
+            <VStack className={cls.info} gap="4">
+                <Skeleton width="80%" height={40} className={cls.title} borderRadius="10px" />
+                {/* <Skeleton width="40%" height={30} borderRadius="10px" /> */}
+                <VStack gap="8" className={cls.footer} max>
+                    <HStack justify="between" max>
+                        <Skeleton width={100} height={20} borderRadius="10px" />
+                        <Skeleton width={70} height={20} borderRadius="10px" />
+                    </HStack>
+                    <HStack gap="8">
+                        <Skeleton className={cls.avatar} width={32} height={32} borderRadius="50%" />
+                        <Skeleton width={100} height={20} borderRadius="10px" />
+                    </HStack>
+                </VStack>
+            </VStack>
         </>
     );
 
     return (
-        <div className={classNames(mainClass, {}, [className, cls[view]])}>
-            <ToggleFeatures
-                feature="isAppRedesigned"
-                on={
-                    <CardRedesigned border="middle" className={cls.card}>
-                        {cardContent}
-                    </CardRedesigned>
-                }
-                off={<CardDeprecated className={cls.card}>{cardContent}</CardDeprecated>}
-            />
+        <div className={classNames(cls.ArticleListItem, {}, [className, cls[view]])}>
+            <Card border="middle" className={cls.card} padding="0">
+                {cardContent}
+            </Card>
         </div>
     );
 });

@@ -8,16 +8,8 @@ interface FiltersContainerProps {
 
 export const FiltersContainer = memo((props: FiltersContainerProps) => {
     const { className } = props;
-    const {
-        onChangeSort,
-        onChangeType,
-        sort,
-        type,
-        onChangeSearch,
-        search,
-        onChangeOrder,
-        order,
-    } = useArticleFilters();
+    const { onChangeSort, onChangeType, sort, type, onChangeSearch, search, onChangeOrder, order } =
+        useArticleFilters();
 
     return (
         <ArticlesFilters

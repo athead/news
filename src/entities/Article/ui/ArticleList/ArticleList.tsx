@@ -3,14 +3,13 @@ import { HTMLAttributeAnchorTarget, memo, useCallback } from 'react';
 import { useTranslation } from 'react-i18next';
 import { VirtuosoGrid } from 'react-virtuoso';
 import { classNames } from '@/shared/lib/classNames/classNames';
-import { Text, TextSize } from '@/shared/ui/deprecated/Text';
 import { Article } from '../../model/types/article';
 import { ArticleListItem } from '../ArticleListItem/ArticleListItem';
 import { ArticleListItemSkeleton } from '../ArticleListItem/ArticleListItemSkeleton';
 import cls from './ArticleList.module.scss';
 import { ArticleView } from '../../model/consts/consts';
-import { ToggleFeatures } from '@/shared/lib/features';
-import { HStack } from '@/shared/ui/redesigned/Stack';
+import { HStack, VStack } from '@/shared/ui/Stack';
+import { Text } from '@/shared/ui/Text';
 
 interface ArticleListProps {
     className?: string;
@@ -53,9 +52,9 @@ export const ArticleList = memo((props: ArticleListProps) => {
 
     if (!isLoading && !articles.length) {
         return (
-            <div className={classNames(cls.ArticleList, {}, [className, cls[view]])}>
-                <Text size={TextSize.L} title={t('articles_not_found')} />
-            </div>
+            <VStack className={classNames(cls.notFound, {}, [className, cls[view]])}>
+                <Text size="l" title={t('articles_not_found')} />
+            </VStack>
         );
     }
 
@@ -86,49 +85,21 @@ export const ArticleList = memo((props: ArticleListProps) => {
             }}
         />
     ) : (
-        <ToggleFeatures
-            feature="isAppRedesigned"
-            on={
-                <HStack
-                    wrap="wrap"
-                    gap="16"
-                    data-testid="ArticleList"
-                    className={classNames(cls.ArticleListRedesigned, {}, [])}
-                >
-                    {articles.length > 0
-                        ? articles.map((article) => {
-                              return (
-                                  <ArticleListItem
-                                      target={target}
-                                      article={article}
-                                      view={view}
-                                      key={article.id}
-                                      className={cls.card}
-                                  />
-                              );
-                          })
-                        : null}
-                    {isLoading && getSkeletons(view)}
-                </HStack>
-            }
-            off={
-                <div data-testid="ArticleList" className={classNames(cls.ArticleList, {}, [className, cls[view]])}>
-                    {articles.length > 0
-                        ? articles.map((article) => {
-                              return (
-                                  <ArticleListItem
-                                      target={target}
-                                      article={article}
-                                      view={view}
-                                      key={article.id}
-                                      className={cls.card}
-                                  />
-                              );
-                          })
-                        : null}
-                    {isLoading && getSkeletons(view)}
-                </div>
-            }
-        />
+        <HStack wrap="wrap" gap="16" data-testid="ArticleList" className={classNames(cls.ArticleList, {}, [])}>
+            {isLoading && getSkeletons(view)}
+            {articles.length > 0
+                ? articles.map((article) => {
+                      return (
+                          <ArticleListItem
+                              target={target}
+                              article={article}
+                              view={view}
+                              key={article.id}
+                              className={cls.card}
+                          />
+                      );
+                  })
+                : null}
+        </HStack>
     );
 });
