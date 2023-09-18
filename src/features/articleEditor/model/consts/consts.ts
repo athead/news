@@ -1,4 +1,6 @@
 export enum ValidateArticleError {
+    NO_DATA = 'NO_DATA',
+    EMPTY_ARTICLE = 'EMPTY_ARTICLE',
     INCORRECT_DATA = 'INCORRECT_DATA',
     SERVER_ERROR = 'SERVER_ERROR',
 }

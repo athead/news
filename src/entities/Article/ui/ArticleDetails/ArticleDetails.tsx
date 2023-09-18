@@ -68,7 +68,7 @@ export const ArticleDetails = memo((props: ArticleDetailsProps) => {
                     src={article?.img}
                     className={cls.img}
                 />
-                {article?.blocks.map(renderArticleBlock)}
+                {article?.blocks?.map(renderArticleBlock)}
             </>
         );
     }

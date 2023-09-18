@@ -489,7 +489,7 @@
     },
     {
       "id": "9",
-      "title": "dolor ut elit qui labore veniam",
+      "title": "dolor ut elit qui labore veniam1",
       "subtitle": "Ad incididunt reprehenderit consequat cupidatat aliqua amet nisi magna sunt.",
       "img": "https://picsum.photos/920/300",
       "views": 4582,
@@ -544,7 +544,16 @@
             "Ea aute ipsum excepteur fugiat ea deserunt id occaecat mollit labore Lorem in. Incididunt do elit voluptate sit velit ex deserunt exercitation. Mollit commodo reprehenderit non irure amet eiusmod. Eiusmod non dolore ullamco voluptate laborum do qui est sint dolore minim."
           ]
         }
-      ]
+      ],
+      "user": {
+        "id": "3",
+        "username": "manager",
+        "password": "manager",
+        "roles": [
+          "MANAGER"
+        ],
+        "avatar": "https://xakep.ru/wp-content/uploads/2018/05/171485/KuroiSH-hacker.jpg"
+      }
     },
     {
       "id": "10",

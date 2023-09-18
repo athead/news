@@ -17,6 +17,9 @@
     "feedback_title": "Enter your feedback to improve articles quality",
     "editing_article": "Article editor",
     "creating_article": "Article creator",
+    "save_btn": "Save",
+    "create_btn": "Create",
+    "cancel_btn": "Cancel",
     "{{count}} views_one": "{{count}} view",
     "{{count}} views_other": "{{count}} views"
 }

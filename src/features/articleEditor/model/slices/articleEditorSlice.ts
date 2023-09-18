@@ -5,6 +5,7 @@ import { fetchEditArticleById } from '../services/fetchEditArticleById/fetchEdit
 
 const initialState: ArticleEditorSchema = {
     isLoading: false,
+    isEdited: false,
     error: undefined,
     data: undefined,
 };
@@ -13,11 +14,17 @@ export const articleEditorSlice = createSlice({
     name: 'articleEditor',
     initialState,
     reducers: {
-        updateArticle: (state, action: PayloadAction<Article>) => {
+        updateArticle: (state, action: PayloadAction<DeepPartial<Article>>) => {
             state.form = { ...state.form, ...action.payload };
+            if(JSON.stringify(state.form) === JSON.stringify(state.data)) {
+                state.isEdited = false;
+            } else {
+                state.isEdited = true;
+            }
         },
         cancelEdit: (state) => {
             state.form = state.data;
+            state.isEdited = false;
             state.validateErrors = undefined;
         },
     },
@@ -27,7 +34,7 @@ export const articleEditorSlice = createSlice({
                 state.error = undefined;
                 state.isLoading = true;
             })
-            .addCase(fetchEditArticleById.fulfilled, (state, action: PayloadAction<Article>) => {
+            .addCase(fetchEditArticleById.fulfilled, (state, action: PayloadAction<DeepPartial<Article>>) => {
                 state.isLoading = false;
                 state.data = action.payload;
                 state.form = action.payload;
