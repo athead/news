@@ -1,3 +1,18 @@
 .ArticleEditor {
+    position: relative;
+}
 
+.carette {
+    position: absolute;
+    opacity: 0;
+    left: 0;
+    // transform: translateX(-100%);
+    top: 0;
+    &.visible {
+        opacity: 1;
+    }
+}
+
+.mainContent {
+    position: relative;
 }

@@ -15,6 +15,7 @@ import { getRouteArticleDetails } from '@/shared/const/router';
 import { Button } from '@/shared/ui/Button';
 import { HStack, VStack } from '@/shared/ui/Stack';
 import { ArticleBlockType, ArticleView } from '../../model/consts/consts';
+import { User } from '@/entities/User';
 
 export interface ArticleListItemProps {
     className?: string;
@@ -23,17 +24,26 @@ export interface ArticleListItemProps {
     target?: HTMLAttributeAnchorTarget;
 }
 
+interface UserInfoProps {
+    user?: User;
+}
+const UserInfo = memo((props: UserInfoProps) => {
+    if (!props.user) return null;
+    const { avatar, username } = props.user;
+    return (
+        <>
+            <Avatar size={32} src={avatar} className={cls.avatar} />
+            <Text weight="bold" text={username} />
+        </>
+    );
+});
+
 export const ArticleListItem = memo((props: ArticleListItemProps) => {
     const { className, article, view, target } = props;
     const { t } = useTranslation();
 
     // const types = <Text text={article.type.join(', ')} className={cls.types} />;
-    const userInfo = (
-        <>
-            <Avatar size={32} src={article.user.avatar} className={cls.avatar} />
-            <Text weight="bold" text={article.user.username} />
-        </>
-    );
+
     const views = (
         <HStack gap="8">
             <Icon Svg={EyeIcon} />
@@ -42,7 +52,7 @@ export const ArticleListItem = memo((props: ArticleListItemProps) => {
     );
 
     if (view === ArticleView.BLOCK) {
-        const textBlock = article.blocks.find((block) => {
+        const textBlock = article.blocks?.find((block) => {
             return block.type === ArticleBlockType.TEXT;
         }) as ArticleTextBlock;
 
@@ -56,7 +66,7 @@ export const ArticleListItem = memo((props: ArticleListItemProps) => {
             >
                 <VStack max gap="16">
                     <HStack gap="8" max>
-                        {userInfo}
+                        <UserInfo user={article.user} />
                         <Text text={article.createdAt} />
                     </HStack>
                     <Text title={article.title} weight="bold" />
@@ -68,9 +78,10 @@ export const ArticleListItem = memo((props: ArticleListItemProps) => {
                         className={cls.img}
                         alt={article.title}
                     />
-                    {textBlock?.paragraphs && (
+                    {/* {textBlock?.paragraphs && (
                         <Text className={cls.textBlock} text={textBlock.paragraphs.slice(0, 2).join(' ')} />
-                    )}
+                    )} */}
+                    {textBlock?.text && <Text className={cls.textBlock} text={textBlock.text} />}
                     <HStack max justify="between">
                         <AppLink target={target} to={getRouteArticleDetails(article.id)}>
                             <Button variant="outline">{t('read_more')}</Button>
@@ -97,13 +108,15 @@ export const ArticleListItem = memo((props: ArticleListItemProps) => {
                     className={cls.img}
                 />
                 <VStack className={cls.info} gap="4">
-                    <Text title={article.title} className={cls.title} weight="bold" clamp='2'/>
+                    <Text title={article.title} className={cls.title} weight="bold" clamp="2" />
                     <VStack gap="4" className={cls.footer} max>
                         <HStack justify="between" max>
                             <Text text={article.createdAt} className={cls.date} />
                             {views}
                         </HStack>
-                        <HStack gap="4">{userInfo}</HStack>
+                        <HStack gap="4">
+                            <UserInfo user={article.user} />
+                        </HStack>
                     </VStack>
                 </VStack>
             </Card>

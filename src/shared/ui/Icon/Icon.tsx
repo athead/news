@@ -17,8 +17,8 @@ interface NonClickableIconProps extends IconBaseProps {
 interface ClickableIconProps extends IconBaseProps {
     clickable: true;
     onClick?: () => void;
-    // onMouseLeave?: () => void;
-    // onMouseEnter?: () => void;
+    onMouseLeave?: () => void;
+    onMouseEnter?: () => void;
 }
 
 type IconProps = NonClickableIconProps | ClickableIconProps;
@@ -30,9 +30,11 @@ export const Icon = memo((props: IconProps) => {
         <Svg
             width={width}
             height={height}
-            className={classNames(cls.Icon, {}, [clickable ? '' : className])}
+            className={classNames(cls.Icon, {}, [className])}
             {...otherProps}
             onClick={undefined}
+            onMouseLeave={undefined}
+            onMouseEnter={undefined}
         />
     );
 
@@ -42,8 +44,8 @@ export const Icon = memo((props: IconProps) => {
                 type="button"
                 className={classNames(cls.button, {}, [className])}
                 onClick={props.onClick}
-                // onMouseEnter={props.onMouseEnter}
-                // onMouseLeave={props.onMouseLeave}
+                onMouseEnter={props.onMouseEnter}
+                onMouseLeave={props.onMouseLeave}
                 style={{ height, width }}
             >
                 {Icon}

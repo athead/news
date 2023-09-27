@@ -10,16 +10,38 @@
     border-radius: 48px;
 }
 
+.clear {
+    border: none;
+    background: transparent;
+    color: var(--text);
+}
+
 .s {
     height: 32px;
+    .input {
+        font: var(--font-s);
+    }
 }
 
 .m {
     height: 38px;
+    .input {
+        font: var(--font-m);
+    }
 }
 
 .l {
     height: 44px;
+    .input {
+        font: var(--font-l);
+    }
+}
+
+.xl {
+    height: 50px;
+    .input {
+        font: var(--font-xl);
+    }
 }
 
 .addonLeft, .addonRight {
@@ -35,8 +57,12 @@
 }
 
 .focused {
+    &.normal {
     border: 2px solid var(--accent);
-
+    }
+    &.clear {
+        border: none;
+    }
     .addonLeft svg, .addonRight svg {
         color: var(--accent);
     }
@@ -45,7 +71,6 @@
 .input {
     width: 100%;
 
-    font: var(--font-m);
     color: var(--text);
 
     background: none;

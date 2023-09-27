@@ -12,6 +12,7 @@
     "desc": "desc",
     "created_date": "Created date",
     "title": "Title",
+    "subtitle": "Subtitle",
     "views": "Views",
     "article_rate": "Rate article",
     "feedback_title": "Enter your feedback to improve articles quality",
@@ -20,6 +21,11 @@
     "save_btn": "Save",
     "create_btn": "Create",
     "cancel_btn": "Cancel",
+    "title_block": "Title",
+    "text_block": "Text",
+    "image_block": "Image",
+    "code_block": "Code",
+    
     "{{count}} views_one": "{{count}} view",
     "{{count}} views_other": "{{count}} views"
 }

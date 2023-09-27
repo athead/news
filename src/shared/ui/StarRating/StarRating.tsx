@@ -27,12 +27,9 @@ export const StarRating = memo((props: StarRatingProps) => {
     };
 
     const onLeave = () => {
-        return () => {
-            console.log('eter');
-            if (!isSelected) {
-                setCurSratsCount(0);
-            }
-        };
+        if (!isSelected) {
+            setCurSratsCount(0);
+        }
     };
 
     const onClick = (starsCount: number) => {
@@ -49,7 +46,7 @@ export const StarRating = memo((props: StarRatingProps) => {
             {stars.map((starNumber) => {
                 return (
                     <Icon
-                    Svg={Star}
+                        Svg={Star}
                         key={starNumber}
                         className={classNames(
                             cls.StarIcon,

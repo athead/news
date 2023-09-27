@@ -6,7 +6,9 @@ import { Text } from '../Text';
 
 type HTMLInputProps = Omit<InputHTMLAttributes<HTMLInputElement>, 'value' | 'onChange' | 'readOnly' | 'size'>;
 
-type InputSize = 's' | 'm' | 'l';
+type InputSize = 's' | 'm' | 'l' | 'xl';
+
+type InputVariant = 'normal' | 'clear';
 
 interface InputProps extends HTMLInputProps {
     className?: string;
@@ -18,6 +20,7 @@ interface InputProps extends HTMLInputProps {
     addonLeft?: ReactNode;
     addonRight?: ReactNode;
     size?: InputSize;
+    variant?: InputVariant;
 }
 
 export const Input = memo((props: InputProps) => {
@@ -33,6 +36,7 @@ export const Input = memo((props: InputProps) => {
         addonRight,
         label,
         size = 'm',
+        variant ='normal',
         ...otherProps
     } = props;
     const ref = useRef<HTMLInputElement>(null);
@@ -65,7 +69,7 @@ export const Input = memo((props: InputProps) => {
     };
 
     const input = (
-        <div className={classNames(cls.InputWrapper, mods, [className, cls[size]])}>
+        <div className={classNames(cls.InputWrapper, mods, [className, cls[size], cls[variant]])} {...otherProps}>
             {Boolean(addonLeft) && <div className={cls.addonLeft}>{addonLeft}</div>}
             <input
                 ref={ref}
@@ -77,7 +81,6 @@ export const Input = memo((props: InputProps) => {
                 onBlur={onBlur}
                 readOnly={readonly}
                 placeholder={placeholder}
-                {...otherProps}
             />
             {Boolean(addonRight) && <div className={cls.addonRight}>{addonRight}</div>}
         </div>

@@ -10,11 +10,11 @@ import { Button } from '@/shared/ui/Button';
 
 interface ArticleAdditionalInfoProps {
     className?: string;
-    author: User;
-    createdAt: string;
-    views: number;
-    onEdit: () => void;
-    onCreate: () => void;
+    author?: User;
+    createdAt?: string;
+    views?: number;
+    onEdit?: () => void;
+    onCreate?: () => void;
 }
 
 export const ArticleAdditionalInfo = memo((props: ArticleAdditionalInfoProps) => {
@@ -24,9 +24,9 @@ export const ArticleAdditionalInfo = memo((props: ArticleAdditionalInfoProps) =>
     return (
         <VStack gap="32" className={classNames(cls.ArticleAdditionalInfo, {}, [className])}>
             <HStack gap="8">
-                <Avatar src={author.avatar} size={32} />
-                <Text text={author.username} weight="bold" />
-                <Text text={createdAt} />
+                {author && <Avatar src={author.avatar} size={32} />}
+                {author && <Text text={author.username} weight="bold" />}
+                {createdAt && <Text text={createdAt} />}
             </HStack>
             <Button onClick={onEdit}>{t('edit_btn')}</Button>
             <Button onClick={onCreate}>{t('create_article')}</Button>

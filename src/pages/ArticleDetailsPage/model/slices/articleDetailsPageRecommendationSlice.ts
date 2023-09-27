@@ -5,9 +5,8 @@ import { ArticleDetailsPageRecommendationSchema } from '../types/articleDetailsP
 import { fetchArticleRecommendations } from '../services/fetchArticleRecommendations/fetchArticleRecommendations';
 
 const recommendationsAdapter = createEntityAdapter<Article>({
-    // Assume IDs are stored in a field other than `comment.id`
-    selectId: (comment) => {
-        return comment.id;
+    selectId: (article) => {
+        return article.id;
     },
 });
 

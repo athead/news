@@ -11,6 +11,8 @@ export const renderArticleBlock = (block: ArticleBlock) => {
             return <ArticleCodeBlockComponent key={block.id} className={cls.block} block={block} />;
         case ArticleBlockType.TEXT:
             return <ArticleTextBlockComponent key={block.id} className={cls.block} block={block} />;
+        case ArticleBlockType.TITLE:
+            return <ArticleTextBlockComponent key={block.id} className={cls.block} block={block} />;
         case ArticleBlockType.IMAGE:
             return <ArticleImageBlockComponent key={block.id} className={cls.block} block={block} />;
         default:

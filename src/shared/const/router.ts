@@ -28,13 +28,15 @@ export const getRouteArticles = () => {
 export const getRouteProfile = (id: string) => {
     return `/profile/${id}`;
 };
-export const getRouteArticleDetails = (id: string) => {
+export const getRouteArticleDetails = (id?: string) => {
+    if (!id) return getRouteArticles();
     return `/articles/${id}`;
 };
 export const getRouteArticleCreate = () => {
     return '/articles/new';
 };
-export const getRouteArticleEdit = (id: string) => {
+export const getRouteArticleEdit = (id?: string) => {
+    if (!id) return getRouteArticles();
     return `/articles/${id}/edit`;
 };
 export const getRouteAdminPanel = () => {

@@ -13,7 +13,7 @@ export const AdditionalInfoContainer = memo(() => {
     const navigate = useNavigate();
 
     const onEditArticle = useCallback(() => {
-        if (article) {
+        if (article?.id) {
             navigate(getRouteArticleEdit(article.id));
         }
     }, [article, navigate]);

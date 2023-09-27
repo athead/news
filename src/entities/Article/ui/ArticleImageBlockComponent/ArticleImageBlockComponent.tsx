@@ -13,7 +13,7 @@ interface ArticleImageBlockComponentProps {
 }
 
 export const ArticleImageBlockComponent = memo((props: ArticleImageBlockComponentProps) => {
-    const { className, block } = props;
+    const { className, block, ...otherProps } = props;
     // const { t } = useTranslation();
 
     return (
@@ -23,6 +23,7 @@ export const ArticleImageBlockComponent = memo((props: ArticleImageBlockComponen
             gap="8"
             align="center"
             className={classNames(cls.ArticleImageBlockComponent, {}, [className])}
+            {...otherProps}
         >
             <AppImage
                 src={block.src}
