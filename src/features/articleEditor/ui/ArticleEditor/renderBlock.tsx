@@ -18,6 +18,7 @@ export const renderArticleBlock = (block: ArticleBlock) => {
                     className={cls.block}
                     block={block}
                     editable
+                    initialValue={block.code}
                     placeholder={i18n.t('input code here')}
                 />
             );
@@ -29,6 +30,7 @@ export const renderArticleBlock = (block: ArticleBlock) => {
                     className={cls.block}
                     block={block}
                     editable
+                    initialValue={block.text}
                     placeholder={i18n.t('input text here')}
                 />
             );
@@ -41,6 +43,7 @@ export const renderArticleBlock = (block: ArticleBlock) => {
                     className={cls.block}
                     block={block}
                     editable
+                    initialValue={block.title}
                     placeholder={i18n.t('input title here')}
                 />
             );

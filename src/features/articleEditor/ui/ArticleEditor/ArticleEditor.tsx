@@ -1,7 +1,6 @@
 import { useTranslation } from 'react-i18next';
 import { MouseEvent, memo, useCallback, useEffect, useRef, useState } from 'react';
 import { useSelector } from 'react-redux';
-import { OutputData } from '@editorjs/editorjs';
 import { useAppDispatch } from '@/shared/lib/hooks/useAppDispatch/useAppDispatch';
 import { Text } from '@/shared/ui/Text';
 import { fetchEditArticleById } from '../../model/services/fetchEditArticleById/fetchEditArticleById';
@@ -22,8 +21,6 @@ import { ArticleBlockType } from '@/entities/Article';
 import { getUserAuthData } from '@/entities/User';
 import cls from './ArticleEditor.module.scss';
 import { classNames } from '@/shared/lib/classNames/classNames';
-// eslint-disable-next-line
-import { ArticleBlockEditor } from '@/features/ArticleBlockEditor';
 import { renderArticleBlock } from './renderBlock';
 
 interface ArticleEditorProps {
@@ -57,7 +54,6 @@ export const ArticleEditor = memo((props: ArticleEditorProps) => {
     const articleForm = useSelector(getArticleEditorForm);
     const [isBlockHovered, setIsBlockHovered] = useState(false);
     const [caretteTop, setCaretteTop] = useState('0');
-    const [data, setData] = useState<OutputData>();
 
     useEffect(() => {
         if (articleId) dispatch(fetchEditArticleById(articleId));
@@ -133,7 +129,6 @@ export const ArticleEditor = memo((props: ArticleEditorProps) => {
                     onMouseLeave={onMouseLeaveHandler}
                 />
                 {articleForm?.blocks && articleForm.blocks.map(renderArticleBlock)}
-                {/* <ArticleBlockEditor data={data} onChange={setData} /> */}
             </VStack>
         );
     }

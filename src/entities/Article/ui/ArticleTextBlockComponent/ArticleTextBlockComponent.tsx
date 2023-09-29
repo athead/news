@@ -12,14 +12,14 @@ interface ArticleTextBlockComponentProps {
     block: ArticleTextBlock | ArticleTitleBlock;
     placeholder?: string;
     editable?: boolean;
-    initedValue?: string;
+    initialValue?: string;
     size?: inputSize;
     onChange?: (value: string) => void;
 }
 
 export const ArticleTextBlockComponent = memo((props: ArticleTextBlockComponentProps) => {
-    const { className, block, editable, onChange, initedValue, placeholder, size = 'm', ...otherProps } = props;
-    const [text, setText] = useState(initedValue);
+    const { className, block, editable, onChange, initialValue, placeholder, size = 'm', ...otherProps } = props;
+    const [text, setText] = useState(initialValue);
 
     const onChangeHandler = useCallback(
         (value: string) => {

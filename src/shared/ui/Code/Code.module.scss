@@ -19,7 +19,7 @@
     border-radius: 16px;
 }
 .Code, .CodePreview, .textarea {
-    font: var(--font-m);
+    // font: var(--font-m);
 }
 .CodePreview {
     position: absolute;
@@ -30,19 +30,20 @@
     top: 10px;
     left: 20px;
     right: 10px;
-    width: 100%;
+    width: calc(100% - 30px);
     height: 200px;
     z-index: 3;
     opacity: 0;
     pointer-events: none;
-    cursor:text;
+    cursor: text;
+    overflow-y: auto;
 }
 
 .textarea {
     position: absolute;
     display: inline-block;
     padding: 0;
-    width: calc(100% - 40px);
+    width: calc(100% - 30px);
     height: 200px;
     z-index: 4;
     margin: 0;
@@ -57,7 +58,10 @@
     opacity: 0;
     pointer-events: none;
     background: transparent;
-    font-family: Consolas;
+    // font-style: inherit;
+    font-size: var(--font-size-m);
+    line-height: var(--font-size-l);
+    color: var(--text);
     resize: none;
 }
 .visible {

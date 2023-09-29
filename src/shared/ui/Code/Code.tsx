@@ -19,8 +19,11 @@ interface CodeProps {
 export const Code = memo((props: CodeProps) => {
     const { className, text, ident, editable, initialValue, placeholder, onChange, ...otherProps } = props;
     const textareaRef = useRef<HTMLTextAreaElement>(null);
+    const preRef = useRef<HTMLPreElement>(null);
+
     const [codeText, setCodeText] = useState(initialValue || '');
     const [isOnInput, setIsOnInput] = useState(false);
+    const [scrollPosition, setScrollPosition] = useState(0);
     const onCopy = useCallback(() => {
         navigator.clipboard.writeText(text);
     }, [text]);
@@ -30,6 +33,22 @@ export const Code = memo((props: CodeProps) => {
         hljs.highlightAll();
     }, []);
 
+    // const onScroll = () => {
+    //     if (isOnInput && textareaRef.current) setScrollPosition(textareaRef.current.scrollTop);
+    //     else if (preRef.current) setScrollPosition(preRef.current.scrollTop);
+    //     console.log('on scroll', scrollPosition);
+    // };
+
+    const setElementsScroll = () => {
+        const textareaScroll = textareaRef.current?.scrollTop || 0;
+        const preScroll = textareaRef.current?.scrollTop || 0;
+        if (isOnInput) {
+            if (textareaRef.current) textareaRef.current.scrollTop = preScroll;
+        } else {
+            if (preRef.current) preRef.current.scrollTop = textareaScroll;
+        }
+    };
+
     const onTextChange = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
         setCodeText(e.target.value);
         onChange?.(e.target.value);
@@ -38,11 +57,13 @@ export const Code = memo((props: CodeProps) => {
     const onTextBlur = useCallback(() => {
         setIsOnInput(false);
         hljs.highlightAll();
+        setElementsScroll();
     }, []);
 
     const onTextFocus = useCallback(() => {
         textareaRef.current?.focus();
         setIsOnInput(true);
+        setElementsScroll();
     }, []);
 
     if (editable) {
@@ -60,6 +81,7 @@ export const Code = memo((props: CodeProps) => {
                 {codeText && (
                     <pre
                         role="presentation"
+                        ref={preRef}
                         onClick={onTextFocus}
                         className={classNames(cls.CodePreview, { [cls.visible]: !isOnInput }, [className])}
                     >
@@ -73,8 +95,7 @@ export const Code = memo((props: CodeProps) => {
     }
     return (
         <pre className={classNames(cls.Code, {}, [className])} {...otherProps}>
-            <Icon Svg={copyIcon} width={40} height={40} clickable
-className={cls.copyBtn} onClick={onCopy} />
+            <Icon Svg={copyIcon} width={40} height={40} clickable className={cls.copyBtn} onClick={onCopy} />
             <code className="language-javascript" id={ident}>
                 {text}
             </code>
